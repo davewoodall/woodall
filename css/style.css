@@ -15,7 +15,7 @@ body {
 }
 
 .first span:nth-child(1) {
-  color: #E14549;
+  color: #f5f1db;
   animation: slide_d;
   animation-duration: 1200ms;
 }
@@ -23,19 +23,22 @@ body {
 .first span:nth-child(2) {
   color: #E57477;
   animation: slide_a;
-  animation-duration: 1200ms;
+  animation-duration: 700ms;
+  animation-timing-function: cubic-bezier(.79,.05,.5,.99);
 }
 
 .first span:nth-child(3) {
   color: #D6B81D;
   animation: slide_v;
-  animation-duration: 1200ms;
+  animation-duration: 1000ms;
+  animation-timing-function: cubic-bezier(.79,.05,.5,.99);
 }
 
 .first span:nth-child(4) {
   color: #459EE1;
   animation: slide_e;
-  animation-duration: 1200ms;
+  animation-duration: 800ms;
+  animation-timing-function: cubic-bezier(.79,.05,.5,.99);
 }
 
 .last {
@@ -70,6 +73,54 @@ body {
   letter-spacing: -20px;
 }
 
+@keyframes slide_d {
+  from {
+    opacity: 0;
+    color: #E5D374;
+    left: 16px;
+  }
+  to {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes slide_a {
+  from {
+    opacity: 0;
+    color: #E5D374;
+    left: -60px;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slide_v {
+  from {
+    opacity: 0;
+    color: #E5D374;
+    left: -115px;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+
+  @keyframes slide_e {
+    from {
+      opacity: 0;
+      color: #E5D374;
+      left: -185px;
+    }
+    to {
+      left: 0;
+      opacity: 1;
+    }
+  }
 /* non-mobile */
 
 @media (min-width: 500px) {
@@ -96,16 +147,6 @@ body {
   }
 
   /* non-mobile animations */
-
-  @keyframes slide_d {
-    from {
-      opacity: 0;
-      color: #E5D374;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 
   @keyframes slide_a {
     from {
