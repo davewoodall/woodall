@@ -1,7 +1,7 @@
 /* global */
 
 body {
-  background: #5fd079;
+  background: #ef3e19;
 }
 
 .first {
@@ -15,7 +15,7 @@ body {
 }
 
 .letter {
-  color: #a13587;
+  color: #383838;
  }
 
 .letter-d {
@@ -49,7 +49,7 @@ body {
 /* mobile */
 
 
-.name {
+.name, .fun-fact {
   text-align: center;
 }
 
@@ -195,7 +195,7 @@ body.body-d {
 }
 
 .body-d .letter-d {
-  color: white;
+  color: #adfca2;
 }
 
 .body-d .letter-a {
@@ -212,7 +212,7 @@ body.body-d {
 
 
 body.body-a {
-  background: #d89749;
+  background: #d0ab03;
 }
 
 .body-a .letter-d {
@@ -231,3 +231,46 @@ body.body-a {
   color: #004dbc;
 }
 
+body.body-v {
+  background: #423d3a;
+}
+
+.body-v .letter-d {
+  color: #4087ef;
+}
+
+.body-v .letter-a {
+  color: #4087ef;
+}
+
+.body-v .letter-v {
+  color: white;
+}
+
+.body-v .letter-e {
+  color: #4087ef;
+}
+
+.fun-fact {
+  font-family: georgia;
+  font-style: italic;
+  color: #eee;
+}
+
+.fact-d {
+  font-size: 30px;
+}
+
+@media (min-width: 500px) {
+  .fun-fact > div {
+    text-align: left;
+  }
+  
+  .fact-d {
+    font-size: 100px;
+  }
+  
+  .fact-a, .fact-v, .fact-e {
+    font-size: 50px;
+  }
+}  
