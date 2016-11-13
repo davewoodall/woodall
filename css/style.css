@@ -16,20 +16,26 @@ body {
 
 .first span:nth-child(1) {
   color: #E14549;
+  animation: slide_d;
+  animation-duration: 1200ms;
 }
 
 .first span:nth-child(2) {
   color: #E57477;
   animation: slide_a;
-  animation-duration: 1s;
+  animation-duration: 1200ms;
 }
 
 .first span:nth-child(3) {
   color: #D6B81D;
+  animation: slide_v;
+  animation-duration: 1200ms;
 }
 
 .first span:nth-child(4) {
   color: #459EE1;
+  animation: slide_e;
+  animation-duration: 1200ms;
 }
 
 .last {
@@ -46,19 +52,18 @@ body {
 
 .first {
   font-size: 96px;
-  letter-spacing: -5px;
 }
 
 .first span:nth-child(1) {
-  letter-spacing: -20px;
-}
-
-.first span:nth-child(2) {
   letter-spacing: -30px;
 }
 
+.first span:nth-child(2) {
+  letter-spacing: -35px;
+}
+
 .first span:nth-child(3) {
-  letter-spacing: -20px;
+  letter-spacing: -25px;
 }
 
 .first span:nth-child(4) {
@@ -90,19 +95,52 @@ body {
     letter-spacing: -30px;
   }
 
-}
+  /* non-mobile animations */
 
-/* animations */
-
-
-@keyframes slide_a {
-  from {
-    opacity: 0.5;
-    color: white;
-    left: -120px;
+  @keyframes slide_d {
+    from {
+      opacity: 0;
+      color: #E5D374;
+    }
+    to {
+      opacity: 1;
+    }
   }
-  to {
-    left: 0;
-    opacity: 1;
+
+  @keyframes slide_a {
+    from {
+      opacity: 0;
+      color: #E5D374;
+      left: -120px;
+    }
+    to {
+      left: 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide_v {
+    from {
+      opacity: 0;
+      color: #E5D374;
+      left: -230px;
+    }
+    to {
+      left: 0;
+      opacity: 1;
+    }
+  }
+
+
+  @keyframes slide_e {
+    from {
+      opacity: 0;
+      color: #E5D374;
+      left: -430px;
+    }
+    to {
+      left: 0;
+      opacity: 1;
+    }
   }
 }
