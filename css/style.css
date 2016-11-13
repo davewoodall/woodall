@@ -1,7 +1,7 @@
 /* global */
 
 body {
-  background: #EBDFA1;
+  background: #5fd079;
 }
 
 .first {
@@ -14,28 +14,28 @@ body {
   position: relative;
 }
 
-.first span:nth-child(1) {
-  color: #f5f1db;
+.letter {
+  color: #a13587;
+ }
+
+.letter-d {
   animation: slide_d;
   animation-duration: 1200ms;
 }
 
-.first span:nth-child(2) {
-  color: #E57477;
+.letter-a {
   animation: slide_a;
   animation-duration: 700ms;
   animation-timing-function: cubic-bezier(.79,.05,.5,.99);
 }
 
-.first span:nth-child(3) {
-  color: #D6B81D;
+.letter-v {
   animation: slide_v;
   animation-duration: 1000ms;
   animation-timing-function: cubic-bezier(.79,.05,.5,.99);
 }
 
-.first span:nth-child(4) {
-  color: #459EE1;
+.letter-e {
   animation: slide_e;
   animation-duration: 800ms;
   animation-timing-function: cubic-bezier(.79,.05,.5,.99);
@@ -57,19 +57,19 @@ body {
   font-size: 96px;
 }
 
-.first span:nth-child(1) {
+.letter-d {
   letter-spacing: -30px;
 }
 
-.first span:nth-child(2) {
+.letter-a {
   letter-spacing: -35px;
 }
 
-.first span:nth-child(3) {
+.letter-v {
   letter-spacing: -25px;
 }
 
-.first span:nth-child(4) {
+.letter-e {
   letter-spacing: -20px;
 }
 
@@ -121,7 +121,8 @@ body {
       opacity: 1;
     }
   }
-/* non-mobile */
+
+  /* non-mobile */
 
 @media (min-width: 500px) {
   .name { text-align: left; }
@@ -130,19 +131,19 @@ body {
     font-size: 200px;
   }
   
-  .first span:nth-child(1) {
+  .letter-d {
     letter-spacing: -60px;
   }
 
-  .first span:nth-child(2) {
+  .letter-a {
     letter-spacing: -75px;
   }
 
-  .first span:nth-child(3) {
+  .letter-v {
     letter-spacing: -50px;
   }
 
-  .first span:nth-child(4) {
+  .letter-e {
     letter-spacing: -30px;
   }
 
@@ -185,3 +186,48 @@ body {
     }
   }
 }
+
+
+/* variations */
+
+body.body-d {
+  background: #4d5a20; 
+}
+
+.body-d .letter-d {
+  color: white;
+}
+
+.body-d .letter-a {
+  color: #b6a8e7;
+}
+
+.body-d .letter-v {
+  color: #b6a8e7;
+}
+
+.body-d .letter-e {
+  color: #b6a8e7;
+}
+
+
+body.body-a {
+  background: #d89749;
+}
+
+.body-a .letter-d {
+  color: #004dbc;
+}
+
+.body-a .letter-a {
+  color: white;
+}
+
+.body-a .letter-v {
+  color: #004dbc;
+}
+
+.body-a .letter-e {
+  color: #004dbc;
+}
+
