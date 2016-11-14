@@ -242,18 +242,38 @@ body.body-v {
 }
 
 .body-v .letter-d {
-  color: #4087ef;
+  color: #ef40df;
 }
 
 .body-v .letter-a {
-  color: #4087ef;
+  color: #ef40df;
 }
 
 .body-v .letter-v {
-  color: #4087ef;
+  color: #ef40df;
 }
 
 .body-v .letter-e {
+  color: #ef40df;
+}
+
+body.body-e {
+  background: white;
+}
+
+.body-e .letter-d {
+  color: #4087ef;
+}
+
+.body-e .letter-a {
+  color: #4087ef;
+}
+
+.body-e .letter-v {
+  color: #4087ef;
+}
+
+.body-e .letter-e {
   color: #4087ef;
 }
 
