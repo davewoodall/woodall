@@ -1,9 +1,18 @@
 /* global */
 
 body {
-  background: #ef3e19;
+  background: #ffede9;
   font-family: 'Merriweather', georgia, serif;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 15px solid #fb4141;
+  padding: 0;
+  margin: 0;
 }
+
 
 h1,
 h2 { margin: 0; }
@@ -15,7 +24,7 @@ h2 { margin: 0; }
 }
 
 .letter {
-  color: #383838;
+  color: #8a8888;
  }
 
 .letter-d {
@@ -186,23 +195,23 @@ h2 { margin: 0; }
 /* variations */
 
 body.body-d {
-  background: #4d5a20; 
+  background: #8c9e4d; 
 }
 
 .body-d .letter-d {
-  color: #adfca2;
+  color: #f9ff31;
 }
 
 .body-d .letter-a {
-  color: #b6a8e7;
+  color: #f9ff31;
 }
 
 .body-d .letter-v {
-  color: #b6a8e7;
+  color: #f9ff31;
 }
 
 .body-d .letter-e {
-  color: #b6a8e7;
+  color: #f9ff31;
 }
 
 
@@ -215,7 +224,7 @@ body.body-a {
 }
 
 .body-a .letter-a {
-  color: white;
+  color: #004dbc;
 }
 
 .body-a .letter-v {
@@ -239,7 +248,7 @@ body.body-v {
 }
 
 .body-v .letter-v {
-  color: white;
+  color: #4087ef;
 }
 
 .body-v .letter-e {
