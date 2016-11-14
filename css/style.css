@@ -267,3 +267,8 @@ body.body-v {
     font-size: 50px;
   }
 }  
+
+/* helpers */
+.hidden {
+    display: none !important;
+}
