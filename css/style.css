@@ -215,6 +215,7 @@ a,
 
 body.body-d {
   background: #8c9e4d; 
+  border: 15px solid #8c9e4d;
 }
 
 .body-d .letter-d {
@@ -236,6 +237,7 @@ body.body-d {
 
 body.body-a {
   background: #d0ab03;
+  border: 15px solid #d0ab03;
 }
 
 .body-a .letter-d {
@@ -256,6 +258,7 @@ body.body-a {
 
 body.body-v {
   background: #423d3a;
+  border: 15px solid #423d3a;
 }
 
 .body-v .letter-d {
@@ -276,6 +279,7 @@ body.body-v {
 
 body.body-e {
   background: white;
+  border: 15px solid white;
 }
 
 .body-e .letter-d {
