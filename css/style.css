@@ -2,16 +2,16 @@
 
 body {
   background: #ef3e19;
+  font-family: 'Merriweather', georgia, serif;
 }
 
-.first {
-  font-family: helvetica neue;
-  font-weight: bold;
-}
+h1,
+h2 { margin: 0; }
 
 .first span {
   display: inline-block;
   position: relative;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .letter {
@@ -39,11 +39,6 @@ body {
   animation: slide_e;
   animation-duration: 800ms;
   animation-timing-function: cubic-bezier(.79,.05,.5,.99);
-}
-
-.last {
-  font-family: georgia;
-  font-style: italic;
 }
 
 /* mobile */
@@ -252,8 +247,6 @@ body.body-v {
 }
 
 .fun-fact {
-  font-family: georgia;
-  font-style: italic;
   color: #eee;
 }
 
