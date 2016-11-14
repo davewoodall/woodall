@@ -12,7 +12,6 @@ body {
   margin: 0;
   animation: border;
   animation-duration: 4s;
- 
   border: 15px solid #ffede9;
 }
 
@@ -28,12 +27,17 @@ body {
 
 
 h1,
-h2 { margin: 0; }
+h2,
+h3,
+a,
+.first span {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+ }
 
 .first span {
   display: inline-block;
   position: relative;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .letter {
