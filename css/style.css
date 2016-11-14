@@ -128,7 +128,9 @@ h2 { margin: 0; }
 
   /* non-mobile */
 
-@media (min-width: 500px) {
+@media (min-width: 1100px) {
+  .container { padding-left: 20px; }
+
   .name { text-align: left; }
   
   .first {
@@ -263,7 +265,7 @@ body.body-v {
   font-size: 30px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 1100px) {
   .fun-fact > div {
     text-align: left;
   }
