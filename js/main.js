@@ -11,5 +11,9 @@ $(function() {
     setTimeout(function() {
       $(fact).addClass('hidden');
     }, 1000);
+
+    setTimeout(function() {
+      $('body').removeClass();
+    }, 10000);
   });
 });
