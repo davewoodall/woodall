@@ -16,7 +16,12 @@ $(function() {
       $('body').removeClass();
     }, 10000);
   });
-  $('#close-menu').on('click', function(){
-    $('.nav-box').slideUp();
+
+  $('.menu-link').on('click', function() {
+    $('.nav-box').toggleClass('hidden');
+  });
+  
+  $('#close-menu').on('click', function() {
+    $('.nav-box').toggleClass('hidden');
   });
 });
