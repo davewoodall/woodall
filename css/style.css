@@ -389,7 +389,7 @@ body.body-e {
 .nav-box {
   position: absolute;
   background: #dad7c7;
-  top: -15px;
+  top: -325px;
   bottom: -15px;
   left: -15px;
   right: -15px;
@@ -414,13 +414,6 @@ body.drawer-in {
   animation-fill-mode: forwards;
 }
 
-.drawer-out .nav-box {
-  animation: drawer-out;
-  animation-duration: 1500ms;
-  animation-fill-mode: forwards;
-  background: red;
-}
-
 @keyframes drawer-out {
   from { }
   to {
@@ -431,7 +424,6 @@ body.drawer-in {
 @keyframes drawer-in {
   from { 
     top: 300px;
-    background: red;
   }
   to {
     top: 0px;
@@ -450,7 +442,6 @@ body.drawer-in {
   @keyframes drawer-in {
     from { 
       left: -300px;
-      background: red;
     }
     to {
       left: 0px;
@@ -477,6 +468,7 @@ body.drawer-in {
 
 @media (min-width: 1100px) {
   .nav-box {
+    top: -15px;
     left: 800px;
   }
 }

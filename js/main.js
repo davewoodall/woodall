@@ -19,5 +19,6 @@ $(function() {
   $('#close-menu').on('click', function() {
     $('body').removeClass('');
     $('body').addClass('drawer-in');
+    $('.nav-box').addClass('hidden');
   });
 });
