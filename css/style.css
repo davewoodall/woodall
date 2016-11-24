@@ -136,18 +136,31 @@ li {
   }
 }
 
-
   @keyframes slide_e {
-    from {
+    0% {
+      transform: rotate(17deg);
       opacity: 0;
       color: #E5D374;
       left: -185px;
     }
-    to {
-      left: 0;
+    40% {
+      transform: rotate(17deg);
+      left: 20px;
       opacity: 1;
     }
+    40% {
+      transform: rotate(17deg);
+      left: 0px;
+      opacity: 1;
+    }
+    70% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
   }
+
 
   /* non-mobile */
 
@@ -214,14 +227,21 @@ li {
       color: #E5D374;
       left: -430px;
     }
-    80% {
+    40% {
       transform: rotate(17deg);
       left: 20px;
       opacity: 1;
     }
+    40% {
+      transform: rotate(17deg);
+      left: 0px;
+      opacity: 1;
+    }
+    70% {
+      transform: rotate(-10deg);
+    }
     100% {
       transform: rotate(0deg);
-      left: 0px;
     }
   }
 }
@@ -365,7 +385,7 @@ body.body-e {
   text-decoration: underline;
 }
 
-/* 
+
 .nav-box {
   position: absolute;
   background: #dad7c7;
@@ -378,7 +398,7 @@ body.body-e {
   z-index: 1000;
 }
 
-*/
+
 
 /* animation for nav */
 
@@ -390,7 +410,7 @@ body.drawer-out {
 
 body.drawer-in {
   animation: drawer-in;
-  animation-duration: 500ms;
+  animation-duration: 1500ms;
   animation-fill-mode: forwards;
 }
 
@@ -398,19 +418,43 @@ body.drawer-in {
   animation: drawer-out;
   animation-duration: 1500ms;
   animation-fill-mode: forwards;
+  background: red;
 }
 
 @keyframes drawer-out {
   from { }
   to {
-    left: -300px;
+    top: 300px;
   }
 }
 
 @keyframes drawer-in {
-  from { }
+  from { 
+    top: 300px;
+    background: red;
+  }
   to {
-    left: 0px;
+    top: 0px;
+  }
+}
+
+@media (min-width: 1100px) {
+
+  @keyframes drawer-out {
+    from { }
+    to {
+      left: -300px;
+    }
+  }
+
+  @keyframes drawer-in {
+    from { 
+      left: -300px;
+      background: red;
+    }
+    to {
+      left: 0px;
+    }
   }
 }
 

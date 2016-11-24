@@ -12,11 +12,12 @@ $(function() {
 
   $('.menu-link').on('click', function() {
     $('.nav-box').removeClass('hidden');
-//    $('.nav-box').addClass('drawer-out');
+    $('body').removeClass();
     $('body').addClass('drawer-out');
   });
   
   $('#close-menu').on('click', function() {
-   $('body').removeClass('drawer-out').addClass('drawer-in');
+    $('body').removeClass('');
+    $('body').addClass('drawer-in');
   });
 });
