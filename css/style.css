@@ -19,12 +19,10 @@ body {
   from {
     border: 15px solid #fb4141;
   }
-
   to {
     border: 15px solid #ffede9;
   }
 }
-
 
 h1,
 h2,
@@ -34,6 +32,15 @@ a,
   margin: 0;
   font-family: 'Open Sans', sans-serif;
  }
+
+ul { 
+  padding: 0; 
+  margin: 0;
+}
+
+li { 
+  list-style: none
+}
 
 .first span {
   display: inline-block;
@@ -68,7 +75,6 @@ a,
 }
 
 /* mobile */
-
 
 .name, .fun-fact {
   text-align: center;
@@ -185,27 +191,37 @@ a,
   }
 
   @keyframes slide_v {
-    from {
+    0% {
       opacity: 0;
       color: #E5D374;
-      left: -230px;
+      top: -130px;
     }
-    to {
-      left: 0;
+    85% {
+      top: 40px;
+      opacity: 1;
+    }
+    100% {
+      top: 0;
       opacity: 1;
     }
   }
 
 
   @keyframes slide_e {
-    from {
+    0% {
+      transform: rotate(17deg);
       opacity: 0;
       color: #E5D374;
       left: -430px;
     }
-    to {
-      left: 0;
+    80% {
+      transform: rotate(17deg);
+      left: 20px;
       opacity: 1;
+    }
+    100% {
+      transform: rotate(0deg);
+      left: 0px;
     }
   }
 }
@@ -327,7 +343,6 @@ body.body-e {
 
 /* nav */
 
-
 .menu-btn a {
   text-align: center;
   text-decoration: none;
@@ -350,7 +365,7 @@ body.body-e {
   text-decoration: underline;
 }
 
-
+/* 
 .nav-box {
   position: absolute;
   background: #dad7c7;
@@ -363,9 +378,40 @@ body.body-e {
   z-index: 1000;
 }
 
-#menu { 
-  float: left;
-  text-decoration: none;
+*/
+
+/* animation for nav */
+
+body.drawer-out {
+  animation: drawer-out;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+body.drawer-in {
+  animation: drawer-in;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+.drawer-out .nav-box {
+  animation: drawer-out;
+  animation-duration: 1500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes drawer-out {
+  from { }
+  to {
+    left: -300px;
+  }
+}
+
+@keyframes drawer-in {
+  from { }
+  to {
+    left: 0px;
+  }
 }
 
 #close-menu {
@@ -375,15 +421,6 @@ body.body-e {
 
 .nav-buttons {
   overflow: auto;
-}
-
-ul { 
-  padding: 0; 
-  margin: 0;
-}
-
-li { 
-  list-style: none
 }
 
 .nav-links a {
@@ -397,21 +434,6 @@ li {
 @media (min-width: 1100px) {
   .nav-box {
     left: 800px;
-  }
-}
-
-#about {
-  display: none;
-  position: absolute;
-  top: 200px;
-  z-index: 1;
-}
-
-@media (min-width: 1100px) {
-  #about {
-    top: 100px;
-    right: 60px;
-    width: 600px;
   }
 }
 

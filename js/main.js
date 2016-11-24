@@ -8,20 +8,15 @@ $(function() {
     $('.fun-fact').children().addClass('hidden');
     $(fact).removeClass('hidden');
 
-    setTimeout(function() {
-      $(fact).addClass('hidden');
-    }, 1000);
-
-    setTimeout(function() {
-      $('body').removeClass();
-    }, 10000);
   });
 
   $('.menu-link').on('click', function() {
-    $('.nav-box').toggleClass('hidden');
+    $('.nav-box').removeClass('hidden');
+//    $('.nav-box').addClass('drawer-out');
+    $('body').addClass('drawer-out');
   });
   
   $('#close-menu').on('click', function() {
-    $('.nav-box').toggleClass('hidden');
+   $('body').removeClass('drawer-out').addClass('drawer-in');
   });
 });
