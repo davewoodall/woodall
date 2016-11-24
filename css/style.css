@@ -10,18 +10,6 @@ body {
   left: 0;
   padding: 0;
   margin: 0;
-  animation: border;
-  animation-duration: 4s;
-  border: 15px solid #ffede9;
-}
-
-@keyframes border {
-  from {
-    border: 15px solid #fb4141;
-  }
-  to {
-    border: 15px solid #ffede9;
-  }
 }
 
 h1,
@@ -251,7 +239,6 @@ li {
 
 body.body-d {
   background: #8c9e4d; 
-  border: 15px solid #8c9e4d;
 }
 
 .body-d .letter-d {
@@ -273,7 +260,6 @@ body.body-d {
 
 body.body-a {
   background: #d0ab03;
-  border: 15px solid #d0ab03;
 }
 
 .body-a .letter-d {
@@ -294,7 +280,6 @@ body.body-a {
 
 body.body-v {
   background: #423d3a;
-  border: 15px solid #423d3a;
 }
 
 .body-v .letter-d {
@@ -315,7 +300,6 @@ body.body-v {
 
 body.body-e {
   background: white;
-  border: 15px solid white;
 }
 
 .body-e .letter-d {
@@ -367,6 +351,7 @@ body.body-e {
   text-align: center;
   text-decoration: none;
   display: block;
+  color: #8a8888;
 }
 
 @media (min-width: 1100px) {
@@ -388,7 +373,7 @@ body.body-e {
 
 .nav-box {
   position: absolute;
-  background: #dad7c7;
+  background: #8a8888;
   top: -325px;
   bottom: -15px;
   left: -15px;
@@ -452,6 +437,7 @@ body.drawer-in {
 #close-menu {
   float: right;
   text-decoration: none;
+  color: #ffede9;
 }
 
 .nav-buttons {
@@ -462,8 +448,7 @@ body.drawer-in {
   display: block;
   font-size: 80px;
   text-decoration: none;
-  font-family: 
-  color: #aaa;
+  color: #ffede9;
 }
 
 @media (min-width: 1100px) {
