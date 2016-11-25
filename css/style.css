@@ -21,74 +21,48 @@ a,
   font-family: 'Open Sans', sans-serif;
  }
 
-ul { 
-  padding: 0; 
-  margin: 0;
-}
-
-li { 
-  list-style: none
-}
-
 .first span {
   display: inline-block;
   position: relative;
 }
 
-.letter {
-  color: #8a8888;
- }
+.first { font-size: 96px; }
+.letter { color: #8a8888; }
 
-.letter-d {
-  animation: slide_d;
-  animation-duration: 1200ms;
-}
-
-.letter-a {
-  animation: slide_a;
-  animation-duration: 700ms;
-  animation-timing-function: cubic-bezier(.79,.05,.5,.99);
-}
-
-.letter-v {
-  animation: slide_v;
-  animation-duration: 1000ms;
-  animation-timing-function: cubic-bezier(.79,.05,.5,.99);
-}
-
-.letter-e {
-  animation: slide_e;
-  animation-duration: 800ms;
-  animation-timing-function: cubic-bezier(.79,.05,.5,.99);
-}
-
-/* mobile */
-
-.name, .fun-fact {
+.name,
+.fun-fact {
   text-align: center;
+  color: #eee;
 }
 
-.first {
-  font-size: 96px;
+@media (min-width: 1100px) {
+  .container { padding-left: 20px; }
+  .name { text-align: left; }
+  .first { font-size: 200px; }
 }
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li { list-style: none }
+
+/* DAVE */
+
+/* letter _d */
 
 .letter-d {
+  animation: letter-d;
+  animation-duration: 1200ms;
   letter-spacing: -30px;
 }
 
-.letter-a {
-  letter-spacing: -35px;
+@media (min-width: 1100px) {
+  .letter-d { letter-spacing: -60px; }
 }
 
-.letter-v {
-  letter-spacing: -25px;
-}
-
-.letter-e {
-  letter-spacing: -20px;
-}
-
-@keyframes slide_d {
+@keyframes letter-d {
   from {
     opacity: 0;
     color: #E5D374;
@@ -100,7 +74,29 @@ li {
   }
 }
 
-@keyframes slide_a {
+.body-d { background: #8c9e4d; }
+
+.body-d .letter-d,
+.body-d .letter-a,
+.body-d .letter-v,
+.body-d .letter-e {
+  color: #f9ff31;
+}
+
+/* letter _a */
+
+.letter-a {
+  animation: letter-a;
+  animation-duration: 700ms;
+  animation-timing-function: cubic-bezier(.79,.05,.5,.99);
+  letter-spacing: -35px;
+}
+
+@media (min-width: 1100px) {
+  .letter-a { letter-spacing: -75px; }
+}
+
+@keyframes letter-a {
   from {
     opacity: 0;
     color: #E5D374;
@@ -112,7 +108,43 @@ li {
   }
 }
 
-@keyframes slide_v {
+@media (min-width: 1100px) {
+  @keyframes letter-a {
+    from {
+      opacity: 0;
+      color: #E5D374;
+      left: -120px;
+    }
+    to {
+      left: 0;
+      opacity: 1;
+    }
+  }
+}
+
+.body-a { background: #d0ab03; }
+
+.body-a .letter-d, 
+.body-a .letter-a,
+.body-a .letter-v,
+.body-a .letter-e {
+  color: #004dbc;
+}
+
+/* letter _v */
+
+.letter-v {
+  animation: letter-v;
+  animation-duration: 1000ms;
+  animation-timing-function: cubic-bezier(.79,.05,.5,.99);
+  letter-spacing: -25px;
+}
+
+@media (min-width: 1100px) {
+  .letter-v { letter-spacing: -50px; }
+}
+
+@keyframes letter-v {
   from {
     opacity: 0;
     color: #E5D374;
@@ -124,74 +156,8 @@ li {
   }
 }
 
-  @keyframes slide_e {
-    0% {
-      transform: rotate(17deg);
-      opacity: 0;
-      color: #E5D374;
-      left: -185px;
-    }
-    40% {
-      transform: rotate(17deg);
-      left: 20px;
-      opacity: 1;
-    }
-    40% {
-      transform: rotate(17deg);
-      left: 0px;
-      opacity: 1;
-    }
-    70% {
-      transform: rotate(-10deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
-
-
-  /* non-mobile */
-
 @media (min-width: 1100px) {
-  .container { padding-left: 20px; }
-
-  .name { text-align: left; }
-  
-  .first {
-    font-size: 200px;
-  }
-  
-  .letter-d {
-    letter-spacing: -60px;
-  }
-
-  .letter-a {
-    letter-spacing: -75px;
-  }
-
-  .letter-v {
-    letter-spacing: -50px;
-  }
-
-  .letter-e {
-    letter-spacing: -30px;
-  }
-
-  /* non-mobile animations */
-
-  @keyframes slide_a {
-    from {
-      opacity: 0;
-      color: #E5D374;
-      left: -120px;
-    }
-    to {
-      left: 0;
-      opacity: 1;
-    }
-  }
-
-  @keyframes slide_v {
+  @keyframes letter-v {
     0% {
       opacity: 0;
       color: #E5D374;
@@ -206,9 +172,57 @@ li {
       opacity: 1;
     }
   }
+}
 
+.body-v { background: #423d3a; }
 
-  @keyframes slide_e {
+.body-v .letter-d, 
+.body-v .letter-a,
+.body-v .letter-v,
+.body-v .letter-e {
+  color: #ef40df;
+}
+
+/* letter _e */
+
+.letter-e {
+  animation: letter-e;
+  animation-duration: 800ms;
+  animation-timing-function: cubic-bezier(.79,.05,.5,.99);
+  letter-spacing: -20px;
+}
+
+@media (min-width: 1100px) {
+  .letter-e { letter-spacing: -30px; }
+}
+
+@keyframes letter-e {
+  0% {
+    transform: rotate(17deg);
+    opacity: 0;
+    color: #E5D374;
+    left: -185px;
+  }
+  40% {
+    transform: rotate(17deg);
+    left: 20px;
+    opacity: 1;
+  }
+  40% {
+    transform: rotate(17deg);
+    left: 0px;
+    opacity: 1;
+  }
+  70% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (min-width: 1100px) {
+  @keyframes letter-e {
     0% {
       transform: rotate(17deg);
       opacity: 0;
@@ -234,118 +248,33 @@ li {
   }
 }
 
+.body-e { background: white; }
 
-/* variations */
-
-body.body-d {
-  background: #8c9e4d; 
-}
-
-.body-d .letter-d {
-  color: #f9ff31;
-}
-
-.body-d .letter-a {
-  color: #f9ff31;
-}
-
-.body-d .letter-v {
-  color: #f9ff31;
-}
-
-.body-d .letter-e {
-  color: #f9ff31;
-}
-
-
-body.body-a {
-  background: #d0ab03;
-}
-
-.body-a .letter-d {
-  color: #004dbc;
-}
-
-.body-a .letter-a {
-  color: #004dbc;
-}
-
-.body-a .letter-v {
-  color: #004dbc;
-}
-
-.body-a .letter-e {
-  color: #004dbc;
-}
-
-body.body-v {
-  background: #423d3a;
-}
-
-.body-v .letter-d {
-  color: #ef40df;
-}
-
-.body-v .letter-a {
-  color: #ef40df;
-}
-
-.body-v .letter-v {
-  color: #ef40df;
-}
-
-.body-v .letter-e {
-  color: #ef40df;
-}
-
-body.body-e {
-  background: white;
-}
-
-.body-e .letter-d {
-  color: #4087ef;
-}
-
-.body-e .letter-a {
-  color: #4087ef;
-}
-
-.body-e .letter-v {
-  color: #4087ef;
-}
-
+.body-e .letter-d,
+.body-e .letter-a,
+.body-e .letter-v,
 .body-e .letter-e {
   color: #4087ef;
 }
 
-.fun-fact {
-  color: #eee;
-}
+/* letter facts */
 
-.fact-d {
-  font-size: 30px;
-}
+.fact-d { font-size: 30px; }
 
 @media (min-width: 1100px) {
-  .fun-fact > div {
-    text-align: left;
-  }
+  .fun-fact > div { text-align: left; }
+  .fact-d { font-size: 100px; }
   
-  .fact-d {
-    font-size: 100px;
-  }
-  
-  .fact-a, .fact-v, .fact-e {
+  .fact-a,
+  .fact-v,
+  .fact-e {
     font-size: 50px;
   }
 }  
 
-/* helpers */
-.hidden {
-    display: none !important;
-}
+.hidden { display: none !important; }
 
-/* nav */
+/* menu buttons */
 
 .menu-btn a {
   text-align: center;
@@ -354,6 +283,8 @@ body.body-e {
   color: #8a8888;
 }
 
+.menu-btn a:hover { text-decoration: underline; }
+
 @media (min-width: 1100px) {
   .menu-btn {
     position: absolute; 
@@ -361,15 +292,16 @@ body.body-e {
     right: 50px;
   }
 
-  .menu-btn a {
-    text-align: right;
-  }
+  .menu-btn a { text-align: right; }
 }
 
-.menu-btn a:hover {
-  text-decoration: underline;
+#close-menu {
+  float: right;
+  text-decoration: none;
+  color: #ffede9;
 }
 
+/* drawer */
 
 .nav-box {
   position: absolute;
@@ -383,78 +315,59 @@ body.body-e {
   z-index: 1000;
 }
 
+@media (min-width: 1100px) {
+  .nav-box {
+    top: -15px;
+    left: 800px;
+  }
+}
 
+/* drawer out */
 
-/* animation for nav */
-
-body.drawer-out {
+.drawer-out {
   animation: drawer-out;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
 }
 
-body.drawer-in {
+@keyframes drawer-out {
+  from { }
+  to { top: 300px; }
+}
+
+@media (min-width: 1100px) {
+  @keyframes drawer-out {
+    from { }
+    to { left: -300px; }
+  }
+}
+
+/* drawer in */
+
+.drawer-in {
   animation: drawer-in;
   animation-duration: 1500ms;
   animation-fill-mode: forwards;
 }
 
-@keyframes drawer-out {
-  from { }
-  to {
-    top: 300px;
-  }
-}
-
 @keyframes drawer-in {
-  from { 
-    top: 300px;
-  }
-  to {
-    top: 0px;
-  }
+  from { top: 300px; }
+  to { top: 0px; }
 }
 
 @media (min-width: 1100px) {
-
-  @keyframes drawer-out {
-    from { }
-    to {
-      left: -300px;
-    }
-  }
-
   @keyframes drawer-in {
-    from { 
-      left: -300px;
-    }
-    to {
-      left: 0px;
-    }
+    from { left: -300px; }
+    to { left: 0px; }
   }
 }
 
-#close-menu {
-  float: right;
-  text-decoration: none;
-  color: #ffede9;
-}
-
-.nav-buttons {
-  overflow: auto;
-}
+.nav-buttons { overflow: auto; }
 
 .nav-links a {
   display: block;
   font-size: 80px;
   text-decoration: none;
   color: #ffede9;
-}
-
-@media (min-width: 1100px) {
-  .nav-box {
-    top: -15px;
-    left: 800px;
-  }
 }
 
