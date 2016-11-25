@@ -276,23 +276,22 @@ li { list-style: none }
 
 /* menu buttons */
 
-.menu-btn a {
+.menu-open {
   text-align: center;
   text-decoration: none;
   display: block;
   color: #8a8888;
+  font-size: 25px;
 }
 
-.menu-btn a:hover { text-decoration: underline; }
+.menu-open:hover { text-decoration: underline; }
 
 @media (min-width: 1100px) {
-  .menu-btn {
+  .menu-open {
     position: absolute; 
     top: 40px;
     right: 50px;
   }
-
-  .menu-btn a { text-align: right; }
 }
 
 #close-menu {
