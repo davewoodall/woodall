@@ -10,17 +10,15 @@ $(function() {
     $(fact).removeClass('hidden');
   });
 
-  // nav-open
+  // menu-open
   $('#menu-open').on('click', function() {
-    $('.nav-box').removeClass('hidden');
     $('body').removeClass();
     $('body').addClass('drawer-out');
   });
 
-  // nav-close
+  // menu-close
   $('#menu-close').on('click', function() {
     $('body').removeClass('');
     $('body').addClass('drawer-in');
-    $('.nav-box').addClass('hidden');
   });
 });

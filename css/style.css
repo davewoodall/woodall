@@ -305,10 +305,10 @@ li { list-style: none }
 .nav-box {
   position: absolute;
   background: #8a8888;
-  top: -325px;
-  bottom: -15px;
-  left: -15px;
-  right: -15px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
   padding: 30px;
   text-align: center;
   z-index: 1000;
@@ -317,7 +317,7 @@ li { list-style: none }
 @media (min-width: 1100px) {
   .nav-box {
     top: -15px;
-    left: 800px;
+    left: 1500px;
   }
 }
 
@@ -330,13 +330,15 @@ li { list-style: none }
 }
 
 @keyframes drawer-out {
-  from { }
+  from { top: -2000px; }
   to { top: 300px; }
 }
 
 @media (min-width: 1100px) {
   @keyframes drawer-out {
-    from { }
+    from {
+     left: 80px;
+    }
     to { left: -300px; }
   }
 }
@@ -345,7 +347,7 @@ li { list-style: none }
 
 .drawer-in {
   animation: drawer-in;
-  animation-duration: 1500ms;
+  animation-duration: 250ms;
   animation-fill-mode: forwards;
 }
 
@@ -358,6 +360,31 @@ li { list-style: none }
   @keyframes drawer-in {
     from { left: -300px; }
     to { left: 0px; }
+  }
+}
+
+.drawer-in .nav-box {
+  animation: menu-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menu-in {
+  from { top: 300px; }
+  to { top: 0px; }
+}
+
+@media (min-width: 1100px) {
+  @keyframes menu-in {
+    0% {
+      top: 0;
+      left: 1100px;
+    }
+    
+    100% { 
+      left: 2000px; 
+      display: none;
+    }
   }
 }
 
