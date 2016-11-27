@@ -58,6 +58,13 @@ ul {
 
 li { list-style: none }
 
+.contact {  
+  color: #8a8888;
+  position:fixed;
+  top: 2vh;
+  right: 2vh;
+}
+
 /* DAVE */
 
 /* letter _d */
