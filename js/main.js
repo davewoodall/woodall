@@ -12,8 +12,7 @@ $(function() {
 
   // menu-open
   $('#menu-open').on('click', function() {
-    $('body').removeClass();
-    $('body').addClass('drawer-out');
+    $('.container').addClass('drawer-out');
   });
 
   // menu-close
