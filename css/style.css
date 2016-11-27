@@ -94,6 +94,8 @@ li { list-style: none }
   color: #f9ff31;
 }
 
+.body-d .about a { color: #333; }
+
 /* letter _a */
 
 .letter-a {
@@ -143,6 +145,7 @@ li { list-style: none }
   color: #004dbc;
 }
 
+.body-a .about a { color: #333; }
 /* letter _v */
 
 .letter-v {
