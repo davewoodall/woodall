@@ -1,0 +1,525 @@
+:root {
+  /* COLORS */
+
+  --white-1: #fbfaf0;
+  --white-2: #f5f3e4;
+  --pudding: #ffecaa;
+  --gray: #4b4b4b;
+  --orange: #feb061;
+  --blue: #24d0f6;
+
+  /* SIZES */
+
+  --size-root: 1em;
+  --size-0: 0;
+  --size-1: 0.25;
+  --size-2: 0.5;
+  --size-3: 0.75;
+  --size-4: 1;
+  --size-5: 1.25;
+  --size-6: 1.5;
+  --size-7: 1.75;
+  --size-8: 2;
+  --size-9: 2.25;
+  --size-10: 2.5;
+  --size-11: 2.75;
+  --size-12: 3;
+  --size-13: 3.25;
+  --size-14: 3.5;
+  --size-15: 3.75;
+  --size-16: 4;
+
+  /* SPACES */
+
+  --space-root: 1em;
+  --space-0: calc(var(--space-root) * 0);
+  --space-1: calc(var(--space-root) * 0.25);
+  --space-2: calc(var(--space-root) * 0.5);
+  --space-3: calc(var(--space-root) * 0.75);
+  --space-4: calc(var(--space-root) * 1);
+  --space-5: calc(var(--space-root) * 1.25);
+  --space-6: calc(var(--space-root) * 1.5);
+  --space-7: calc(var(--space-root) * 1.75);
+  --space-8: calc(var(--space-root) * 2);
+  --space-9: calc(var(--space-root) * 2.25);
+  --space-10: calc(var(--space-root) * 2.5);
+  --space-11: calc(var(--space-root) * 2.75);
+  --space-12: calc(var(--space-root) * 3);
+  --space-13: calc(var(--space-root) * 3.25);
+  --space-14: calc(var(--space-root) * 3.5);
+  --space-15: calc(var(--space-root) * 3.75);
+  --space-16: calc(var(--space-root) * 4);
+  --space-17: calc(var(--space-root) * 4.25);
+  --space-18: calc(var(--space-root) * 4.5);
+  --space-19: calc(var(--space-root) * 4.75);
+  --space-20: calc(var(--space-root) * 5);
+  --space-21: calc(var(--space-root) * 5.25);
+  --space-22: calc(var(--space-root) * 5.5);
+  --space-23: calc(var(--space-root) * 5.75);
+  --space-24: calc(var(--space-root) * 6);
+
+  /* TYPOGRAPHY */
+
+  --root-font-size: 1em;
+  --font-size-h1: calc(var(--size-12) * var(--root-font-size));
+  --font-size-h2: calc(var(--size-8) * var(--root-font-size));
+  --font-size-h3: calc(var(--size-4) * var(--root-font-size));
+  --font-size-h4: calc(var(--size-3) * var(--root-font-size));
+  --font-size-h5: calc(var(--size-3) * var(--root-font-size));
+  --font-size-h6: calc(var(--size-1) * var(--root-font-size));
+  --font-size-p: calc(var(--size-3) * var(--root-font-size));
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.p {
+  color: var(--gray);
+  margin: calc(var(--space-root) * var(--space-0)) 0;
+  padding: calc(var(--space-root) * var(--space-0)) 0;
+  font-family: helvetica neue, helvetica;
+}
+
+.h1 {
+  font-size: calc(var(--size-1) * var(--font-size-h1));
+}
+.h2 {
+  font-size: calc(var(--size-1) * var(--font-size-h2));
+}
+.h3 {
+  font-size: calc(var(--size-1) * var(--font-size-h3));
+}
+.h4 {
+  font-size: calc(var(--size-1) * var(--font-size-h4));
+}
+.h5 {
+  font-size: calc(var(--size-1) * var(--font-size-h5));
+}
+.h6 {
+  font-size: calc(var(--size-1) * var(--font-size-h6));
+}
+.p {
+  font-size: calc(var(--size-4) * var(--font-size-p));
+}
+
+@media (min-width: 200px) {
+  .h1 {
+    font-size: calc(var(--size-2) * var(--font-size-h1));
+  }
+  .h2 {
+    font-size: calc(var(--size-2) * var(--font-size-h2));
+  }
+  .h3 {
+    font-size: calc(var(--size-2) * var(--font-size-h3));
+  }
+  .h4 {
+    font-size: calc(var(--size-4) * var(--font-size-h4));
+  }
+  .h5 {
+    font-size: calc(var(--size-4) * var(--font-size-h5));
+  }
+  .h6 {
+    font-size: calc(var(--size-4) * var(--font-size-h6));
+  }
+  .p {
+    font-size: calc(var(--size-4) * var(--font-size-p));
+  }
+}
+@media (min-width: 400px) {
+  .h1 {
+    font-size: calc(var(--size-4) * var(--font-size-h1));
+  }
+  .h2 {
+    font-size: calc(var(--size-4) * var(--font-size-h2));
+  }
+  .h3 {
+    font-size: calc(var(--size-4) * var(--font-size-h3));
+  }
+  .h4 {
+    font-size: calc(var(--size-4) * var(--font-size-h4));
+  }
+  .h5 {
+    font-size: calc(var(--size-6) * var(--font-size-h5));
+  }
+  .h6 {
+    font-size: calc(var(--size-4) * var(--font-size-h6));
+  }
+  .p {
+    font-size: calc(var(--size-5) * var(--font-size-p));
+  }
+}
+@media (min-width: 600px) {
+  .h1 {
+    font-size: calc(var(--size-8) * var(--font-size-h1));
+  }
+  .h2 {
+    font-size: calc(var(--size-8) * var(--font-size-h2));
+  }
+  .h3 {
+    font-size: calc(var(--size-8) * var(--font-size-h3));
+  }
+  .h4 {
+    font-size: calc(var(--size-8) * var(--font-size-h4));
+  }
+  .h5 {
+    font-size: calc(var(--size-8) * var(--font-size-h5));
+  }
+  .h6 {
+    font-size: calc(var(--size-8) * var(--font-size-h6));
+  }
+  .p {
+    font-size: calc(var(--size-7) * var(--font-size-p));
+  }
+}
+@media (min-width: 800px) {
+  .h1 {
+    font-size: calc(var(--size-9) * var(--font-size-h1));
+  }
+  .h2 {
+    font-size: calc(var(--size-9) * var(--font-size-h2));
+  }
+  .h3 {
+    font-size: calc(var(--size-9) * var(--font-size-h3));
+  }
+  .h4 {
+    font-size: calc(var(--size-9) * var(--font-size-h4));
+  }
+  .h5 {
+    font-size: calc(var(--size-9) * var(--font-size-h5));
+  }
+  .h6 {
+    font-size: calc(var(--size-9) * var(--font-size-h6));
+  }
+  .p {
+    font-size: calc(var(--size-7) * var(--font-size-p));
+  }
+}
+@media (min-width: 1000px) {
+  .h1 {
+    font-size: calc(var(--size-10) * var(--font-size-h1));
+  }
+  .h2 {
+    font-size: calc(var(--size-10) * var(--font-size-h2));
+  }
+  .h3 {
+    font-size: calc(var(--size-10) * var(--font-size-h3));
+  }
+  .h4 {
+    font-size: calc(var(--size-10) * var(--font-size-h4));
+  }
+  .h5 {
+    font-size: calc(var(--size-10) * var(--font-size-h5));
+  }
+  .h6 {
+    font-size: calc(var(--size-10) * var(--font-size-h6));
+  }
+  .p {
+    font-size: calc(var(--size-7) * var(--font-size-p));
+  }
+}
+@media (min-width: 1200px) {
+  .h1 {
+    font-size: calc(var(--size-11) * var(--font-size-h1));
+  }
+  .h2 {
+    font-size: calc(var(--size-11) * var(--font-size-h2));
+  }
+  .h3 {
+    font-size: calc(var(--size-11) * var(--font-size-h3));
+  }
+  .h4 {
+    font-size: calc(var(--size-10) * var(--font-size-h4));
+  }
+  .h5 {
+    font-size: calc(var(--size-8) * var(--font-size-h5));
+  }
+  .h6 {
+    font-size: calc(var(--size-10) * var(--font-size-h6));
+  }
+  .p {
+    font-size: calc(var(--size-7) * var(--font-size-p));
+  }
+}
+
+/* LAYOUT */
+
+:root {
+  --col-base: 100%;
+  --col-080: 0.8;
+  --col-066: 0.666;
+  --col-050: 0.5;
+  --col-033: 0.333;
+  --col-020: 0.2;
+}
+
+.row {
+  overflow: auto;
+  position: relative;
+}
+
+.col {
+  box-sizing: border-box;
+  padding: var(--space-5);
+}
+
+.main-col {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.side-col {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 var(--space-5);
+}
+
+@media (min-width: 800px) {
+  .col {
+    width: calc(var(--col-050) * var(--col-base));
+    float: left;
+  }
+
+  .main-col {
+    width: calc(var(--col-066) * var(--col-base));
+    float: left;
+    padding: var(--space-5);
+  }
+
+  .side-col {
+    width: calc(var(--col-033) * var(--col-base));
+    float: left;
+    padding: var(--space-5);
+  }
+}
+
+/* --- _app
+----------------------------------- */
+
+.body {
+  background: var(--white-2);
+}
+
+/* NAV */
+
+.nav {
+  background: var(--blue);
+  z-index: 100;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  text-align: right;
+  padding: var(--space-2);
+}
+
+.nav-link {
+  transition: all 200ms;
+  color: var(--gray);
+  padding: var(--space-2);
+  margin: var(--space-2);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background: var(--pudding);
+}
+
+/* HERO */
+
+.hero {
+  z-index: 100;
+  position: relative;
+}
+
+.hero-image {
+  background: var(--orange);
+  background-position: -330px -120px;
+  height: 80vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@media (min-width: 600px) {
+  .hero-image {
+    background-image: url('../img/ping_pong_blur.jpg');
+    background-position: 0 -20px;
+    height: 70vw;
+  }
+}
+
+.hero-headline {
+  position: absolute;
+  top: 4vw;
+  padding: var(--space-8);
+}
+@media (min-width: 400px) {
+  .hero-headline {
+    top: 8vw;
+    padding: var(--space-10);
+  }
+}
+@media (min-width: 600px) {
+  .hero-headline {
+    padding: var(--space-8);
+  }
+}
+@media (min-width: 800px) {
+  .hero-headline {
+    top: 4vw;
+    padding: var(--space-8);
+  }
+}
+@media (min-width: 1000px) {
+  .hero-headline {
+    top: 10vw;
+    padding: var(--space-10);
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-headline {
+  }
+}
+
+.hero-headline .h1,
+.hero-headline .h2 {
+  color: var(--white-2);
+}
+
+.hero-headline .h2 {
+  font-weight: 400;
+}
+
+.caption {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .caption {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: white;
+    font-weight: 100;
+    font-size: 10px;
+  }
+}
+
+/* OVERVIEW */
+
+.overview {
+  padding: var(--space-6);
+  background: var(--orange);
+  overflow: auto;
+}
+
+@media (min-width: 800px) {
+  .overview-bio .p,
+  .p {
+    line-height: 32px;
+  }
+}
+
+.skills {
+  padding: 0;
+  margin: 0;
+}
+.skill {
+  list-style: none;
+  color: var(--gray);
+  display: inline-block;
+  background: var(--white-2);
+  border-radius: 18px;
+  border: 2px solid var(--blue);
+  padding: var(--space-2) var(--space-3);
+  margin: var(--space-1);
+}
+
+.section-header,
+.continued-education {
+  padding-left: var(--space-5);
+}
+
+@media (min-width: 800px) {
+  .section-header,
+  .continued-education {
+    padding-left: 0;
+  }
+}
+
+/* MAIN */
+
+.article {
+  margin-top: var(--space-10);
+  padding: var(--space-10);
+  background: var(--white-1);
+  box-shadow: 0px 0px 4px #eee;
+}
+.break {
+  margin: var(--space-10);
+  padding: var(--space-10);
+  border: 2px dashed rgb(162, 162, 162);
+}
+.break .h3,
+.break .p {
+  color: rgb(162, 162, 162);
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  background: var(--pudding);
+}
+@media (min-width: 800px) {
+  .sidebar {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+/* _dw Organize */
+
+.title {
+  margin-bottom: var(--space-1);
+}
+
+.company-bar {
+  overflow: hidden;
+  margin-bottom: var(--space-4);
+}
+
+.company {
+  float: left;
+}
+
+.tenure {
+  float: right;
+  font-weight: 400;
+  margin-top: var(--space-2);
+}
+
+.sidebar {
+  padding-top: var(--space-24);
+}
+.sidebar .section {
+  padding-top: var(--space-4);
+}
+.sidebar .list li {
+  padding-top: var(--space-2);
+}
+
+#education,
+#work-experience {
+  padding-top: var(--space-10);
+}
+.continued-education {
+  padding-top: var(--space-4);
+  font-style: italic;
+}
