@@ -21,3 +21,6 @@ task :post, :title do |t, args|
     post.puts "---\n\n"
   end
 end
+
+
+# nanoc --env=[prod]

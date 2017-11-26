@@ -1,0 +1,11 @@
+<h1>I'm a blog!</h1>
+
+<% published_posts.each do |post| %>
+  <div class='post'>
+    <h1><%= link_to post[:title], post.path %></h1>
+    <aside><%= get_pretty_date(post) %></aside>
+    <article>
+      <%= get_post_start(post) %>
+    </article>
+  </div>
+<% end %>

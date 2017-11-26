@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dave Woodall | </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="2017 Resume of Dave Woodall" />
+    <meta name="keywords" content="dave woodall remote web developer coder" />
+    <meta name="author" content="dave woodall wwwoodall fakefarm" />
+    <link rel="stylesheet" href="/css/application.css">
+    <style id='footer-ss'></style>
+  </head>
+  <body>
+    <body class='body'>
+      <div class="container">
+        
+  <main class='container'>
+    <h1>Hello, I'm the index layout</h1>
+    <h1>I'm a blog!</h1>
+
+
+  <div class='post'>
+    <h1><a href="/2017/11/creating-a-new-site-using-nanoc/">creating and deploying a nanoc 4 static website</a></h1>
+    <aside>November 26, 2017</aside>
+    <article>
+      
+<p>I was recently on the market for a new static site generator. I looked at the lists of popular options. I vistied <a href="https://www.staticgen.com/">Static Gen</a>, a site designated to comparing static site generators, to see what was available. My preference was a Ruby site so I narrowed in on middleman, jekyll, and nanoc. I decided on nanoc for a few reasons.</p>
+
+<p>First, I wanted to have a site that was more than just a blog. Jekyll is by far the strongest leader of blog sites. I had used middleman in the past and liked the flexibility. Truth be told, what had me try nanoc was that there were Zero issues or pull requests on a repo containing over 5,000 commits. Impressive! That gave me the sense that any question or issue I might have would be resolved quickly.</p>
+
+<p>I followed along the tutorial but found it lacking a few specific steps. Specifically, I wasn’t sure how to deploy or post a blog. I googled for a few tutorials and was surprised to discover the most popular one was from 2012 that covered Nanoc Version 3. Nanoc is now on Version 4.</p>
+
+<p>This post collects the best content from the nanoc tutorial, david clrk’s post, and my own additions. Feel free to read those but I want to have a complete step by step process in one post. So here goes!</p>
+
+<h2 id="step-1-installation">Step 1. Installation</h2>
+
+<p>Let’s install nanoc, create a site, and add a gemfile.</p>
+
+<p><code>gem install nanoc</code></p>
+
+<p>Once that installs, you can use</p>
+
+<p><code>nanoc create-site [site name]</code></p>
+
+<p>The official tutorial has readers installing global gems rather than managing the site’s gems through a gemfile. I prefer a gemfile so I created one with the following gems</p>
+
+<p>```
+gem ‘nanoc’       # because it’s a nanoc site
+gem ‘kramdown’    # markdown
+gem ‘adsf’        # server
+gem ‘stringex’    # string parsing
+gem ‘rake’        # have some rake tasks</p>
+
+<p>group :nanoc do
+  gem ‘guard-nanoc’
+end
+```</p>
+
+<p>Nanoc does a good job of keeping out extra content. The point that I have to deliberaly create a gemfile and a rakefile is proof that this project is not currently suffering from bloat. That’s a good thing to me!</p>
+
+<p>Run <code>bundle</code> to install those gems.</p>
+
+<h2 id="step-2-viewing-locally">Step 2. Viewing locally</h2>
+
+<p>Nanoc serves static content. By default, nanoc puts all static content into a folder called ‘output’. We’re going to use github pages to serve our site and github uses a directory called <strong>docs</strong>.</p>
+
+<p>Override the output directory by visiting <code>nanoc.yaml</code> and changing the line like so;</p>
+
+<p><code>output_dir: docs</code></p>
+
+<p>Nanoc comes with an empty <code>output/</code> directory but we don’t need that so you can just delete it.</p>
+
+<p>In order to create a static version of the site, run the command</p>
+
+<p><code>bundle exec nanoc</code></p>
+
+<p>If all goes well, here is what the output should look like;</p>
+
+<p>```
+$ bundle exec nanoc
+Loading site… done
+Compiling site…
+      create  [0.00s]  docs/index.html
+      create  [0.00s]  docs/stylesheet.css</p>
+
+<p>Site compiled in 0.01s.
+```</p>
+
+<p>To view your site locally run</p>
+
+<p><code>bundle exec nanoc view</code></p>
+
+<p>You should see your new site at <a href="http://127.0.0.1:3000/">localhost:3000</a></p>
+
+<h2 id="step-3-improving-development-experience">Step 3. Improving development experience</h2>
+
+<p>Nanoc outsources live reload to guard, which is why we installed guard-nanoc. Let’s create a nanoc guard file.</p>
+
+<p><code>bundle exec guard init nanoc</code></p>
+
+<p>Now, run <code>bundle exec nanoc live</code> to have live updates.</p>
+
+<h2 id="step-2-deployment-to-github">Step 2. Deployment to Github</h2>
+
+<p>I like to deploy as soon as possible so I know the rocket can get off the launch pad.
+If you have a github account and know how to use it, then this part will be very easy for you. If you are not familiar with github, please <a href="">visit this page</a>.</p>
+
+<h3 id="sidenote-nanoc-deploy">Sidenote nanoc deploy</h3>
+
+<p>Nanoc comes with <code>nanoc deploy</code>. However, I found the explanation and implementation to be more complicated than necessary. Github allows static sites to be served from master branch out of a specific directory called <strong>docs</strong>.</p>
+
+<h3 id="configuring-github">Configuring github</h3>
+
+<ol>
+  <li>Create a new repo</li>
+  <li>follow typical git commands;</li>
+</ol>
+
+<p><code>
+git init
+git add .
+git commit -m "New Nanoc Site"
+git remote add origin [YOUR REPO HERE DUDE]
+git push -u origin master
+</code></p>
+
+<p>Then, visit /settings and change the static site to ‘master/docs’</p>
+
+<p>Once you push your repo, then your site is deployed!</p>
+
+<h2 id="but-but">But but..</h2>
+
+<p>At this point you may have run over to your newly deployed site and noticed that it doesn’t look like the local one.</p>
+
+<p><img src="" alt="picture of local" /></p>
+
+<p><img src="" alt="picture of deployed" /></p>
+
+<p>At this point, you have two options;</p>
+
+<ol>
+  <li>Simply add a CNAME to <code>content/</code> directory and github pages will use that domain.</li>
+</ol>
+
+<h2 id="part-2">Part 2</h2>
+
+<p>If you don’t want to go out and buy a domain name everytime, then you probably want the ability to manage urls dynamically. Let’s address that in the next post…</p>
+
+<p>be nanoc –env=[prod]</p>
+
+<h1 id="problem--">problem -</h1>
+<ul>
+  <li>stylesheets / dynamic paths</li>
+</ul>
+
+<ol>
+  <li>nanoc.yaml comes as a @config</li>
+  <li>need an env variable</li>
+  <li>build some link_to helpers for stylesheets</li>
+  <li>how to deploy with nanoc stylesheets</li>
+</ol>
+
+<h2 id="step-4-introducing-some-guts">Step 4. Introducing some guts</h2>
+
+<ol>
+  <li>Or, you need to configure base url. Let’s proceed with configuring the base_url.</li>
+</ol>
+
+<p><code>be nanoc --env=[prod]</code></p>
+
+<h2 id="adding-content">adding content</h2>
+
+<p>All our code will be managed in <code>content/</code>, <code>layouts/</code>, <code>Rules</code>, and <code>lib/</code>. We will talk about these later.</p>
+
+    </article>
+  </div>
+
+
+  </main>
+
+      </div>
+      <div class="scripts">
+        <script>
+        (function(b, o, i, l, e, r) {
+  b.GoogleAnalyticsObject = l;
+  b[l] ||
+    (b[l] = function() {
+      (b[l].q = b[l].q || []).push(arguments);
+    });
+  b[l].l = +new Date();
+  e = o.createElement(i);
+  r = o.getElementsByTagName(i)[0];
+  e.src = '//www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e, r);
+})(window, document, 'script', 'ga');
+ga('create', 'UA-40303853-1', 'auto');
+ga('send', 'pageview');
+</script>
+      </div>
+    </body>
+</html>
+

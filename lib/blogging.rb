@@ -11,6 +11,10 @@ module PostHelper
     end
     return content
   end
+
+  def published_posts
+    sorted_articles.select {|p| p if p[:published] == true }
+  end
 end
 
 include PostHelper
