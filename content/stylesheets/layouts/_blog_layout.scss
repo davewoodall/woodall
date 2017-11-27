@@ -1,0 +1,12 @@
+@import '../base/base';
+
+#l-blog {
+}
+
+@media (min-width: 800px) {
+  #l-blog {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-gap: 1%;
+  }
+}

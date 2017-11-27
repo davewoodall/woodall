@@ -1,6 +1,6 @@
 module PostHelper
   def get_pretty_date(post)
-    attribute_to_time(post[:created_at]).strftime('%B %-d, %Y')
+    attribute_to_time(post[:last_updated]).strftime('%B %-d, %Y')
   end
 
   def get_post_start(post)
@@ -14,6 +14,10 @@ module PostHelper
 
   def published_posts
     sorted_articles.select {|p| p if p[:published] == true }
+  end
+
+  def latest_post
+    sorted_articles.select {|p| p if p[:published] == true }.first
   end
 end
 

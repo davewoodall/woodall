@@ -1,11 +1,23 @@
-<h1>I'm a blog!</h1>
-
-<% published_posts.each do |post| %>
+---
+title: InternetLand
+---
+<header>
+  <h1 class='h1'>Welcome to InternetLand</h1>
+</header>
+<main>
+  <h2 class='h2'><%= latest_post[:title] %></h2>
+  <p class='p'><%= get_post_start(latest_post) %></p>
+</main>
+<aside>
+  <h2 class='h2'>Posts</h2>
+  <% published_posts.each do |post| %>
   <div class='post'>
-    <h1><%= link_to post[:title], post.path %></h1>
-    <aside><%= get_pretty_date(post) %></aside>
-    <article>
-      <%= get_post_start(post) %>
-    </article>
+    <h3 class='h3'>
+      <%= link_to post[:title], post.path %>
+    </h3>
   </div>
-<% end %>
+  <article>
+    <p class='p'><%= post[:description] %></p>
+  </article>
+  <% end %>
+</aside>

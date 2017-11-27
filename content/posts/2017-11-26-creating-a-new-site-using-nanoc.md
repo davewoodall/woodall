@@ -1,13 +1,17 @@
 ---
-title: creating and deploying a nanoc 4 static website
+title: Create &amp; deploy <br> a static website <br> with nanoc 4 &amp; github pages
 created_at: 2017-11-26 11:44:17 -0500
+last_updated: 2017-11-26
 kind: article
 published: true
+description: How to build a nanoc site from scratch
 ---
 
-I was recently on the market for a new static site generator. I looked at the lists of popular options. I vistied [Static Gen](https://www.staticgen.com/), a site designated to comparing static site generators, to see what was available. My preference was a Ruby site so I narrowed in on middleman, jekyll, and nanoc. I decided on nanoc for a few reasons.
+I was recently on the market for a new static site generator. I vistied [Static Gen](https://www.staticgen.com/) to compare static site generators. My preference was a Ruby site so I narrowed in on middleman, jekyll, and nanoc. I decided on nanoc for a few reasons.
 
 First, I wanted to have a site that was more than just a blog. Jekyll is by far the strongest leader of blog sites. I had used middleman in the past and liked the flexibility. Truth be told, what had me try nanoc was that there were Zero issues or pull requests on a repo containing over 5,000 commits. Impressive! That gave me the sense that any question or issue I might have would be resolved quickly.
+
+<!-- more -->
 
 I followed along the tutorial but found it lacking a few specific steps. Specifically, I wasn't sure how to deploy or post a blog. I googled for a few tutorials and was surprised to discover the most popular one was from 2012 that covered Nanoc Version 3. Nanoc is now on Version 4.
 
@@ -17,7 +21,9 @@ This post collects the best content from the nanoc tutorial, david clrk's post, 
 
 Let's install nanoc, create a site, and add a gemfile.
 
-`gem install nanoc`
+    #!ruby
+      gem install nanoc
+
 
 Once that installs, you can use
 
@@ -25,17 +31,16 @@ Once that installs, you can use
 
 The official tutorial has readers installing global gems rather than managing the site's gems through a gemfile. I prefer a gemfile so I created one with the following gems
 
-```
-gem 'nanoc'       # because it's a nanoc site
-gem 'kramdown'    # markdown
-gem 'adsf'        # server
-gem 'stringex'    # string parsing
-gem 'rake'        # have some rake tasks
+    gem 'nanoc'       # because it's a nanoc site
+    gem 'kramdown'    # markdown
+    gem 'adsf'        # server
+    gem 'stringex'    # string parsing
+    gem 'rake'        # have some rake tasks
 
-group :nanoc do
-  gem 'guard-nanoc'
-end
-```
+    group :nanoc do
+      gem 'guard-nanoc'
+    end
+
 
 Nanoc does a good job of keeping out extra content. The point that I have to deliberaly create a gemfile and a rakefile is proof that this project is not currently suffering from bloat. That's a good thing to me!
 

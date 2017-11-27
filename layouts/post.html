@@ -1,9 +1,9 @@
 <% render '/default.*' do %>
-  <div class='post'>
+  <header>
+    <aside>Updated: <%= get_pretty_date(item) %></aside>
     <h1><%= item[:title] %></h1>
-    <aside><%= get_pretty_date(item) %></aside>
-    <article>
-      <%= yield %>
-    </article>
-  </div>
+  </header>
+  <article class='post'>
+    <%= yield %>
+  </article>
 <% end %>

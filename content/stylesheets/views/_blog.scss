@@ -1,0 +1,18 @@
+@import '../base/base';
+
+#l-blog {
+  header {
+    grid-column-start: 1;
+    grid-column-end: span 5;
+  }
+  main {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+  }
+  aside {
+    grid-column-start: 4;
+    grid-column-end: span 2;
+    padding-left: 1em;
+    border-left: 15px solid $white-1;
+  }
+}
