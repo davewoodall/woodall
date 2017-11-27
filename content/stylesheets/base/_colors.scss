@@ -1,6 +1,31 @@
+$red: #e36a4f;
 $white-1: #fbfaf0;
 $white-2: #f5f3e4;
 $pudding: #ffecaa;
 $gray: #4b4b4b;
 $orange: #feb061;
 $blue: #24d0f6;
+
+.orange {
+  color: $orange;
+}
+
+.bg-orange {
+  background: $orange;
+}
+
+.blue {
+  color: $blue;
+}
+
+.bg-blue {
+  background: $blue;
+}
+
+.white {
+  color: $white-1;
+}
+
+.bg-white {
+  background: $white-1;
+}

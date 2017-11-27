@@ -1,5 +1,5 @@
 ---
-title: Create &amp; deploy <br> a static website <br> with nanoc 4 &amp; github pages
+title: Create &amp; deploy a static website with nanoc 4 &amp; github pages
 created_at: 2017-11-26 11:44:17 -0500
 last_updated: 2017-11-26
 kind: article
@@ -21,16 +21,18 @@ This post collects the best content from the nanoc tutorial, david clrk's post, 
 
 Let's install nanoc, create a site, and add a gemfile.
 
-    #!ruby
-      gem install nanoc
-
+~~~
+  $ gem install nanoc
+~~~
 
 Once that installs, you can use
-
-`nanoc create-site [site name]`
+```
+  $ nanoc create-site [site name]
+```
 
 The official tutorial has readers installing global gems rather than managing the site's gems through a gemfile. I prefer a gemfile so I created one with the following gems
 
+~~~ ruby
     gem 'nanoc'       # because it's a nanoc site
     gem 'kramdown'    # markdown
     gem 'adsf'        # server
@@ -40,7 +42,7 @@ The official tutorial has readers installing global gems rather than managing th
     group :nanoc do
       gem 'guard-nanoc'
     end
-
+~~~
 
 Nanoc does a good job of keeping out extra content. The point that I have to deliberaly create a gemfile and a rakefile is proof that this project is not currently suffering from bloat. That's a good thing to me!
 

@@ -2,14 +2,21 @@
 title: InternetLand
 ---
 <header>
-  <h1 class='h1'>Welcome to InternetLand</h1>
+  <h1 class='h3'>
+    <span class='orange'>Welcome</span>
+    2
+    <br>
+    <span class="white">InternetLand</span>
+  </h1>
 </header>
 <main>
-  <h2 class='h2'><%= latest_post[:title] %></h2>
-  <p class='p'><%= get_post_start(latest_post) %></p>
+  <div class="wrapper">
+    <h2 class='h2 main-title'><%= latest_post[:title] %></h2>
+    <p class='p'><%= get_post_start(latest_post) %></p>
+  </div>
 </main>
 <aside>
-  <h2 class='h2'>Posts</h2>
+  <h2 class='h3'>posts</h2>
   <% published_posts.each do |post| %>
   <div class='post'>
     <h3 class='h3'>

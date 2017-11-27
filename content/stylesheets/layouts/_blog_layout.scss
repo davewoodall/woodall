@@ -3,10 +3,11 @@
 #l-blog {
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
   #l-blog {
     display: grid;
     grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(10, 50px);
     grid-gap: 1%;
   }
 }

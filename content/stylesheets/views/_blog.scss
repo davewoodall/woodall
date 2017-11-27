@@ -1,18 +1,117 @@
 @import '../base/base';
 
 #l-blog {
+  background: $white-1;
+
   header {
     grid-column-start: 1;
-    grid-column-end: span 5;
+    grid-column-end: span 4;
+    grid-row-start: 1;
+    grid-row-end: span 5;
+    z-index: 1;
+    margin: 2em;
+
+    @media (min-width: 600px) {
+      h1 {
+        background: $red;
+        line-height: 100px;
+        transform: rotate(-6deg) translateY(-40px);
+      }
+    }
   }
+
+  @media (min-width: 900px) {
+    header {
+      transform: skewY(-10deg) rotate(-3deg);
+
+      h1 {
+        padding: 0.25em;
+        line-height: 30px;
+        transform: skewX(10deg) rotate(-6deg) translateY(-160px);
+      }
+    }
+  }
+
   main {
+    z-index: 10;
     grid-column-start: 1;
     grid-column-end: span 3;
+    grid-row-start: 7;
+    grid-row-end: span 10;
+    background: white;
+    // h2 {
+    //   background: $orange;
+    //   padding: 0.5em;
+    //   transform: translateY(-40px);
+    // }
+    // p {
+    //   transform: translateY(-30px);
+    // }
   }
+
+  @media (min-width: 700px) {
+    main {
+      // h2 {
+      //   background: $orange;
+      //   padding: 0.5em;
+      //   transform: translateY(-80px);
+      // }
+      // p {
+      //   transform: translateY(-30px);
+      // }
+    }
+  }
+
+  @media (min-width: 900px) {
+    main {
+      .wrapper {
+        // background: $white-1;
+        padding: 2em;
+        margin: 2em;
+        border-top: 20px solid $red;
+        border-right: 20px solid $red;
+        border-bottom: 20px solid $blue;
+        border-left: 20px solid $blue;
+        transform: translateY(-160px);
+      }
+      .main-title {
+        // transform: translateY(70px);
+        // line-height: 80px;
+        padding: 0.25em;
+
+        background: white;
+        color: $gray;
+        margin-bottom: 1.2em;
+      }
+      p {
+        transform: translateY(-50px);
+      }
+    }
+  }
+
   aside {
+    background: white;
+    z-index: 5;
     grid-column-start: 4;
     grid-column-end: span 2;
+    grid-row-start: 2;
+    grid-row-end: span 10;
     padding-left: 1em;
-    border-left: 15px solid $white-1;
+    h2 {
+      // background: $blue;
+      padding: 0.5em;
+      transform: translateY(-40px);
+    }
+  }
+
+  @media (min-width: 900px) {
+    aside {
+      padding: 2em;
+      background: $gray;
+      h2 {
+        background: $blue;
+        transform: translateY(-80px);
+      }
+    }
   }
 }
