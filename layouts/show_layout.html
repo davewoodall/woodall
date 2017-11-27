@@ -1,8 +1,10 @@
   <% render '/default.*' do %>
-    <section id="l-blog">
+    <section id="l-show">
         <nav class='site-nav nav'>
           <%= render '/partials/nav.*' %>
         </nav>
-        <%= yield %>
+        <main>
+          <%= yield %>
+        </main>
     </section>
   <% end %>

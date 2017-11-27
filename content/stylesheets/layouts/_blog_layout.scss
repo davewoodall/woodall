@@ -6,8 +6,16 @@
 @media (min-width: 700px) {
   #l-blog {
     display: grid;
-    grid-template-columns: repeat(5, 20%);
+    grid-template-columns: repeat(5, 260px);
     grid-template-rows: repeat(10, 50px);
     grid-gap: 1%;
+  }
+
+  .site-nav {
+    z-index: 100;
+    grid-column-start: 3;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 1;
   }
 }

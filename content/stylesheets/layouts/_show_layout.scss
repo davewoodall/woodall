@@ -1,5 +1,17 @@
 @import '../base/base';
-#post {
+
+#l-show {
+  main {
+    padding: 1em;
+  }
+
+  @media (min-width: 800px) {
+    main {
+      padding: 0;
+      width: 50%;
+      margin: 1em auto;
+    }
+  }
   .nav {
     z-index: 100;
     position: fixed;
@@ -17,19 +29,5 @@
   }
   .nav-link:hover {
     background: $pudding;
-  }
-
-  header {
-    background: $white-1;
-    padding: 1em;
-    h1 {
-      margin: 0;
-      padding: 1em 4em 1em 0.5em;
-      font-size: 5em;
-    }
-  }
-  .post {
-    width: 50%;
-    margin: 0 auto;
   }
 }

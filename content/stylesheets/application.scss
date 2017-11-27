@@ -1,6 +1,11 @@
 @import 'base/base';
 
 @import 'layouts/blog_layout';
+@import 'layouts/show_layout';
 
+@import 'views/about';
 @import 'views/blog';
+@import 'views/contact';
+@import 'views/landing';
 @import 'views/post';
+@import 'views/resume';

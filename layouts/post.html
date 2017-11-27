@@ -1,5 +1,8 @@
 <% render '/default.*' do %>
   <section id="post">
+    <nav class='site-nav nav'>
+      <%= render '/partials/nav.*' %>
+    </nav>
     <header>
       <aside>Updated: <%= get_pretty_date(item) %></aside>
       <h1><%= item[:title] %></h1>

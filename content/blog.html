@@ -18,13 +18,13 @@ title: InternetLand
 <aside>
   <h2 class='h3'>posts</h2>
   <% published_posts.each do |post| %>
-  <div class='post'>
-    <h3 class='h3'>
+  <div class='post v-space'>
+    <h3 class='h3 post-title'>
       <%= link_to post[:title], post.path %>
     </h3>
+    <article class='v-space'>
+      <p class='p'><%= post[:description] %></p>
+    </article>
   </div>
-  <article>
-    <p class='p'><%= post[:description] %></p>
-  </article>
   <% end %>
 </aside>
