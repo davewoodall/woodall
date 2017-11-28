@@ -5,14 +5,12 @@ compile '/posts/*' do
   layout '/post.*'
 end
 
-compile '/blog.html' do
-  filter :erb
-  layout '/blog_layout.*' # this really should be index view but let's keep it simple and specific until we need to make this more generic.
-end
-
 [
   '/about.html',
+  '/blog.html',
+  '/education.html',
   '/resume.html',
+  '/former-life.html',
   '/contact.html'
 ].each do |page|
   compile page do

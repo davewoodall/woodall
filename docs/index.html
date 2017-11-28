@@ -15,11 +15,12 @@
   <body class='body'>
     <section id='landing'>
   <nav class='site-nav right-nav'>
-    <a class="nav-link" href="/">home</a>
-<a class="nav-link" href="/blog/">blog</a>
-<a class="nav-link" href="/2017/11/creating-a-new-site-using-nanoc/">latest post</a>
+    <a class="nav-link" href="/">intro</a>
 <a class="nav-link" href="/about/">about</a>
+<a class="nav-link" href="/blog/">blog</a>
+<a class="nav-link" href="/2017/11/nanoc-stylesheets/">latest post</a>
 <a class="nav-link" href="/resume/">resume</a>
+<a class="nav-link" href="/education/">education</a>
 <a class="nav-link" href="/contact/">contact</a>
 
   </nav>
@@ -68,13 +69,23 @@
     </section>
     <section class="overview-bio col">
       <h3 class="h2">Blog</h3>
-      <h2 class='h4 main-title v-space'>Create &amp; deploy a static website with nanoc 4 &amp; github pages</h2>
+      <h2 class='h4 main-title v-space'>nanoc stylesheets</h2>
       <p class='p v-space'>
-<p>I was recently on the market for a new static site generator. I vistied <a href="https://www.staticgen.com/">Static Gen</a> to compare static site generators. My preference was a Ruby site so I narrowed in on middleman, jekyll, and nanoc. I decided on nanoc for a few reasons.</p>
+<h2 id="part-2">Part 2</h2>
 
-<p>First, I wanted to have a site that was more than just a blog. Jekyll is by far the strongest leader of blog sites. I had used middleman in the past and liked the flexibility. Truth be told, what had me try nanoc was that there were Zero issues or pull requests on a repo containing over 5,000 commits. Impressive! That gave me the sense that any question or issue I might have would be resolved quickly.</p>
+<p>If you don’t want to go out and buy a domain name everytime, then you probably want the ability to manage urls dynamically. Let’s address that in the next post…</p>
 
-<div class='read-more'><a href='/2017/11/creating-a-new-site-using-nanoc/'>Continue reading &rsaquo;</a></div></p>
+<!-- be nanoc --env=[prod]
+
+# problem -
+- stylesheets / dynamic paths
+
+1. nanoc.yaml comes as a @config
+2. need an env variable
+3. build some link_to helpers for stylesheets
+4. how to deploy with nanoc stylesheets -->
+
+<div class='read-more'><a href='/2017/11/nanoc-stylesheets/'>Continue reading &rsaquo;</a></div></p>
     </section>
   </section>
 </section>
