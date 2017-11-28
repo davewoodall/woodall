@@ -55,30 +55,6 @@ $col-020: 0.2;
   box-sizing: border-box;
 }
 
-/* NAV */
-
-// .nav {
-//   background: $white-1;
-//   z-index: 100;
-//   position: fixed;
-//   right: 0;
-//   width: 100%;
-//   text-align: right;
-//   padding: $space-2;
-// }
-//
-// .nav-link {
-//   transition: all 200ms;
-//   color: $gray;
-//   padding: $space-2;
-//   margin: $space-2;
-//   text-decoration: none;
-// }
-//
-// .nav-link:hover {
-//   background: $pudding;
-// }
-
 /* HERO */
 
 .hero {
@@ -87,9 +63,9 @@ $col-020: 0.2;
 }
 
 .hero-image {
-  background: $orange;
+  background: $white-2;
   background-position: -330px -120px;
-  height: 80vw;
+  height: 40vw;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -97,40 +73,41 @@ $col-020: 0.2;
 
 @media (min-width: 600px) {
   .hero-image {
-    background-image: url('../img/ping_pong_blur.jpg');
+    // background-image: url('../img/ping_pong_blur.jpg');
     background-position: 0 -20px;
-    height: 70vw;
+    // height: 40vw;
   }
 }
 
 .hero-headline {
-  position: absolute;
-  top: 4vw;
-  padding: $space-8;
+  // position: absolute;
+  // top: 4vw;
+  padding: $space-4;
+  background: $white-2;
 }
 @media (min-width: 400px) {
   .hero-headline {
-    top: 8vw;
-    padding: $space-10;
+    // top: 8vw;
+    padding: $space-4;
   }
 }
 @media (min-width: 600px) {
   .hero-headline {
-    padding: $space-8;
+    padding: $space-4;
   }
 }
 @media (min-width: 800px) {
   .hero-headline {
     top: 4vw;
-    padding: $space-8;
+    padding: $space-4;
   }
 }
-@media (min-width: 1000px) {
-  .hero-headline {
-    top: 10vw;
-    padding: $space-10;
-  }
-}
+// @media (min-width: 1000px) {
+//   .hero-headline {
+//     top: 10vw;
+//     padding: $space-10;
+// }
+// }
 
 @media (min-width: 1200px) {
   .hero-headline {
@@ -139,7 +116,7 @@ $col-020: 0.2;
 
 .hero-headline .h1,
 .hero-headline .h2 {
-  color: $white-2;
+  color: $gray;
 }
 
 .hero-headline .h2 {
@@ -166,7 +143,7 @@ $col-020: 0.2;
 
 .overview {
   padding: $space-6;
-  background: $orange;
+  background: $white-1;
   overflow: auto;
 }
 

@@ -2,28 +2,23 @@
 title: Internetland
 ---
 <section id='landing'>
-  <nav class='site-nav nav'>
+  <nav class='site-nav right-nav'>
     <%= render '/partials/nav.*' %>
   </nav>
-  <header class="hero">
-    <section class="hero-image"></section>
-    <section class="hero-headline">
-      <h1 class='h1'>DAVE<br>WOODALL</h1>
-      <h2 class='h2'>web developer for fun and profit</h2>
+  <header class="">
+    <section class="">
+      <h1 class='h2'>DAVE<br>WOODALL</h1>
+      <h2 class='h3'>web developer for fun and profit</h2>
     </section>
-    <figure class='caption'>Photo credit: Venus Ang</figure>
   </header>
   <section class="overview">
-    <section class="overview-bio col">
-      <div class="overview-image"></div>
-      <h3 class="h2">That's me...</h3>
-      <p class="p overview-text">
-        I'm the one sitting down, wearing pants, and having a good time with some of my co-workers at our latest offsite. My career path is as eccletic that wall behind me. Currently, I am a Senior Software Developer primarily writing Ruby on Rails, VueJS, and friends. Before that, I was a business owner, art director, and graphic designer. I have a Masters in Finance and a patent to validate at least one of my ideas.  I enjoy working on small and medium size remote teams who use tools like Slack, Git[hub|lab], and Jira to ship software. I try to roll my R's when I say <i>SCRUM</i>. Feel free to contact me if these skills match your needs. Thanks for stopping by!
-      </p>
-    </section>
     <section class="overview-skills col">
-      <h2 class="section-header h2">&amp; my software</h2>
-      <ul class="skills">
+      <h3 class="h2">Bio</h3>
+      <p class="p overview-text v-space">
+        <span class='h4'><b>I am a Senior Software Developer</b></span> primarily writing Ruby on Rails, VueJS, and friends. Before that, I was a business owner, art director, and graphic designer. I have a Masters in Finance and a patent to validate at least one of my ideas.  I enjoy working on small and medium size remote teams who use tools like Slack, Git[hub|lab], and Jira to ship software. I try to roll my R's when I say <i>SCRUM</i>. Feel free to contact me if these skills match your needs. Thanks for stopping by!
+      </p>
+      <h3 class="section-header v-space h2 v-space">Bingo</h3>
+      <ul class="skills v-space">
         <li class="skill">Ruby</li>
         <li class="skill">Ruby on Rails</li>
         <li class="skill">VueJS</li>
@@ -52,6 +47,11 @@ title: Internetland
         <li class="skill">Postgres</li>
         <li class="skill">MySql</li>
       </ul>
+    </section>
+    <section class="overview-bio col">
+      <h3 class="h2">Blog</h3>
+      <h2 class='h4 main-title v-space'><%= latest_post[:title] %></h2>
+      <p class='p v-space'><%= get_post_start(latest_post) %></p>
     </section>
   </section>
 </section>

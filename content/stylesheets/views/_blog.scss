@@ -3,28 +3,6 @@
 #l-blog {
   background: $white-1;
 
-  .nav {
-    // background: $blue;
-    z-index: 100;
-    position: fixed;
-    right: 0;
-    width: 50%;
-    text-align: right;
-    padding: $space-2;
-  }
-
-  .nav-link {
-    transition: all 200ms;
-    color: $gray;
-    padding: $space-2;
-    margin: $space-2;
-    text-decoration: none;
-  }
-
-  .nav-link:hover {
-    background: $pudding;
-  }
-
   header {
     grid-column-start: 1;
     grid-column-end: span 3;
