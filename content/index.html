@@ -1,22 +1,26 @@
 ---
-title: Internetland
+title: URL to SQL
+description: Dave Woodall is a full stack web developer
 ---
 <section id='landing'>
   <nav class='site-nav right-nav'>
     <%= render '/partials/nav.*' %>
   </nav>
-  <header class="">
-    <section class="">
+  <header class="overview">
+    <section class="overview">
       <h1 class='h2'>DAVE<br>WOODALL</h1>
-      <h2 class='h3'>web developer for fun and profit</h2>
+      <p class='h3'>URL to SQL | full stack web developer</p>
     </section>
   </header>
   <section class="overview">
     <section class="overview-skills col">
       <h3 class="h2">Bio</h3>
       <p class="p overview-text v-space">
-        <span class='h4'><b>I am a Senior Software Developer</b></span> primarily writing Ruby on Rails, VueJS, and friends. Before that, I was a business owner, art director, and graphic designer. I have a Masters in Finance and a patent to validate at least one of my ideas.  I enjoy working on small and medium size remote teams who use tools like Slack, Git[hub|lab], and Jira to ship software. I try to roll my R's when I say <i>SCRUM</i>. Feel free to contact me if these skills match your needs. Thanks for stopping by!
+        <span class='h4'><b>Senior Software Developer</b></span> focused on developing Ruby on Rails and VueJS web applications. What I enjoy about web development is that it boils down to effective communication. I work best on small and medium size remote teams who employ tools like Slack, Git[hub|lab], and Jira to ship software. I try to roll my R's when I say <i>SCRUM</i>. Feel free to <%= link_to 'contact me', '/contact/' %> if my profile matches your needs. Thanks for stopping by!
       </p>
+      <div class='v-space'>
+        <%= link_to 'more about me &rsaquo;', '/about/' %>
+      </div>
       <h3 class="section-header v-space h2 v-space">Bingo</h3>
       <ul class="skills v-space">
         <li class="skill">Ruby</li>
@@ -24,13 +28,14 @@ title: Internetland
         <li class="skill">VueJS</li>
         <li class="skill">Webpack</li>
         <li class="skill">Node</li>
-        <li class="skill">JQuery</li>
-        <li class="skill">JavaScript (5/6/7)</li>
+        <li class="skill">ExpressJS</li>
+        <li class="skill">JavaScript (5 &amp; 6)</li>
         <li class="skill">Angular(1)</li>
-        <li class="skill">Backbone</li>
+        <li class="skill">BackboneJS</li>
+        <li class="skill">JQuery</li>
         <li class="skill">Middleman</li>
         <li class="skill">Nanoc</li>
-        <li class="skill">Underscore</li>
+        <li class="skill">UnderscoreJS</li>
         <li class="skill">RSpec</li>
         <li class="skill">Minitest</li>
         <li class="skill">CSS</li>
@@ -39,7 +44,7 @@ title: Internetland
         <li class="skill">Pundit</li>
         <li class="skill">Devise</li>
         <li class="skill">Ransack</li>
-        <li class="skill">Git &amp; Github</li>
+        <li class="skill">Git</li>
         <li class="skill">Heroku</li>
         <li class="skill">CentOs</li>
         <li class="skill">New Relic</li>
@@ -47,6 +52,9 @@ title: Internetland
         <li class="skill">Postgres</li>
         <li class="skill">MySql</li>
       </ul>
+      <div class='v-space'>
+        <%= link_to 'view my resume &rsaquo;', '/resume/' %>
+      </div>
     </section>
     <section class="overview-bio col">
       <h3 class="h2">Blog</h3>

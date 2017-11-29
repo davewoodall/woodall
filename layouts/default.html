@@ -5,16 +5,16 @@
   <title>Dave Woodall | <%= @item[:title] %></title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="2017 Resume of Dave Woodall" />
-  <meta name="keywords" content="dave woodall remote web developer coder" />
+  <meta name="description" content="<%= @item[:description] %>" />
+  <meta name="keywords" content="dave woodall remote web developer coder ruby on rails vue js" />
   <meta name="author" content="dave woodall wwwoodall fakefarm" />
   <link rel="stylesheet" href="/stylesheets/application.css">
-  <style id='footer-ss'></style>
 </head>
 <body>
   <body class='body'>
     <%= yield %>
     <div class="scripts">
+      <script src='/script.js'></script>
       <script>
       (function(b, o, i, l, e, r) {
   b.GoogleAnalyticsObject = l;

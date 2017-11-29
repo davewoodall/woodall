@@ -3,7 +3,7 @@ title: nanoc stylesheets
 created_at: 2017-11-26 14:50:03 -0500
 last_updated: 2017-11-26
 kind: article
-published: true
+published: false
 description: wow i don't even remember where we left off with this tutorial.
 ---
 

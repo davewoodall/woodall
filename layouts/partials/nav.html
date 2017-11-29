@@ -1,7 +1,8 @@
-<%= link_to 'intro', '/', class: 'nav-link' %>
-<%= link_to 'about', '/about/', class: 'nav-link' %>
-<%= link_to 'blog', '/blog/', class: 'nav-link' %>
-<%= link_to 'latest post', latest_post.path, class: 'nav-link' %>
-<%= link_to 'resume', '/resume/', class: 'nav-link' %>
-<%= link_to 'education', '/education/', class: 'nav-link' %>
-<%= link_to 'contact', '/contact/', class: 'nav-link' %>
+<%= link_to_unless_current 'intro', '/', class: 'nav-link' %>
+<%= link_to_unless_current 'about', '/about/', class: 'nav-link' %>
+<%= link_to_unless_current 'resume', '/resume/', class: 'nav-link' %>
+<%= link_to_unless_current 'education', '/education/', class: 'nav-link' %>
+<%= link_to_unless_current 'blog', '/blog/', class: 'nav-link' %>
+<%= link_to_unless_current 'latest post', latest_post.path, class: 'nav-link' %>
+<%= link_to_unless_current 'contact', '/contact/', class: 'nav-link' %>
+<%= link_to 'github', 'http://www.github.com/fakefarm', class: 'nav-link', target: '_blank' %>
