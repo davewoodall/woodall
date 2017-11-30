@@ -15,6 +15,7 @@ task :post, :title do |t, args|
   open(filename, 'w') do |post|
     post.puts '---'
     post.puts "title: #{title}"
+    post.puts "description: #{title}"
     post.puts "created_at: #{Time.now}"
     post.puts "last_updated: #{Time.now}"
     post.puts 'kind: article'

@@ -2,30 +2,41 @@
 
 .site-nav {
   z-index: 100;
-  padding: $space-2;
   overflow: auto;
 }
-.active,
-.nav-link {
-  float: left;
-  transition: all 200ms;
-  color: $links;
-  padding: $space-2;
-  margin: $space-2;
-  text-decoration: none;
-}
-.nav-link:hover {
-  background: $hover-color;
-}
-.active {
-  background: $active-color;
-}
 
-@media (min-width: 1000px) {
+@media (min-width: $break-4) {
   .site-nav {
+    padding: $space-2;
     position: absolute;
     right: 0;
     top: 0;
     text-align: right;
   }
+}
+
+.active,
+.nav-link {
+  float: left;
+  transition: all 200ms;
+  color: $links;
+  padding: $space-1;
+  margin: $space-1;
+  text-decoration: none;
+}
+
+@media (min-width: $break-2) {
+  .active,
+  .nav-link {
+    padding: $space-2;
+    margin: $space-2;
+  }
+}
+
+.nav-link:hover {
+  background: $hover-color;
+}
+
+.active {
+  background: $active-color;
 }

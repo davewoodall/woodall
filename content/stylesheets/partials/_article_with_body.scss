@@ -8,16 +8,22 @@
 }
 
 .headlines {
-  overflow: hidden;
+  overflow: auto;
+  border-top: 3px solid $one;
+  padding: $space-2;
+  margin-top: $space-2;
   margin-bottom: $space-4;
+  font-size: $size-4;
 }
 
 .org {
   float: left;
 }
-
 .date {
   float: right;
+}
+
+.org,
+.date {
   font-weight: 400;
-  margin-top: $space-2;
 }

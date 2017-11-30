@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'measurements';
 
 // TODO add fonts
 // add google fonts
@@ -11,6 +12,9 @@ $active-color: $orange;
 $hover-color: $pudding;
 
 // convenience variables;
+$one: $color-1;
+$two: $color-2;
+
 $body: $color-1;
 $header: $color-2;
 $article: $color-2;
@@ -22,7 +26,3 @@ $text: $text-color;
 
 // blog post
 $display-code-line-numbers: none;
-
-.line-numbers {
-  display: none;
-}
