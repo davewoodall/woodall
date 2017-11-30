@@ -1,33 +1,18 @@
 #!/usr/bin/env ruby
 
-compile '/posts/*' do
-  filter :kramdown
-  layout '/post.*'
-end
-
-[
-  '/about.html',
-  '/blog.html',
-  '/education.html',
-  '/resume.html',
-  '/former-life.html',
-  '/contact.html'
-].each do |page|
-  compile page do
-    filter :erb
-    layout '/show.*'
-  end
-end
-
-
-compile '/**/*.html' do
+compile '/index.html' do
   filter :erb
   layout '/default.*'
 end
 
+compile '/**/*.html' do
+  filter :erb
+  layout '/show.*'
+end
+
 compile '/**/*.md' do
  filter :kramdown
- layout '/default.*'
+ layout '/post.*'
 end
 
 compile '/**/*.scss' do
