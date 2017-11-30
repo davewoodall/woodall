@@ -1,8 +1,28 @@
 @import 'colors';
 
+// TODO add fonts
+// add google fonts
+
 $color-1: $white-1;
 $color-2: $white-2;
 $text-color: $gray;
 $link-color: $gray;
 $active-color: $orange;
 $hover-color: $pudding;
+
+// convenience variables;
+$body: $color-1;
+$header: $color-2;
+$article: $color-2;
+$card: $color-2;
+$main: $color-2;
+$footer: $color-2;
+$links: $link-color;
+$text: $text-color;
+
+// blog post
+$display-code-line-numbers: none;
+
+.line-numbers {
+  display: none;
+}

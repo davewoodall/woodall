@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Dave Woodall | <%= @item[:title] %></title>
+  <title><%= config[:full_name] %> | <%= @item[:title] %></title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="<%= @item[:description] %>" />
@@ -14,7 +14,6 @@
   <body class='body'>
     <%= yield %>
     <div class="scripts">
-      <script src='/script.js'></script>
       <script>
       (function(b, o, i, l, e, r) {
   b.GoogleAnalyticsObject = l;

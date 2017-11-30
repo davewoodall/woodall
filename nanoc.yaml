@@ -1,3 +1,48 @@
+first_name: DAVE
+last_name: WOODALL
+full_name: Dave Woodall
+tagline: URL to SQL | full stack web developer
+github_account: fakefarm
+
+bio_title: 'Bio'
+skill_title: 'Bingo'
+blog_title: 'Blog'
+
+bio:
+  <span class='h4'><b>Senior Software Developer</b></span> focused on developing Ruby on Rails and VueJS web applications. What I enjoy about web development is that it boils down to effective communication. I work best on small and medium size remote teams who employ tools like Slack, Git[hub|lab], and Jira to ship software. I try to roll my R's when I say <i>SCRUM</i>. Feel free to <a href='/contact/'>contact me</a> if my profile matches your needs. Thanks for stopping by!
+
+skills:
+  - Ruby
+  - Ruby on Rails
+  - VueJS
+  - Webpack
+  - Node
+  - ExpressJS
+  - JavaScript (5 &amp; 6)
+  - Angular(1)
+  - BackboneJS
+  - JQuery
+  - Middleman
+  - Nanoc
+  - UnderscoreJS
+  - RSpec
+  - Minitest
+  - CSS
+  - SCSS
+  - HTML
+  - Pundit
+  - Devise
+  - Ransack
+  - Git
+  - Heroku
+  - CentOs
+  - New
+  - Relic
+  - Bash
+  - Postgres
+  - MySql
+
+
 string_pattern_type: glob
 
 text_extensions: [ 'adoc', 'asciidoc', 'atom', 'coffee', 'css', 'erb', 'haml', 'handlebars', 'hb', 'htm', 'html', 'js', 'less', 'markdown', 'md', 'ms', 'mustache', 'php', 'rb', 'rdoc', 'sass', 'scss', 'slim', 'txt', 'xhtml', 'xml' ]

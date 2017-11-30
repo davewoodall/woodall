@@ -1,8 +1,10 @@
-<%= link_to_unless_current 'intro', '/', class: 'nav-link' %>
-<%= link_to_unless_current 'about', '/about/', class: 'nav-link' %>
-<%= link_to_unless_current 'resume', '/resume/', class: 'nav-link' %>
-<%= link_to_unless_current 'education', '/education/', class: 'nav-link' %>
-<%= link_to_unless_current 'blog', '/blog/', class: 'nav-link' %>
-<%= link_to_unless_current 'latest post', latest_post.path, class: 'nav-link' %>
-<%= link_to_unless_current 'contact', '/contact/', class: 'nav-link' %>
-<%= link_to 'github', 'http://www.github.com/fakefarm', class: 'nav-link', target: '_blank' %>
+<nav class='site-nav'>
+  <%= link_to_unless_current 'intro', '/', class: 'nav-link' %>
+  <%= link_to_unless_current 'about', '/about/', class: 'nav-link' %>
+  <%= link_to_unless_current 'resume', '/resume/', class: 'nav-link' %>
+  <%= link_to_unless_current 'education', '/education/', class: 'nav-link' %>
+  <%= link_to_unless_current 'blog', '/blog/', class: 'nav-link' %>
+  <%= link_to_unless_current 'latest post', latest_post.path, class: 'nav-link' %>
+  <%= link_to_unless_current 'contact', '/contact/', class: 'nav-link' %>
+  <%= link_to 'github', "http://www.github.com/#{config[:github_account]}" , class: 'nav-link', target: '_blank' %>
+</nav>

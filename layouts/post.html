@@ -1,16 +1,14 @@
 <% render '/default.*' do %>
-  <header class='overview'>
-    <h1 class='p'>Dave Woodall</h1>
+  <header class='header'>
+    <h1 class='p'><%= config[:full_name] %></h1>
   </header>
   <section id="post">
-    <nav class='site-nav right-nav'>
-      <%= render '/partials/nav.*' %>
-    </nav>
+    <%= render '/partials/nav.*' %>
     <header>
-      <aside>Updated: <%= get_pretty_date(item) %></aside>
       <h1><%= item[:title] %></h1>
     </header>
     <article class='post'>
+      <div class='last-updated'>Last Updated: <%= get_pretty_date(item) %></div>
       <%= yield %>
     </article>
   </section>

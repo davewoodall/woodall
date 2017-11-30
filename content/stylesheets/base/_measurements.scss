@@ -42,3 +42,19 @@ $space-21: $space-root * 5.25;
 $space-22: $space-root * 5.5;
 $space-23: $space-root * 5.75;
 $space-24: $space-root * 6;
+
+.space-1 {
+  padding: $space-2 $space-2 0;
+}
+
+@media (min-width: 600px) {
+  .space-1 {
+    padding: $space-5 $space-5 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .space-1 {
+    padding: $space-8 $space-8 0;
+  }
+}

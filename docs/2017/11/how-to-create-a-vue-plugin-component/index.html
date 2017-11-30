@@ -13,26 +13,26 @@
 <body>
   <body class='body'>
     
-  <header class='overview'>
+  <header class='header'>
     <h1 class='p'>Dave Woodall</h1>
   </header>
   <section id="post">
-    <nav class='site-nav right-nav'>
-      <a class="nav-link" href="/">intro</a>
-<a class="nav-link" href="/about/">about</a>
-<a class="nav-link" href="/resume/">resume</a>
-<a class="nav-link" href="/education/">education</a>
-<a class="nav-link" href="/blog/">blog</a>
-<span class="active">latest post</span>
-<a class="nav-link" href="/contact/">contact</a>
-<a class="nav-link" target="_blank" href="http://www.github.com/fakefarm">github</a>
+    <nav class='site-nav'>
+  <a class="nav-link" href="/">intro</a>
+  <a class="nav-link" href="/about/">about</a>
+  <a class="nav-link" href="/resume/">resume</a>
+  <a class="nav-link" href="/education/">education</a>
+  <a class="nav-link" href="/blog/">blog</a>
+  <a class="nav-link" href="/2017/11/how-to-write-a-technical-blog-post/">latest post</a>
+  <a class="nav-link" href="/contact/">contact</a>
+  <a class="nav-link" target="_blank" href="http://www.github.com/fakefarm">github</a>
+</nav>
 
-    </nav>
     <header>
-      <aside>Updated: November 29, 2017</aside>
       <h1>How to create a Vue Plugin Component</h1>
     </header>
     <article class='post'>
+      <div class='last-updated'>Last Updated: November 29, 2017</div>
       
 <p>Vue components are the predominant approach to Vue Apps. However, there are situations which require universal access to state (data) or behavior (methods). Vue Plugins are how to address this situation.</p>
 
@@ -172,7 +172,6 @@ Plugins usually incorporate some logic (data, component registration, maybe mixi
   </section>
 
     <div class="scripts">
-      <script src='/script.js'></script>
       <script>
       (function(b, o, i, l, e, r) {
   b.GoogleAnalyticsObject = l;

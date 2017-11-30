@@ -8,10 +8,32 @@
   .skill {
     list-style: none;
     display: inline-block;
-    background: $color-1;
-    border-radius: 18px;
+    background: $color-2;
+    border-radius: 30px;
     font-size: 16px;
     padding: $space-1 $space-3;
     margin: $space-2 $space-1;
+  }
+
+  p {
+    margin-top: $space-4;
+  }
+
+  @media (min-width: 800px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(10, 10%);
+      grid-template-rows: repeat(10, 100px);
+    }
+
+    .left-grid-panel {
+      grid-column-start: 1;
+      grid-column-end: span 5;
+    }
+
+    .right-grid-panel {
+      grid-column-start: 6;
+      grid-column-end: span 5;
+    }
   }
 }

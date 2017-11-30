@@ -1,16 +1,55 @@
 @import '../base/base';
 #post {
+  .post {
+    // width: 50%;
+    margin: 0 auto;
+  }
+
   header {
     background: $color-2;
-    padding: 1em;
-    h1 {
-      margin: 0;
-      padding: 1em 4em 1em 0.5em;
-      font-size: 5em;
-    }
   }
-  .post {
-    width: 50%;
-    margin: 0 auto;
+
+  .last-updated {
+    padding-top: $space-4;
+  }
+
+  .code {
+    background: $color-2;
+    padding: $space-1;
+    line-height: 18px;
+    font-size: 12px;
+  }
+
+  @media (min-width: 800px) {
+    .code {
+      margin-top: $space-4;
+      padding: $space-4 $space-8;
+      font-size: 18px;
+      line-height: 32px;
+    }
+
+    .post {
+      width: 50%;
+      margin: $space-8 auto;
+    }
+
+    header {
+      padding: 1em;
+      h1 {
+        margin: 0;
+        padding: 1em 4em 1em 0.5em;
+        font-size: 5em;
+      }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      margin-top: $space-8;
+    }
   }
 }

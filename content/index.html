@@ -3,38 +3,47 @@ title: URL to SQL
 description: Dave Woodall is a full stack web developer
 ---
 <section id='landing'>
-  <nav class='site-nav right-nav'>
-    <%= render '/partials/nav.*' %>
-  </nav>
-  <header class="overview">
-    <h1 class='h2'>DAVE<br>WOODALL</h1>
-    <p class='h3'>URL to SQL | full stack web developer</p>
+  <%= render '/partials/nav.*' %>
+  <header class="padding-1">
+    <h1 class='h2'>
+      <%= config[:first_name] %>
+      <br>
+      <%= config[:last_name] %>
+    </h1>
+    <h3 class='h3'>
+      <%= config[:tagline] %>
+    </h3>
   </header>
-  <section class="overview">
-    <section class="overview-skills">
-      <h3 class="h2">Bio</h3>
-      <p class="p overview-text v-space">
-        <span class='h4'><b>Senior Software Developer</b></span> focused on developing Ruby on Rails and VueJS web applications. What I enjoy about web development is that it boils down to effective communication. I work best on small and medium size remote teams who employ tools like Slack, Git[hub|lab], and Jira to ship software. I try to roll my R's when I say <i>SCRUM</i>. Feel free to <%= link_to 'contact me', '/contact/' %> if my profile matches your needs. Thanks for stopping by!
-      </p>
-      <div class='v-space'>
-        <%= link_to 'more about me &rsaquo;', '/about/' %>
-      </div>
-      <h3 class="section-header v-space h2 v-space">Bingo</h3>
-      <ul class="skills v-space">
-        <% %W(
-            Ruby Ruby\ on\ Rails VueJS Webpack Node ExpressJS JavaScript\ (5\ &amp;\ 6) Angular(1) BackboneJS JQuery Middleman Nanoc UnderscoreJS RSpec Minitest CSS SCSS HTML Pundit Devise Ransack Git Heroku CentOs New\ Relic Bash Postgres MySql
-          ).each do |skill| %>
+  <section class="grid">
+    <section class="left-grid-panel">
+      <article class='padding-1'>
+        <h3 class="h2"><%= config[:bio_title] %></h3>
+        <p class="p overview-text v-space">
+          <%= config[:bio] %>
+        </p>
+        <div class='v-space'>
+          <%= link_to 'more about me &rsaquo;', '/about/' %>
+        </div>
+      </article>
+      <article class='padding-1'>
+        <h3 class="section-header h2"><%= config[:skill_title] %></h3>
+        <br>
+        <ul class="skills v-space">
+          <% config[:skills].each do |skill| %>
           <li class="skill"><%= skill %></li>
-        <% end %>
-      </ul>
-      <div class='v-space'>
-        <%= link_to 'view my resume &rsaquo;', '/resume/' %>
-      </div>
+          <% end %>
+        </ul>
+        <div class='v-space'>
+          <%= link_to 'view my resume &rsaquo;', '/resume/' %>
+        </div>
+      </article>
     </section>
-    <section class="overview-bio">
-      <h3 class="h2">Blog</h3>
-      <h2 class='h4 main-title v-space'><%= latest_post[:title] %></h2>
-      <p class='p v-space'><%= get_post_start(latest_post) %></p>
+    <section class="right-grid-panel">
+      <article class='padding-1'>
+        <h3 class="h2"><%= config[:blog_title] %></h3>
+        <h2 class='h4 main-title v-space'><%= latest_post[:title] %></h2>
+        <div class='v-space'><%= get_post_start(latest_post) %></div>
+      </article>
     </section>
   </section>
 </section>

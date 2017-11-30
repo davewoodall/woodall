@@ -1,6 +1,6 @@
 @import '../base/base';
 
-.right-nav {
+.site-nav {
   z-index: 100;
   padding: $space-2;
   overflow: auto;
@@ -9,7 +9,7 @@
 .nav-link {
   float: left;
   transition: all 200ms;
-  color: $link-color;
+  color: $links;
   padding: $space-2;
   margin: $space-2;
   text-decoration: none;
@@ -21,8 +21,8 @@
   background: $active-color;
 }
 
-@media (min-width: 800px) {
-  .right-nav {
+@media (min-width: 1000px) {
+  .site-nav {
     position: absolute;
     right: 0;
     top: 0;

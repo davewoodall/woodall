@@ -6,15 +6,14 @@
 @import 'utilities';
 
 .body {
-  background: $color-1;
+  background: $body;
+}
+
+.header {
+  background: $header;
+  padding: $space-6;
 }
 
 a {
-  color: $link-color;
-}
-
-.overview {
-  padding: $space-6;
-  background: $color-2;
-  overflow: auto;
+  color: $links;
 }
