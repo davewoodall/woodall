@@ -15,7 +15,7 @@ end
 ].each do |page|
   compile page do
     filter :erb
-    layout '/show_layout.*'
+    layout '/show.*'
   end
 end
 
