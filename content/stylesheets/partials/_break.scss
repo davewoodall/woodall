@@ -3,9 +3,9 @@
 .break {
   margin: $space-10;
   padding: $space-10;
-  border: 2px dashed rgb(162, 162, 162);
+  border: 2px dashed $break;
 }
 .break .h3,
 .break .p {
-  color: rgb(162, 162, 162);
+  color: $break;
 }

@@ -4,20 +4,23 @@
 // TODO add fonts
 // add google fonts
 
+// color scheme
 $one: $white-1;
 $two: $white-2;
 $three: $gray;
+$four: $lt-gray;
+$five: $orange;
+$six: $pudding;
 
+// in the wild
 $body: $one;
 $header: $two;
 $card: $two;
-
+$break: $four;
 $text: $three;
-
-// links
 $links: $three;
-$active: $orange;
-$hover: $pudding;
+$active: $five;
+$hover: $six;
 
 // blog post: none  block
 $display-code-line-numbers: none;

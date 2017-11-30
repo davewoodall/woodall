@@ -3,8 +3,7 @@
   main {
     padding: 1em;
   }
-
-  @media (min-width: 800px) {
+  @media (min-width: $break-3) {
     main {
       padding: 0;
       width: 50%;
@@ -12,17 +11,14 @@
       margin: 2em auto 1em;
     }
   }
-
   .title {
     margin-bottom: $space-1;
   }
-
   .section-header,
   .continued-education {
     padding-left: $space-5;
   }
-
-  @media (min-width: 800px) {
+  @media (min-width: $break-3) {
     .section-header,
     .continued-education {
       padding-left: 0;

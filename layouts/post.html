@@ -8,7 +8,7 @@
       <h1 class='post-title'><%= item[:title] %></h1>
     </header>
     <article class='post-body' id="markdown">
-      <div class='last-updated'>Last Updated: <%= get_pretty_date(item) %></div>
+      <div class='p last-updated'>Last Updated: <%= get_pretty_date(item) %></div>
       <%= yield %>
     </article>
   </section>
