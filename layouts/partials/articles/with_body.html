@@ -1,0 +1,36 @@
+<article class="article">
+  <header class='article-header'>
+    <h2 class='h3'>
+      <%= a[:title] %>
+    </h2>
+    <% if (!a[:org].nil? || !a[:date].nil?)  %>
+      <div class='headlines'>
+        <h3 class="org h4"><%= a[:org] %></h3>
+        <h3 class="date h5"><%= a[:date] %></h3>
+      </div>
+    <% end %>
+  </header>
+
+  <% if (!a[:summary].nil? || !a[:list].nil?)  %>
+    <section class='article-summary'>
+
+      <% if !a[:summary].nil? %>
+        <p class='p'><%= a[:summary] %></p>
+      <% end %>
+
+      <% if !a[:list].nil? %>
+        <ul>
+          <% a[:list].each do |item| %>
+            <% if !item[:url].nil? %>
+              <li class="li"><a href="<%= item[:url] %>" target="_blank"><%= item[:name] %></a></li>
+            <% else %>
+              <li class="li"><%= item[:name] %></li>
+            <% end %>
+          <% end %>
+        </ul>
+      <% end %>
+
+    </section>
+  <% end %>
+
+</article>

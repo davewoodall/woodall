@@ -21,4 +21,4 @@ guard 'nanoc' do
   watch(%r{^(content|layouts|lib)/.*$})
 end
 
-notification :terminal_notifier, timeout: 1 if `uname` =~ /Darwin/
+# notification :terminal_notifier, timeout: 1 if `uname` =~ /Darwin/

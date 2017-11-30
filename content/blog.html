@@ -2,16 +2,10 @@
 title: blog
 description: Welcome to Internetland.
 ---
-<section  class="section experience">
-  <h2 class="section-header h2">blog</h2>
-  <% published_posts.each do |post| %>
-  <article class="article">
-    <header class='header article-header'>
-      <h2 class="title h3"><%= link_to post[:title], post.path %></h2>
-    </header>
-    <section class="summary">
-      <p class="summary p"><%= post[:description] %></p>
-    </section>
-  </article>
-  <% end %>
-</section>
+
+<% published_posts.each do |post| %>
+  <%= render '/partials/articles/with_body.*',
+      a: { title: (link_to post[:title], post.path),
+           summary: post[:description]
+         } %>
+<% end %>

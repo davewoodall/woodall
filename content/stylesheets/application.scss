@@ -1,13 +1,11 @@
 @import 'base/base';
 
-@import 'layouts/blog_layout';
-@import 'layouts/show_layout';
-
 @import 'partials/nav';
+@import 'partials/article_with_body';
+@import 'partials/article_break';
 
-@import 'views/about';
-@import 'views/blog';
-@import 'views/contact';
 @import 'views/landing';
 @import 'views/post';
-@import 'views/resume';
+@import 'views/education';
+
+@import 'layouts/show_layout';

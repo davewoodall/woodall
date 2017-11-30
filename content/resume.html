@@ -3,81 +3,67 @@ title: resume
 description: Dave Woodall's Resume
 ---
 
+<%= render '/partials/articles/with_body.*',
+  a: {
+    title: 'Senior Software Engineer',
+    org: 'Phishme',
+    date: 'July 2016 - Present',
+    summary: 'Work in progress..'
+  }
+%>
 
-<h2 class="section-header h2">resume</h2>
-<article class="article">
-  <header class='header article-header'>
-    <h2 class="title h3">Senior Software Engineer</h2>
-    <div class='company-bar row'>
-      <h3 class="company h4">Phishme</h3>
-      <h3 class="tenure h5">July 2016 - Present</h3>
-    </div>
-  </header>
-  <section class="summary">
-    <p class="summary p">Work in progress..</p>
-  </section>
-</article>
-<article class="article">
-  <header class='header article-header'>
-    <h2 class="title h3">Software Engineer</h2>
-    <div class='company-bar'>
-      <h3 class="company h4">LivingSocial</h3>
-      <h3 class="tenure h5">January 2014 - May 2016</h3>
-    </div>
-  </header>
-  <section class="summary">
-    <p class="summary p">Worked on a variety of teams with a variety of responsibilities. My initial team was working on the Escapes team. My tasksMost of my work was frontend on Rails: HTML, ERB, Partials, CSS, and JQuery maintenance.</p>
-    <ul class='job-summary'>
-      <li class="p">Team 1: Escapes Retail Vertical</li>
-      <li class="p">Team 2: Personalization Data Science GEM &amp; UI</li>
-      <li class="p">Team 3: Internal Tools, Customer Service</li> </ul>
-    </section>
-  </article>
-  <article class="article">
-    <header class='header article-header'>
-      <h2 class="title h3">Designer, Developer, Consultant</h2>
-      <div class='company-bar'>
-        <h3 class="company h4">hireDave.me, LLC</h3>
-        <h3 class="tenure h5">March 2013 - July 2016</h3>
-      </div>
-    </header>
-    <section class="summary">
-      <p class="summary p">Design and development with Ruby on Rails, HTML, CSS, JQuery, JavaScript, Angular, Adobe Photoshop. Projects include work for the following clients;</p>
-      <ul class='job-summary'>
-        <li class="p">Marshill.com</li>
-        <li class="p">3rdRevolution.com</li>
-        <li class="p">InvitedHome.com</li>
-        <li class="p">SuppFinder.com</li>
-        <li class="p">LoganStreetCapital.com</li>
-        <li class="p">BrandFolder.com</li>
-      </ul>
-    </section>
-  </article>
-  <article class="article">
-    <header class='header article-header'>
-      <h2 class="title h3">Software Developer</h2>
-      <div class='company-bar'>
-        <h3 class="company h4">Factory Design Labs</h3>
-        <h3 class="tenure h5">November 2012 - March 2013</h3>
-      </div>
-    </header>
-    <section class="summary">
-      <p class="summary p">Joined an advertising company that warned me of the feast and famine culture. I thought it would be fun to try anyway. The team was great and I learned a ton from hangout out with Mike, Anthony, and Jesse.</p>
-    </section>
-  </article>
-  <article class="article">
-    <header class='header article-header'>
-      <h2 class="title h3">Intern</h2>
-      <div class='company-bar'>
-        <h3 class="company h4">Pivotal Labs, Boulder</h3>
-        <h3 class="tenure h5">September 2012 - November 2012</h3>
-      </div>
-    </header>
-    <section class="summary">
-      <p class="summary p">Even though I wasn't a professional developer yet I wanted to start living like one. So, I asked Mike G if I could hangout at their office for a day. That one day turned into an informal, first hand mentoring session from a room full of Pivots.</p>
-    </section>
-  </article>
-  <section class="break">
-    <h2 class="title h3">How I got into writing code...</h2>
-    <p class="p">Writing code is my favorite vocation but it was not my first. If you're curious what I did before what I do now, feel free to explore my <a href="/former-life/">former life</a></p>
-  </section>
+<%= render '/partials/articles/with_body.*',
+  a: {
+    title: 'Software Engineer',
+    org: 'LivingSocial',
+    date: 'January 2014 - May 2016',
+    summary: 'Worked on a variety of teams with a variety of responsibilities. My initial team was working on the Escapes team. My tasksMost of my work was frontend on Rails: HTML, ERB, Partials, CSS, and JQuery maintenance.',
+    list: [
+    { name: "Team 1: Escapes Retail Vertical" },
+    { name: "Team 2: Personalization Data Science GEM &amp; UI" },
+    { name: "Team 3: Internal Tools, Customer Service" }
+    ]
+  }
+%>
+
+<%= render '/partials/articles/with_body.*',
+  a: {
+    title: 'Developer, Designer, Consultant',
+    org: 'hireDave.me, LLC',
+    date: 'March 2013 - July 2016',
+    summary: 'Design and development with Ruby on Rails, HTML, CSS, JQuery, JavaScript, Angular, Adobe Photoshop. Projects include work for the following clients;',
+    list: [
+      { name: "Marshill.com" },
+      { name: "3rdRevolution.com" },
+      { name: "InvitedHome.com" },
+      { name: "SuppFinder.com" },
+      { name: "LoganStreetCapital.com" },
+      { name: "BrandFolder.com" }
+    ]
+  }
+%>
+
+  <%= render '/partials/articles/with_body.*',
+    a: {
+      title: 'Software Developer',
+      org: 'Factory Design Labs',
+      date: 'November 2012 - March 2013',
+      summary: 'Joined an advertising company that warned me of the feast and famine culture. I thought it would be fun to try anyway. The team was great and I learned a ton from hangout out with Mike, Anthony, and Jesse.'
+    }
+  %>
+
+  <%= render '/partials/articles/with_body.*',
+    a: {
+      title: 'Intern',
+      org: 'Pivotal Labs, Boulder',
+      date: 'September 2012 - November 2012',
+      summary: "Even though I wasn't a professional developer yet I wanted to start living like one. So, I asked Mike G if I could hangout at their office for a day. That one day turned into an informal, first hand mentoring session from a room full of Pivots."
+    }
+  %>
+
+  <%= render '/partials/articles/break.*',
+    b: {
+      title: 'How I got into writing code...',
+      body: "Writing code is my favorite vocation but it was not my first. If you're curious what I did before what I do now, feel free to explore my <a href='/former-life/'>former life</a>"
+    }
+  %>

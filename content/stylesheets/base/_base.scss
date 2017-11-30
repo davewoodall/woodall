@@ -1,6 +1,20 @@
-@import 'normalize';
-@import 'app';
 @import 'colors';
-@import 'typography';
 @import 'measurements';
+@import 'normalize';
+@import 'theme';
+@import 'typography';
 @import 'utilities';
+
+.body {
+  background: $color-1;
+}
+
+a {
+  color: $link-color;
+}
+
+.overview {
+  padding: $space-6;
+  background: $color-2;
+  overflow: auto;
+}

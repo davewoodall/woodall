@@ -2,45 +2,30 @@
 
 .right-nav {
   z-index: 100;
-  // position: absolute;
-  // right: 0;
-  // top: 0;
-  // text-align: right;
   padding: $space-2;
   overflow: auto;
 }
 .active,
 .nav-link {
-  // display: inline-block;
-  // width: 50%;
   float: left;
   transition: all 200ms;
-  color: $gray;
+  color: $link-color;
   padding: $space-2;
   margin: $space-2;
   text-decoration: none;
 }
 .nav-link:hover {
-  background: $pudding;
+  background: $hover-color;
+}
+.active {
+  background: $active-color;
 }
 
 @media (min-width: 800px) {
   .right-nav {
-    z-index: 100;
     position: absolute;
     right: 0;
     top: 0;
     text-align: right;
-    padding: $space-2;
-  }
-  .nav-link {
-    transition: all 200ms;
-    color: $gray;
-    padding: $space-2;
-    margin: $space-2;
-    text-decoration: none;
-  }
-  .nav-link:hover {
-    background: $pudding;
   }
 }

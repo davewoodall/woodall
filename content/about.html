@@ -1,92 +1,90 @@
 ---
-title: about
+title: about me
 description: Hello, I'm Dave Woodall and this page is about me.
 ---
 
-<h1 class='h2'>about me</h1>
+<%= render '/partials/articles/with_body.*',
+  a: {
+    title: 'Interests',
+    summary: 'I enjoy thinking, tinkering, and trying new things. I got into software because it solved my own problems.'
+  }
+%>
 
-<section  class="section experience">
-  <article class="article">
-    <header class='header article-header'>
-      <h2 class="title h3">Interests</h2>
-    </header>
-    <section class="summary">
-      <p class="summary p">I enjoy thinking, tinkering, and trying new things. I got into software because it solved my own problems.</p>
-    </section>
-  </article>
-</section>
+<%= render '/partials/articles/with_body.*',
+  a: {
+    title: 'Open Source Contributions',
+    list: [
+      {
+        name: 'Jasmine Rails',
+        url: 'https://github.com/searls/jasmine-rails'
+      },
+      {
+        name: 'Underscore',
+        url: 'https://github.com/jashkenas/underscore'
+      },
+      {
+        name: 'Ransack',
+        url: 'https://github.com/activerecord-hackery/ransack'
+      },
+      {
+        name: 'Middleman',
+        url: 'https://github.com/middleman/middleman'
+      },
+      {
+        name: 'Multiple Select',
+        url: 'https://github.com/wenzhixin/multiple-select'
+      },
+      {
+        name: 'Rack CORS',
+        url: 'https://github.com/cyu/rack-cors'
+      },
+    ]
+  }
+%>
 
+<%= render '/partials/articles/with_body.*',
+  a: {
+    title: 'Conferences Attended',
+    list: [
+      { name: "RailsConf, 2017" },
+      { name: "An Event Apart, 2016" },
+      { name: "Rocky Mtn Ruby, 2012 &amp; 2014" },
+      { name: "Ruby Conf, 2012" }
+    ]
+  }
+%>
 
-<section  class="section experience">
-  <article class="article">
-    <header class='header article-header'>
-      <h2 class="title h3">Open Source Contributions</h2>
-    </header>
-    <section class="summary">
-      <ul class="list">
-        <li class="p"><a href="https://github.com/searls/jasmine-rails" target="_blank">Jasmine Rails</a></li>
-        <li class="p"><a href="https://github.com/jashkenas/underscore" target="_blank">Underscore</a></li>
-        <li class="p"><a href="https://github.com/activerecord-hackery/ransack" target="_blank">Ransack</a></li>
-        <li class="p"><a href="https://github.com/middleman/middleman" target="_blank">Middleman</a></li>
-        <li class="p"><a href="https://github.com/wenzhixin/multiple-select" target="_blank">Multiple Select</a></li>
-        <li class="p"><a href="https://github.com/cyu/rack-cors" target="_blank">Rack CORS</a></li>
-      </ul>
-    </section>
-  </article>
-</section>
+<%= render '/partials/articles/with_body.*',
+  a: {
+    title: 'Awards',
+    list: [
+      { name: "South Denver, Small Business of the Year (2011)" },
+      { name: "Patent (US D632871 S1)",
+        url: "https://www.google.com/patents/USD632871" }
+    ]
+  }
+%>
 
-<section  class="section experience">
-  <article class="article">
-    <header class='header article-header'>
-      <h2 class="title h3">Conferences Attended</h2>
-    </header>
-    <section class="summary">
-      <ul class="list">
-        <li class="p">RailsConf, 2017</li>
-        <li class="p">An Event Apart, 2016</li>
-        <li class="p">Rocky Mtn Ruby, 2012 &amp; 2014</li>
-        <li class="p">Ruby Conf, 2012</li>
-      </ul>
-    </section>
-  </article>
-</section>
+<%= render '/partials/articles/with_body.*',
+  a: {
+    title: 'Favorite Books',
+    list: [
+      { name: "POODR" },
+      { name: "TDD by Example" },
+      { name: "Rails Antipatterns" },
+      { name: "Refactoring" },
+      { name: "Adaptive Web Design" },
+      { name: "Responsive Web Design" },
+      { name: "JavaScript Patterns" },
+      { name: "Definitive Guide to JS" },
+      { name: "Definitive Guide to HTTP" }
+    ]
+  }
+%>
 
-<section  class="section experience">
-  <article class="article">
-    <header class='header article-header'>
-      <h2 class="title h3">Awards</h2>
-    </header>
-    <section class="summary">
-      <ul class="list">
-        <li class="p">South Denver, Small Business of the Year (2011)</li>
-        <li class="p"><a target='_blank' href='https://www.google.com/patents/USD632871'>Patent (US D632871 S1)</a></li>
-      </ul>
-    </section>
-  </article>
-</section>
-
-<section  class="section experience">
-  <article class="article">
-    <header class='header article-header'>
-      <h2 class="title h3">Favorite Books</h2>
-    </header>
-    <section class="summary">
-      <ul class="list">
-        <li class="p">POODR</li>
-        <li class="p">TDD by Example</li>
-        <li class="p">Rails Antipatterns</li>
-        <li class="p">Refactoring</li>
-        <li class="p">Adaptive Web Design</li>
-        <li class="p">Responsive Web Design</li>
-        <li class="p">JavaScript Patterns</li>
-        <li class="p">Definitive Guide to JS</li>
-        <li class="p">Definitive Guide to HTTP</li>
-      </ul>
-    </section>
-  </article>
-</section>
-
-<section class="break">
-  <h2 class="title h3">About this site...</h2>
-  <p class="p">This site is a static generated site built with HTML, CSS, Ruby, and the Nanoc framework. I enjoy the freedom and flexibility of combining the power of Ruby with static content.</p>
-</section>
+<%= render '/partials/articles/break.*',
+  b: {
+    title: 'About this site...',
+    body: "This site is a static generated site built with HTML, CSS, Ruby, and the Nanoc framework. I enjoy the freedom and flexibility of combining the power of Ruby with static content."
+  }
+%>

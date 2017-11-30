@@ -1,0 +1,11 @@
+@import '../base/base';
+
+.break {
+  margin: $space-10;
+  padding: $space-10;
+  border: 2px dashed rgb(162, 162, 162);
+}
+.break .h3,
+.break .p {
+  color: rgb(162, 162, 162);
+}

@@ -7,13 +7,11 @@ description: Dave Woodall is a full stack web developer
     <%= render '/partials/nav.*' %>
   </nav>
   <header class="overview">
-    <section class="overview">
-      <h1 class='h2'>DAVE<br>WOODALL</h1>
-      <p class='h3'>URL to SQL | full stack web developer</p>
-    </section>
+    <h1 class='h2'>DAVE<br>WOODALL</h1>
+    <p class='h3'>URL to SQL | full stack web developer</p>
   </header>
   <section class="overview">
-    <section class="overview-skills col">
+    <section class="overview-skills">
       <h3 class="h2">Bio</h3>
       <p class="p overview-text v-space">
         <span class='h4'><b>Senior Software Developer</b></span> focused on developing Ruby on Rails and VueJS web applications. What I enjoy about web development is that it boils down to effective communication. I work best on small and medium size remote teams who employ tools like Slack, Git[hub|lab], and Jira to ship software. I try to roll my R's when I say <i>SCRUM</i>. Feel free to <%= link_to 'contact me', '/contact/' %> if my profile matches your needs. Thanks for stopping by!
@@ -23,40 +21,17 @@ description: Dave Woodall is a full stack web developer
       </div>
       <h3 class="section-header v-space h2 v-space">Bingo</h3>
       <ul class="skills v-space">
-        <li class="skill">Ruby</li>
-        <li class="skill">Ruby on Rails</li>
-        <li class="skill">VueJS</li>
-        <li class="skill">Webpack</li>
-        <li class="skill">Node</li>
-        <li class="skill">ExpressJS</li>
-        <li class="skill">JavaScript (5 &amp; 6)</li>
-        <li class="skill">Angular(1)</li>
-        <li class="skill">BackboneJS</li>
-        <li class="skill">JQuery</li>
-        <li class="skill">Middleman</li>
-        <li class="skill">Nanoc</li>
-        <li class="skill">UnderscoreJS</li>
-        <li class="skill">RSpec</li>
-        <li class="skill">Minitest</li>
-        <li class="skill">CSS</li>
-        <li class="skill">SCSS</li>
-        <li class="skill">HTML</li>
-        <li class="skill">Pundit</li>
-        <li class="skill">Devise</li>
-        <li class="skill">Ransack</li>
-        <li class="skill">Git</li>
-        <li class="skill">Heroku</li>
-        <li class="skill">CentOs</li>
-        <li class="skill">New Relic</li>
-        <li class="skill">Bash</li>
-        <li class="skill">Postgres</li>
-        <li class="skill">MySql</li>
+        <% %W(
+            Ruby Ruby\ on\ Rails VueJS Webpack Node ExpressJS JavaScript\ (5\ &amp;\ 6) Angular(1) BackboneJS JQuery Middleman Nanoc UnderscoreJS RSpec Minitest CSS SCSS HTML Pundit Devise Ransack Git Heroku CentOs New\ Relic Bash Postgres MySql
+          ).each do |skill| %>
+          <li class="skill"><%= skill %></li>
+        <% end %>
       </ul>
       <div class='v-space'>
         <%= link_to 'view my resume &rsaquo;', '/resume/' %>
       </div>
     </section>
-    <section class="overview-bio col">
+    <section class="overview-bio">
       <h3 class="h2">Blog</h3>
       <h2 class='h4 main-title v-space'><%= latest_post[:title] %></h2>
       <p class='p v-space'><%= get_post_start(latest_post) %></p>
