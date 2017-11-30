@@ -1,6 +1,6 @@
 @import '../base/base';
 
-.article-with-body {
+.card {
   margin-top: $space-5;
   padding: $space-5;
   background: $color-2;
@@ -12,7 +12,7 @@
   padding: $space-10;
 }
 
-.headlines {
+.meta {
   overflow: auto;
   border-top: 3px solid $one;
   padding: $space-2;

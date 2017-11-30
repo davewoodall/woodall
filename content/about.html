@@ -3,15 +3,13 @@ title: about me
 description: Hello, I'm Dave Woodall and this page is about me.
 ---
 
-<%= render '/partials/articles/with_body.*',
-  a: {
+<%= render '/partials/card.*',
+  data: {
     title: 'Interests',
-    summary: 'I enjoy thinking, tinkering, and trying new things. I got into software because it solved my own problems.'
-  }
-%>
+    summary: 'I enjoy thinking, tinkering, and trying new things. I got into software because it solved my own problems.' } %>
 
-<%= render '/partials/articles/with_body.*',
-  a: {
+<%= render '/partials/card.*',
+  data: {
     title: 'Open Source Contributions',
     list: [
       {
@@ -39,11 +37,10 @@ description: Hello, I'm Dave Woodall and this page is about me.
         url: 'https://github.com/cyu/rack-cors'
       },
     ]
-  }
-%>
+  }%>
 
-<%= render '/partials/articles/with_body.*',
-  a: {
+<%= render '/partials/card.*',
+  data: {
     title: 'Conferences Attended',
     list: [
       { name: "RailsConf, 2017" },
@@ -51,22 +48,20 @@ description: Hello, I'm Dave Woodall and this page is about me.
       { name: "Rocky Mtn Ruby, 2012 &amp; 2014" },
       { name: "Ruby Conf, 2012" }
     ]
-  }
-%>
+  }%>
 
-<%= render '/partials/articles/with_body.*',
-  a: {
+<%= render '/partials/card.*',
+  data: {
     title: 'Awards',
     list: [
       { name: "South Denver, Small Business of the Year (2011)" },
       { name: "Patent (US D632871 S1)",
         url: "https://www.google.com/patents/USD632871" }
     ]
-  }
-%>
+  }%>
 
-<%= render '/partials/articles/with_body.*',
-  a: {
+<%= render '/partials/card.*',
+  data: {
     title: 'Favorite Books',
     list: [
       { name: "POODR" },
@@ -79,12 +74,10 @@ description: Hello, I'm Dave Woodall and this page is about me.
       { name: "Definitive Guide to JS" },
       { name: "Definitive Guide to HTTP" }
     ]
-  }
-%>
+  }%>
 
-<%= render '/partials/articles/break.*',
+<%= render '/partials/break.*',
   b: {
     title: 'About this site...',
     body: "This site is a static generated site built with HTML, CSS, Ruby, and the Nanoc framework. I enjoy the freedom and flexibility of combining the power of Ruby with static content."
-  }
-%>
+  }%>

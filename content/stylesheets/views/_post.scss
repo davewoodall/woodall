@@ -12,13 +12,11 @@
       font-size: $size-12;
     }
   }
-
   @media (min-width: $break-2) {
     .post-title {
       font-size: $size-16;
     }
   }
-
   @media (min-width: $break-3) {
     .post-title {
       padding: $space-8 $space-4;

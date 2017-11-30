@@ -18,7 +18,7 @@ description: dave woodall's education
 ]
 
 posts.each do |post| %>
-  <%= render '/partials/articles/with_body.*', a: post %>
+  <%= render '/partials/card.*', data: post %>
 <% end %>
 
 <h3 class="h3 continued-education v-space">contiued education</h3>
@@ -45,10 +45,10 @@ posts.each do |post| %>
 ]
 
 posts.each do |post| %>
-  <%= render '/partials/articles/with_body.*', a: post %>
+  <%= render '/partials/card.*', data: post %>
 <% end %>
 
-<%= render '/partials/articles/break.*',
+<%= render '/partials/break.*',
   b: {
     title: "But that's not all...",
     body: "I've included some of my favorite books and conferences over in the <a href='/about/'>about</a> page"

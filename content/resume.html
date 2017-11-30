@@ -3,8 +3,8 @@ title: resume
 description: Dave Woodall's Resume
 ---
 
-<%= render '/partials/articles/with_body.*',
-  a: {
+<%= render '/partials/card.*',
+  data: {
     title: 'Senior Software Engineer',
     org: 'Phishme',
     date: 'July 2016 - Present',
@@ -12,8 +12,8 @@ description: Dave Woodall's Resume
   }
 %>
 
-<%= render '/partials/articles/with_body.*',
-  a: {
+<%= render '/partials/card.*',
+  data: {
     title: 'Software Engineer',
     org: 'LivingSocial',
     date: 'January 2014 - May 2016',
@@ -26,8 +26,8 @@ description: Dave Woodall's Resume
   }
 %>
 
-<%= render '/partials/articles/with_body.*',
-  a: {
+<%= render '/partials/card.*',
+  data: {
     title: 'Developer, Designer, Consultant',
     org: 'hireDave.me, LLC',
     date: 'March 2013 - July 2016',
@@ -43,8 +43,8 @@ description: Dave Woodall's Resume
   }
 %>
 
-  <%= render '/partials/articles/with_body.*',
-    a: {
+  <%= render '/partials/card.*',
+    data: {
       title: 'Software Developer',
       org: 'Factory Design Labs',
       date: 'November 2012 - March 2013',
@@ -52,8 +52,8 @@ description: Dave Woodall's Resume
     }
   %>
 
-  <%= render '/partials/articles/with_body.*',
-    a: {
+  <%= render '/partials/card.*',
+    data: {
       title: 'Intern',
       org: 'Pivotal Labs, Boulder',
       date: 'September 2012 - November 2012',
@@ -61,7 +61,7 @@ description: Dave Woodall's Resume
     }
   %>
 
-  <%= render '/partials/articles/break.*',
+  <%= render '/partials/break.*',
     b: {
       title: 'How I got into writing code...',
       body: "Writing code is my favorite vocation but it was not my first. If you're curious what I did before what I do now, feel free to explore my <a href='/former-life/'>former life</a>"

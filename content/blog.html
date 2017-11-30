@@ -4,8 +4,8 @@ description: Welcome to Internetland.
 ---
 
 <% published_posts.each do |post| %>
-  <%= render '/partials/articles/with_body.*',
-      a: { title: (link_to post[:title], post.path),
+  <%= render '/partials/card.*',
+      data: { title: (link_to post[:title], post.path),
            summary: post[:description]
          } %>
 <% end %>
