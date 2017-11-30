@@ -1,9 +1,8 @@
 @import '../base/base';
 #post {
   .post-header {
-    background: $color-2;
+    background: $two;
   }
-
   .post-title {
     padding: $space-4;
   }
@@ -28,41 +27,42 @@
     padding: $space-8;
     margin: 0 auto;
   }
-
+  @media (min-width: 800px) {
+    .post-body {
+      width: 60%;
+      margin: $space-8 auto;
+    }
+  }
   .last-updated {
     padding-top: $space-4;
   }
 
-  .code {
-    background: $color-2;
-    padding: $space-1;
-    line-height: 18px;
-    font-size: 12px;
-  }
+  // Syntax highlighting
+  // Activating the nanoc syntax highlighter required nokogiri
+  // which felt like overkill to avoid these style overrides.
 
   .line-numbers {
     display: $display-code-line-numbers;
   }
-
   code {
     color: $blue;
     padding: $space-1 $space-2;
     margin: 0 $space-1;
     border-radius: 4px;
-    background: $white-2;
+    background: $two;
   }
-
+  .code {
+    background: $two;
+    padding: $space-1;
+    line-height: 18px;
+    font-size: 12px;
+  }
   @media (min-width: 800px) {
     .code {
       margin-top: $space-4;
       padding: $space-4 $space-8;
       font-size: 18px;
       line-height: 32px;
-    }
-
-    .post-body {
-      width: 60%;
-      margin: $space-8 auto;
     }
   }
 }
