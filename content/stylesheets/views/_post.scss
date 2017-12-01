@@ -4,7 +4,7 @@
 
   // post header
   .post-header {
-    background: $two;
+    background: $post-header;
     margin-top: $space-4;
   }
   @media (min-width: $break-1) {
@@ -66,10 +66,10 @@
     padding: $space-1 $space-2;
     margin: 0 $space-1;
     border-radius: 4px;
-    background: $two;
+    background: $code;
   }
   .code {
-    background: $two;
+    background: $code;
     padding: $space-2 $space-4;
     font-size: 12px;
     line-height: 18px;

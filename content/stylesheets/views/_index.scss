@@ -8,14 +8,14 @@
   .skill {
     list-style: none;
     display: inline-block;
-    background: $two;
+    background: $skill;
     border-radius: 30px;
     font-size: 16px;
     padding: $space-1 $space-3;
     margin: $space-2 $space-1;
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: $break-3) {
     .grid {
       display: grid;
       grid-template-columns: repeat(10, 10%);

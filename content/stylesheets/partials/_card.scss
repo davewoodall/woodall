@@ -3,8 +3,15 @@
 .card {
   margin-top: $space-5;
   padding: $space-5;
-  background: $card;
+  background: $card-body;
   box-shadow: 0px 0px 4px #eee;
+  .p,
+  .h3,
+  .h4,
+  .li,
+  a {
+    color: $card-text;
+  }
 }
 
 @media (min-width: $break-1) {

@@ -7,19 +7,19 @@ description: Dave Woodall is a full stack web developer
     <%= render '/partials/nav.*' %>
   </nav>
   <header class="padding-1">
-    <h1 class='h2'>
+    <h1 class='h2 title'>
       <%= config[:first_name] %>
       <br>
       <%= config[:last_name] %>
     </h1>
-    <h3 class='h3'>
+    <h3 class='h3 tagline'>
       <%= config[:tagline] %>
     </h3>
   </header>
   <section class="grid">
     <section class="left-grid-panel">
       <article class='padding-1'>
-        <h3 class="h2"><%= config[:bio_title] %></h3>
+        <h3 class="h2 title"><%= config[:bio_title] %></h3>
         <p class="p overview-text v-space">
           <%= config[:bio] %>
         </p>
@@ -28,7 +28,7 @@ description: Dave Woodall is a full stack web developer
         </div>
       </article>
       <article class='padding-1'>
-        <h3 class="section-header h2"><%= config[:skill_title] %></h3>
+        <h3 class="section-header h2 title"><%= config[:skill_title] %></h3>
         <br>
         <ul class="skills v-space">
           <% config[:skills].each do |skill| %>
@@ -42,7 +42,7 @@ description: Dave Woodall is a full stack web developer
     </section>
     <section class="right-grid-panel">
       <article class='padding-1'>
-        <h3 class="h2"><%= config[:blog_title] %></h3>
+        <h3 class="h2 title"><%= config[:blog_title] %></h3>
         <h2 class='h4 main-title v-space'><%= latest_post[:title] %></h2>
         <div class='v-space' id="markdown"><%= get_post_start(latest_post) %></div>
       </article>

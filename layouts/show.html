@@ -1,7 +1,7 @@
   <% render '/default.*' do %>
     <section id="show">
       <header class='header'>
-        <h1 class='p'>
+        <h1 class='p title'>
           <%= config[:full_name] %>
         </h1>
       </header>
@@ -9,7 +9,7 @@
         <%= render '/partials/nav.*' %>
       </nav>
       <main>
-        <h1 class='h2'>
+        <h1 class='h2 title'>
           <%= item[:title] %>
         </h1>
         <%= yield %>

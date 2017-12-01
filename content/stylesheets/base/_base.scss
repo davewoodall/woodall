@@ -1,7 +1,7 @@
 @import 'normalize';
-@import 'colors';
 @import 'measurements';
 @import 'typography';
+@import 'colors';
 @import 'utilities';
 @import 'markdown';
 
@@ -12,6 +12,18 @@
 .header {
   background: $header;
   padding: $space-6;
+}
+
+.title {
+  color: $title;
+}
+
+.tagline {
+  color: $tagline;
+}
+
+b {
+  color: $bold;
 }
 
 a {

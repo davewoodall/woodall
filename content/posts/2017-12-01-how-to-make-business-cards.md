@@ -1,11 +1,13 @@
 ---
 title: how to make business cards
-description: I created a simple static website template for developers who don't have a professional website. This is a way for them to get one in less than 30 minutes! 
+description: I created a simple static website template for developers who don't have a professional website. This is a way for them to get one in less than 30 minutes!
 created_at: 2017-12-01 13:11:31 -0500
 last_updated: 2017-12-01 13:11:31 -0500
 kind: article
 published: true
 ---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0Eg3dEQVBE4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 Business Cards is a simple static website generator for software developers to have a professional online presence. Why? Because as the cobbler's kids lack shoes, many developers lack a professional site to clearly communicate their skills.
 

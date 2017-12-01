@@ -1,4 +1,6 @@
-// Colors
+// SITE COLORS
+// It is helpful to see the colors, but they are not intended to be used directly.
+// Consider styling with a THEME
 
 $white-1: #f5f3e4;
 $white-2: #fbfaf0;
@@ -19,13 +21,28 @@ $four: $gray-2;
 $five: $warm-2;
 $six: $warm-3;
 
-// COLORS THEME
+// LAYOUT THEME
 $body: $one;
 $header: $two;
-$card: $two;
+$post-header: $two;
+$footer: $header;
+
+// CARD THEME
+$card-body: $two;
+$card-text: $three;
 $break: $four;
-$footer: $six;
-$text: $three;
+
+// LINK THEME
 $links: $three;
 $active: $five;
 $hover: $six;
+
+// TEXT THEME
+$title: $three;
+$tagline: $three;
+$text: $three;
+$bold: $three;
+$code: $two;
+
+// SKILL PILL
+$skill: $header;
