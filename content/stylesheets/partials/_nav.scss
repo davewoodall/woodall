@@ -1,12 +1,12 @@
 @import '../base/base';
 
-.site-nav {
+.nav-site {
   z-index: 100;
   overflow: auto;
 }
 
 @media (min-width: $break-4) {
-  .site-nav {
+  .nav-site {
     padding: $space-2;
     position: absolute;
     right: 0;
@@ -38,4 +38,9 @@
 
 .active {
   background: $active;
+}
+
+.nav-footer {
+  width: 100%;
+  background: red;
 }

@@ -1,0 +1,14 @@
+@import '../base/base';
+
+.footer {
+  padding: $space-4;
+  background: $footer;
+  overflow: auto;
+}
+
+@media (min-width: $break-2) {
+  .footer {
+    margin-top: $space-12;
+    padding: $space-8;
+  }
+}
