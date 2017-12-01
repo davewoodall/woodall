@@ -5,32 +5,39 @@
     </h2>
     <% if (!data[:org].nil? || !data[:date].nil?)  %>
       <div class='meta'>
-        <h4 class="org h4"><%= data[:org] %></h4>
-        <h4 class="date h4"><%= data[:date] %></h4>
+        <h4 class="org h4">
+          <%= data[:org] %>
+        </h4>
+        <h4 class="date h4">
+          <%= data[:date] %>
+        </h4>
       </div>
     <% end %>
   </header>
-
   <% if (!data[:summary].nil? || !data[:list].nil?)  %>
-    <section class='article-summary'>
-
+    <section class='card-summary'>
       <% if !data[:summary].nil? %>
-        <p class='p'><%= data[:summary] %></p>
+        <p class='p'>
+          <%= data[:summary] %>
+        </p>
       <% end %>
-
       <% if !data[:list].nil? %>
         <ul>
           <% data[:list].each do |item| %>
             <% if !item[:url].nil? %>
-              <li class="li"><a href="<%= item[:url] %>" target="_blank"><%= item[:name] %></a></li>
+              <li class="li">
+                <a href="<%= item[:url] %>" target="_blank">
+                  <%= item[:name] %>
+                </a>
+              </li>
             <% else %>
-              <li class="li"><%= item[:name] %></li>
+              <li class="li">
+                <%= item[:name] %>
+              </li>
             <% end %>
           <% end %>
         </ul>
       <% end %>
-
     </section>
   <% end %>
-
 </article>

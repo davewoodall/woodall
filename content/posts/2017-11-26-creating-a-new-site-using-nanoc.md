@@ -1,6 +1,6 @@
 ---
 title: Create &amp; deploy a static website with nanoc 4 &amp; github pages
-created_at: 2017-11-26 11:44:17 -0500
+created_at: 2017-11-26
 last_updated: 2017-11-26
 kind: article
 published: true

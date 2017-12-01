@@ -1,6 +1,6 @@
 ---
 title: nanoc stylesheets
-created_at: 2017-11-26 14:50:03 -0500
+created_at: 2017-11-26
 last_updated: 2017-11-26
 kind: article
 published: false

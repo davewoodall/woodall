@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title><%= config[:full_name] %> | <%= @item[:title] %></title>
+  <title>
+    <%= config[:full_name] %> | <%= @item[:title] %>
+  </title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="<%= @item[:description] %>" />
-  <meta name="keywords" content="dave woodall remote web developer coder ruby on rails vue js" />
-  <meta name="author" content="dave woodall wwwoodall fakefarm" />
+  <meta name="keywords" content="<%= config[:default_keywords] %>" />
+  <meta name="author" content="<%= config[:author] %>" />
   <link rel="stylesheet" href="/stylesheets/application.css">
 </head>
 <body>
   <body class='body'>
+
     <%= yield %>
+
     <div class="scripts">
       <script>
       (function(b, o, i, l, e, r) {
@@ -27,7 +31,7 @@
   e.src = '//www.google-analytics.com/analytics.js';
   r.parentNode.insertBefore(e, r);
 })(window, document, 'script', 'ga');
-ga('create', 'UA-40303853-1', 'auto');
+ga('create', '<%= config[:google_analytics] %>', 'auto');
 ga('send', 'pageview');
 </script>
   </div>

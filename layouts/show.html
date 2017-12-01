@@ -1,11 +1,15 @@
   <% render '/default.*' do %>
-    <section id="l-show">
+    <section id="show">
       <header class='header'>
-        <h1 class='p'><%= config[:full_name] %></h1>
+        <h1 class='p'>
+          <%= config[:full_name] %>
+        </h1>
       </header>
       <%= render '/partials/nav.*' %>
       <main>
-        <h1 class='h2'><%= item[:title] %></h1>
+        <h1 class='h2'>
+          <%= item[:title] %>
+        </h1>
         <%= yield %>
       </main>
     </section>

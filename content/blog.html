@@ -5,7 +5,10 @@ description: Welcome to Internetland.
 
 <% published_posts.each do |post| %>
   <%= render '/partials/card.*',
-      data: { title: (link_to post[:title], post.path),
-           summary: post[:description]
-         } %>
+      data: {
+        title: (link_to post[:title], post.path),
+        date: created_at(post),
+        summary: post[:description]
+
+      } %>
 <% end %>

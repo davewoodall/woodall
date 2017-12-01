@@ -1,7 +1,7 @@
 ---
 title: How to create a Vue Plugin Component
-created_at: 2017-11-29 10:03:18 -0500
-last_updated: 2017-11-29 10:03:18 -0500
+created_at: 2017-11-29
+last_updated: 2017-11-29
 kind: article
 published: true
 description: How to create a Vue Plugin Component

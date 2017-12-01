@@ -1,8 +1,8 @@
 ---
 title: how to write a technical blog post
 description: Some simple suggestions on how and why you should write technical posts.
-created_at: 2017-11-30 13:16:30 -0500
-last_updated: 2017-11-30 13:16:30 -0500
+created_at: 2017-11-30
+last_updated: 2017-11-30
 kind: article
 published: true
 ---
