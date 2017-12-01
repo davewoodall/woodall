@@ -1,32 +1,31 @@
-$red: #e36a4f;
-$white-2: #fbfaf0;
+// Colors
+
 $white-1: #f5f3e4;
-$pudding: #ffecaa;
-$gray: #4b4b4b;
-$lt-gray: #7a7a7a;
-$orange: #feb061;
-$blue: #24d0f6;
+$white-2: #fbfaf0;
+$white-3: #fcfcfc;
+$white-4: #f0f0f0;
+$gray-1: #4b4b4b;
+$gray-2: #7a7a7a;
+$warm-1: #e36a4f;
+$warm-2: #feb061;
+$warm-3: #ffecaa;
+$cool-1: #24d0f6;
 
-.orange {
-  color: $orange;
-}
+// THEME HELPER (optional)
+$one: $white-1;
+$two: $white-2;
+$three: $gray-1;
+$four: $gray-2;
+$five: $warm-2;
+$six: $warm-3;
 
-.bg-orange {
-  background: $orange;
-}
-
-.blue {
-  color: $blue;
-}
-
-.bg-blue {
-  background: $blue;
-}
-
-.white {
-  color: $white-1;
-}
-
-.bg-white {
-  background: $white-1;
-}
+// COLORS THEME
+$body: $one;
+$header: $two;
+$card: $two;
+$break: $four;
+$footer: $six;
+$text: $three;
+$links: $three;
+$active: $five;
+$hover: $six;

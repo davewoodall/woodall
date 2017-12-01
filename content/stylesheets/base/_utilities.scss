@@ -4,22 +4,22 @@
   margin-top: 1em;
 }
 
+// padding helper
 .padding-1 {
   padding: $space-2 $space-2 0;
 }
-
 @media (min-width: $break-2) {
   .padding-1 {
     padding: $space-5 $space-5 0;
   }
 }
-
 @media (min-width: $break-4) {
   .padding-1 {
     padding: $space-8 $space-8 0;
   }
 }
 
+// space helper
 .space-1 {
   padding: $space-2 $space-2 0;
 }

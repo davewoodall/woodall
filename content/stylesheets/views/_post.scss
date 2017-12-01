@@ -1,5 +1,7 @@
 @import '../base/base';
 #post {
+  $display-code-line-numbers: none;
+
   // post header
   .post-header {
     background: $two;
@@ -60,7 +62,7 @@
     display: $display-code-line-numbers;
   }
   code {
-    color: $blue;
+    color: $cool-1;
     padding: $space-1 $space-2;
     margin: 0 $space-1;
     border-radius: 4px;
