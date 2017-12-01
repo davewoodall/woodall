@@ -1,0 +1,33 @@
+@import 'base/measurements';
+@import 'base/colors';
+
+// LAYOUT THEME
+$body: $one;
+$header: $two;
+$blog-post-header: $two;
+$footer: $header;
+
+// CARD THEME
+$card-body: $two;
+$card-text: $three;
+$break: $four;
+
+// LINK THEME
+$links: $three;
+$active: $five;
+$hover: $six;
+
+// TEXT THEME FONT
+// Add fonts to nanoc.yml
+$header-font: 'Barlow Condensed', sans-serif;
+$body-font: 'Roboto', sans-serif;
+
+// TEXT THEME COLORS
+$title: $three;
+$tagline: $three;
+$text: $three;
+$bold: $three;
+$code: $two;
+
+// SKILL PILL
+$skill: $header;

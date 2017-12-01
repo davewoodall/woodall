@@ -6,6 +6,7 @@ github_account: fakefarm
 default_keywords: dave woodall remote web developer coder ruby on rails vue js
 author: dave woodall wwwoodall fakefarm
 google_analytics: UA-40303853-1
+google_fonts: ['Barlow+Condensed', 'Roboto' ]
 
 bio_title: 'Bio'
 skill_title: 'Bingo'

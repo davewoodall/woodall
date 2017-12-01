@@ -1,8 +1,7 @@
-@import 'base/base';
-
 @import 'partials/nav';
 @import 'partials/card';
 @import 'partials/break';
+@import 'partials/header';
 @import 'partials/footer';
 
 @import 'views/index';
@@ -10,3 +9,5 @@
 @import 'views/education';
 
 @import 'layouts/show';
+
+@import 'site_theme';

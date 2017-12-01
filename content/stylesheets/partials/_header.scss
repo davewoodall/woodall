@@ -1,0 +1,14 @@
+@import '../base/base';
+
+.header {
+  background: $header;
+  padding: $space-6;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.title {
+  color: $title;
+}

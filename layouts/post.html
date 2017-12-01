@@ -1,9 +1,5 @@
 <% render '/default.*' do %>
-  <header class='header'>
-    <h1 class='p title'>
-      <%= config[:full_name] %>
-    </h1>
-  </header>
+  <%= render '/partials/header.*' %>
   <section id="post">
     <nav class='nav-site'>
       <%= render '/partials/nav.*' %>
