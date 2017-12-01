@@ -3,17 +3,20 @@ title: education
 description: dave woodall's education
 ---
 
+<p class="p">My traditional education focused around communications and finance. Those experiences served me well as an entrepreneur. I applied my experiences into starting three successful (as I define success) companies and selling one of them.</p>
+
 <% posts = [
   {
     title: 'M.S. Finance',
     org: 'University of Denver',
     date: '2011',
-    summary: 'Feel free to contact me if you are in need of software help.'
+    summary: 'Focus on entreprenurial finance, funding, and managment'
   },
   {
-    title: 'B.S. Communications',
+    title: 'B.S. Communications (Advertising &amp; P.R.)',
     org: 'Liberty University',
-    date: '2000'
+    date: '2000',
+    summary: 'I used many of my school based projects to start my first t-shirt company. I had a captive audience in the student body who were my first customers. My college experience was the perfect startup incubator.'
   }
 ]
 
@@ -23,30 +26,49 @@ posts.each do |post| %>
 
 <h3 class="h3 continued-education v-space">contiued education</h3>
 
+<p class="p">I started coding by myself but knew I would benefit from taking some courses. Thankfully, that was around the time that the first coding bootcamps started.</p>
+
 <% posts = [
   {
     title: 'Sandi Metz Course',
     org: 'Durham, NC',
     date: '2016',
-    summary: 'Feel free to contact me if you are in need of software help.'
+    summary: 'Yes, <i>THE</i> Sandi Metz! I had the tremendous opportunity to take her 3-Day Object Oriented course. I had already read "POODR" twice. She solidified many of the views about software. I am eternally grateful to Phishme for making this happen.'
   },
   {
-    title: 'The original Code Academy',
+    title: '(the original) Code Academy',
     org: 'Chicago, IL',
     date: '2012',
-    summary: 'Before Code Bootcamps were a thing, I attended the original code bootcamp. I was the third class and the last one before the movement exploded.'
+    summary: 'I attended Code Academy, which suffered from being named the same as the popular online site named the same but was not affiliated. The Code Academy I attended was the first popular Coding Bootcamp. I was the third class and the last one before the movement exploded. It was an amazing 3 month experience which gave me the confidence to forge ahead in my new career.'
   },
   {
     title: 'RoleModel Software Craftsmanship',
     org: 'Holly Springs, NC',
     date: '2012',
-    summary: 'Before Code Bootcamps were a thing, I attended the original code bootcamp. I was the third class and the last one before the movement exploded.'
+    summary: "RMSC offered a week long bootcamp experience that gave an intense overview of all things software. It was a great way to get my bearings before I started Code Academy."
   }
 ]
 
 posts.each do |post| %>
   <%= render '/partials/card.*', data: post %>
 <% end %>
+
+<h3 class="h3 continued-education v-space">Online education</h3>
+
+
+<%= render '/partials/card.*', data: {
+  title: 'Online Training',
+  summary: 'I have invested over 2,000 hours watching software videos on the following;',
+  list: [
+    { name: 'Lynda' },
+    { name: 'PluralSight' },
+    { name: 'GoRails' },
+    { name: 'RailsCasts' },
+    { name: 'Tea Leaf Academy' },
+    { name: 'Udemy' },
+    { name: 'Code School' }
+  ]
+} %>
 
 <%= render '/partials/break.*',
   data:{
