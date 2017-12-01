@@ -19,8 +19,11 @@ $hover: $six;
 
 // TEXT THEME FONT
 // Add fonts to nanoc.yml
-$header-font: 'Barlow Condensed', sans-serif;
-$body-font: 'Roboto', sans-serif;
+$backup-header-font: sans-serif;
+$header-font: 'Barlow Condensed', $backup-header-font;
+
+$backup-body-font: sans-serif;
+$body-font: 'Roboto', $backup-body-font;
 
 // TEXT THEME COLORS
 $title: $three;
