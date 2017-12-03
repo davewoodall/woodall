@@ -5,4 +5,6 @@
 <%= link_to_unless_current 'blog', '/blog/', class: 'nav-link' %>
 <%= link_to_unless_current 'latest post', latest_post.path, class: 'nav-link' %>
 <%= link_to_unless_current 'contact', '/contact/', class: 'nav-link' %>
-<%= link_to 'github', "http://www.github.com/#{config[:github_account]}" , class: 'nav-link', target: '_blank' %>
+<% if config[:github_account] %>
+  <%= link_to 'github', "http://www.github.com/#{config[:github_account]}" , class: 'nav-link', target: '_blank' %>
+<% end %>

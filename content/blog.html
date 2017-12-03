@@ -4,11 +4,12 @@ description: Welcome to Internetland.
 ---
 
 <% published_posts.each do |post| %>
-  <%= render '/partials/card.*',
+  <a class='blog-post-card' href="<%= post.path %>">
+    <%= render '/partials/card.*',
       data: {
-        title: (link_to post[:title], post.path),
+        title: post[:title],
         date: created_at(post),
         summary: post[:description]
-
       } %>
+  </a>
 <% end %>

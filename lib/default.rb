@@ -6,12 +6,16 @@ include Nanoc::Helpers::Text
 
 
 def google_fonts_loader
-  case config[:google_fonts].length
+  fonts = case config[:google_fonts].length
   when 1
-    ''
+    base_url("#{config[:google_fonts][0]}")
   when 2
-    %Q(<link href="https://fonts.googleapis.com/css?family=#{config[:google_fonts][0]}|#{config[:google_fonts][1]}" rel="stylesheet">)
+    base_url("#{config[:google_fonts][0]}|#{config[:google_fonts][1]}")
   else
     ''
   end
+end
+
+def base_url(fonts)
+  %Q(<link href="https://fonts.googleapis.com/css?family=#{fonts}" rel="stylesheet">)
 end

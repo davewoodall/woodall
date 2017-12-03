@@ -7,8 +7,6 @@ kind: article
 published: true
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0Eg3dEQVBE4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-
 Business Cards is a simple static website generator for software developers to have a professional online presence. Why? Because as the cobbler's kids lack shoes, many developers lack a professional site to clearly communicate their skills.
 
 This framework is intended for you fix this and forget it! Seriously, you can fork, push, and be public in 5 minutes if you understand Ruby, ERB, HTML, and CSS - which you should if you consider yourself a web developer! :smile:

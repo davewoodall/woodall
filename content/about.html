@@ -3,78 +3,9 @@ title: about me
 description: Hello, I'm Dave Woodall and this page is about me.
 ---
 
-<%= render '/partials/card.*',
-  data: {
-    title: 'Interests',
-    summary: 'I enjoy thinking, tinkering, and trying new things. I got into software because it solved my own problems.' } %>
-
-<%= render '/partials/card.*',
-  data: {
-    title: 'Open Source Contributions',
-    list: [
-      {
-        name: 'Jasmine Rails',
-        url: 'https://github.com/searls/jasmine-rails'
-      },
-      {
-        name: 'Underscore',
-        url: 'https://github.com/jashkenas/underscore'
-      },
-      {
-        name: 'Ransack',
-        url: 'https://github.com/activerecord-hackery/ransack'
-      },
-      {
-        name: 'Middleman',
-        url: 'https://github.com/middleman/middleman'
-      },
-      {
-        name: 'Multiple Select',
-        url: 'https://github.com/wenzhixin/multiple-select'
-      },
-      {
-        name: 'Rack CORS',
-        url: 'https://github.com/cyu/rack-cors'
-      },
-    ]
-  }%>
-
-<%= render '/partials/card.*',
-  data: {
-    title: 'Conferences Attended',
-    list: [
-      { name: "RailsConf, 2017" },
-      { name: "An Event Apart, 2016" },
-      { name: "Rocky Mtn Ruby, 2012 &amp; 2014" },
-      { name: "Ruby Conf, 2012" }
-    ]
-  }%>
-
-<%= render '/partials/card.*',
-  data: {
-    title: 'Awards',
-    list: [
-      { name: "South Denver, Small Business of the Year (2011)" },
-      { name: "Patent (US D632871 S1)",
-        url: "https://www.google.com/patents/USD632871" }
-    ]
-  }%>
-
-<%= render '/partials/card.*',
-  data: {
-    title: 'Favorite Books',
-    list: [
-      { name: "POODR" },
-      { name: "TDD by Example" },
-      { name: "Rails Antipatterns" },
-      { name: "Refactoring" },
-      { name: "Adaptive Web Design" },
-      { name: "Responsive Web Design" },
-      { name: "JavaScript Patterns" },
-      { name: "Definitive Guide to JS" },
-      { name: "Definitive Guide to HTTP" }
-    ]
-  }%>
+<% config[:about].each do |entry| %>
+  <%= render '/partials/card.*', data: entry %>
+<% end %>
 
 <%= render '/partials/break.*',
   data:{
