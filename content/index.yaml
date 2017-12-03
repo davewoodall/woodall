@@ -3,7 +3,7 @@ description: Dave Woodall is a full stack web developer
 
 first_name: DAVE
 last_name: WOODALL
-tagline: URL to SQL | full stack web developer
+tagline: <span class='body-font highlight-color'>'URL to SQL'</span>&nbsp; full stack web developer
 bio_title: 'Bio'
 skill_title: 'Bingo'
 blog_title: 'Blog'
