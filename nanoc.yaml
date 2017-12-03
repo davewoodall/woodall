@@ -3,7 +3,9 @@
 # 'Slabo+27px', 'Barlow Condensed', 'Lora', Roboto, 'Open Sans'
 google_fonts: ['Barlow Condensed', 'Roboto' ]
 
-blog_comments: true
+# Blog Comments with disqus
+# https://disqus.com/
+use_disqus_for_comments: true
 discuss_subdomain: davewoodall
 
 # Meta

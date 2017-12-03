@@ -8,6 +8,7 @@ description: Welcome to Internetland.
     <%= render '/partials/card.*',
       data: {
         title: post[:title],
+        tags: show_tags(post),
         date: created_at(post),
         summary: post[:description]
       } %>

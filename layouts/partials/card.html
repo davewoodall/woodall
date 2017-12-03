@@ -3,8 +3,11 @@
     <h2 class='h3'>
       <%= data[:title] %>
     </h2>
-    <% if (!data[:org].nil? || !data[:date].nil?)  %>
+    <% if (!data[:org].nil? || !data[:date].nil? || !data[:tags].nil?)  %>
       <div class='meta'>
+        <div class="tags">
+          <%= data[:tags] %>
+        </div>
         <h4 class="org h4">
           <%= data[:org] %>
         </h4>

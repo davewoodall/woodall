@@ -14,14 +14,14 @@
         Last Updated: <%= get_pretty_date(item) %>
       </div>
       <%= yield %>
-      <% if config[:blog_comments] %>
+      <% if config[:use_disqus_for_comments] %>
       <div class='comments'>
         <div id="disqus_thread"></div>
       </div>
       <% end %>
     </article>
   </section>
-  <% if config[:blog_comments] %>
-    <%= render '/partials/comments.*' %>
+  <% if config[:use_disqus_for_comments] %>
+    <%= render '/partials/disqus.*' %>
   <% end %>
 <% end %>

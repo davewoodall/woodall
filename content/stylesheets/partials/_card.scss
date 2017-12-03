@@ -34,9 +34,20 @@
   margin-top: $space-4;
 }
 
-.org {
+.org,
+.tags {
   float: left;
+  // margin-top: $space-2;
 }
+
+.tag {
+  font-size: 0.75em;
+  text-decoration: none;
+  padding: $space-2 $space-3;
+  margin-right: $space-4;
+  background: $one;
+}
+
 .date {
   float: right;
 }
