@@ -4,6 +4,12 @@
   margin-top: 1em;
 }
 
+.italic-space {
+  // TODO fix this
+  padding-top: $space-4;
+  font-style: italic;
+}
+
 // padding helper
 .padding-1 {
   padding: $space-2 $space-2 0;
