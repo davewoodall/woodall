@@ -1,16 +1,38 @@
+@import '../site_theme';
 @import 'measurements';
+
+// My style junk drawer.
+// TODO - keep it cleaned up!
+
+.body {
+  background: $body;
+}
+
+.tagline {
+  color: $tagline;
+}
+
+a {
+  color: $links;
+}
+
+b {
+  color: $bold;
+}
+
+.blog-post-card {
+  text-decoration: none;
+}
 
 .v-space {
   margin-top: 1em;
 }
 
 .italic-space {
-  // TODO fix this
   padding-top: $space-4;
   font-style: italic;
 }
 
-// padding helper
 .padding-1 {
   padding: $space-2 $space-2 0;
 }
@@ -25,7 +47,6 @@
   }
 }
 
-// space helper
 .space-1 {
   padding: $space-2 $space-2 0;
 }

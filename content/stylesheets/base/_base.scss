@@ -4,25 +4,3 @@
 @import 'colors';
 @import 'utilities';
 @import 'markdown';
-
-// TODO - move these somewhere.
-
-.body {
-  background: $body;
-}
-
-.tagline {
-  color: $tagline;
-}
-
-b {
-  color: $bold;
-}
-
-a {
-  color: $links;
-}
-
-.blog-post-card {
-  text-decoration: none;
-}
