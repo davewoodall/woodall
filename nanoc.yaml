@@ -4,6 +4,7 @@
 google_fonts: ['Barlow Condensed', 'Roboto' ]
 
 blog_comments: true
+discuss_subdomain: davewoodall
 
 # Meta
 github_account: fakefarm
