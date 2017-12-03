@@ -1,14 +1,5 @@
----
-title: resume
-description: Dave Woodall's Resume
----
-
-<% config[:resume].each do |entry| %>
+<% item[:resume].each do |entry| %>
   <%= render '/partials/card.*', data: entry %>
 <% end %>
 
-<%= render '/partials/break.*', data:{
-    title: 'The Internet is a fad.',
-    body: "At least, that's what I originally thought. Unlike many of my co-workers, I did not start programming at the age of 6 because my dad brought home a <i>T-Bop 85</i>. Feel free to read up on my <a href='/former-life/'>former life</a> before I started writing code full time."
-  }
-%>
+<%= render '/partials/break.*', data: item[:break] %>

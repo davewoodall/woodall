@@ -1,37 +1,33 @@
----
-title: "'URL to SQL' Full Stack Web Developer"
-description: Dave Woodall is a full stack web developer
----
 <section id='landing'>
   <nav class='nav-site'>
     <%= render '/partials/nav.*' %>
   </nav>
   <header class="padding-1">
     <h1 class='h2 title'>
-      <%= config[:first_name] %>
+      <%= item[:first_name] %>
       <br>
-      <%= config[:last_name] %>
+      <%= item[:last_name] %>
     </h1>
     <h3 class='h3 tagline'>
-      <%= config[:tagline] %>
+      <%= item[:tagline] %>
     </h3>
   </header>
   <section class="grid">
     <section class="left-grid-panel">
       <article class='padding-1'>
-        <h3 class="h2 title"><%= config[:bio_title] %></h3>
+        <h3 class="h2 title"><%= item[:bio_title] %></h3>
         <p class="p overview-text v-space">
-          <%= config[:bio] %>
+          <%= item[:bio] %>
         </p>
         <div class='v-space'>
           <%= link_to 'more about me &rsaquo;', '/about/' %>
         </div>
       </article>
       <article class='padding-1'>
-        <h3 class="section-header h2 title"><%= config[:skill_title] %></h3>
+        <h3 class="section-header h2 title"><%= item[:skill_title] %></h3>
         <br>
         <ul class="skills v-space">
-          <% config[:skills].each do |skill| %>
+          <% item[:skills].each do |skill| %>
           <li class="skill"><%= skill %></li>
           <% end %>
         </ul>
@@ -42,7 +38,7 @@ description: Dave Woodall is a full stack web developer
     </section>
     <section class="right-grid-panel">
       <article class='padding-1'>
-        <h3 class="h2 title"><%= config[:blog_title] %></h3>
+        <h3 class="h2 title"><%= item[:blog_title] %></h3>
         <h2 class='h4 main-title v-space'><%= latest_post[:title] %></h2>
         <div class='v-space' id="markdown"><%= get_post_start(latest_post) %></div>
       </article>

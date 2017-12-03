@@ -1,8 +1,3 @@
----
-title: contact
-description: Feel free to contact me for work, mentorship, or other opportunities.
----
-
-<% config[:contact].each do |entry| %>
+<% item[:contact].each do |entry| %>
   <%= render '/partials/card.*', data: entry %>
 <% end %>

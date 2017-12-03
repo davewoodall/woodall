@@ -1,15 +1,7 @@
----
-title: fomer life
-description: Before writing software I was a business owner, art director, and graphic designer. I graduated undergrad in 2000, the year the Tech Bubble burst. I was already gaining traction with my apparel business so I saw no reason to change course back then. Call me slow, but it took me eight years before I realized that the Internet was here to stay.
----
 <p><%= item[:description] %></p>
 
-<% config[:former_life].each do |entry| %>
+<% item[:former_life].each do |entry| %>
   <%= render '/partials/card.*', data: entry %>
 <% end %>
 
-<div class="break">
-  <p class="p">
-    That's memory lane for me. Makes you realize you don't really know how life's road will lead.
-  </p>
-</div>
+<%= render '/partials/break.*', data: item[:break] %>

@@ -1,0 +1,51 @@
+title: resume
+description: Dave Woodall's Resume
+resume:
+  -
+    title: 'Senior Software Engineer'
+    org: '<a href="http://www.phishme.com" target="_blank">Phishme</a>'
+    date: 'July 2016 - Present'
+    summary: 'Primarily responsible for Vue JS Application which talks to Rails API. The Vue app handles a variety of CRUD operations. Additionally, I contribute to API development as it relates to other web services in the organization which consume the API. I am an active participate in road map discussions, backlog grooming, as well as team retros. My current activities are primiarly around writing the following;'
+    list:
+      - name: 'Vue JS'
+      - name: 'Rails API'
+      - name: 'HTML &amp; CSS'
+      - name: 'Webpack'
+      - name: 'Node'
+      - name: 'RSpec'
+  -
+    title: 'Software Engineer'
+    org: 'LivingSocial'
+    date: 'January 2014 - May 2016'
+    summary: 'Most of my work was front-end on Rails tasks because of my appreciation for UI. I worked on three teams during my time;'
+    list:
+      - name: "Team 1: Escapes Retail Vertical"
+      - name: "Team 2: Personalization Data Science GEM &amp; UI"
+      - name: "Team 3: Internal Tools, Customer Service"
+  -
+    title: 'Software Consultant'
+    org: 'hireDave.me, LLC'
+    date: 'March 2013 - July 2016'
+    summary: 'Design and development services for a variety of clients. Skills I was hired for include: Ruby on Rails, HTML/CSS, JQuery/JavaScript, Angular, Adobe Photoshop. My primary clients included;'
+    list:
+      - name: "Marshill.com"
+      - name: "3rdRevolution.com"
+      - name: "InvitedHome.com"
+      - name: "SuppFinder.com"
+      - name: "LoganStreetCapital.com"
+      - name: "SDGLawLLC.com"
+      - name: "BrandFolder.com"
+  -
+    title: 'Software Developer'
+    org: 'Factory Design Labs'
+    date: 'November 2012 - March 2013'
+    summary: "I had the priviledge of working for Factory Design Labs during it's hay day when worked on accounts such as. Oakley, The North Face, and Calloway Golf. My primary responsibility was developing an internal Rails App for managing employee computer equipment."
+  -
+    title: 'Intern'
+    org: 'Pivotal Labs, Boulder'
+    date: 'September 2012 - November 2012'
+    summary: "Had the chance to be mentored by all the Pivots in the Boulder Office. I worked on various software projects alongside several talented developers. It was an incredible start to my career as I learned the importance of pair programming, test driven development, and agile methodologies."
+
+break:
+    title: 'The Internet is a fad.'
+    body: "At least, that's what I originally thought. Unlike many of my co-workers, I did not start programming at the age of 6 because my dad brought home a <i>T-Bop 85</i>. Feel free to read up on my <a href='/former-life/'>former life</a> before I started writing code full time."

@@ -1,0 +1,38 @@
+title: fomer life
+description: Before writing software I was a business owner, art director, and graphic designer. I graduated undergrad in 2000, the year the Tech Bubble burst. I was already gaining traction with my apparel business so I saw no reason to change course back then. Call me slow, but it took me eight years before I realized that the Internet was here to stay.
+
+former_life:
+  -
+    title: 'Co-Founder &amp; CEO'
+    org: "AMB3R custom t-shirts"
+    date: 'April 2008 - July 2012'
+    summary: "I co-founded AMB3R with $5,000 and a vision to sell t-shirts differently. Our first year we sold $380,000 in apparel. We sold almost $1M the fourth year, which is the year I sold to my business partner so that I could subsidize my switch into becoming a full time developer.</a>"
+    list:
+      - name: '$3M in total sales'
+      - name: 'Successful exit to start a new career!'
+  -
+    title: "Art Director"
+    org: "Ouray Sportswear"
+    date: "January 2009 - October 2011"
+    summary: "I was recruited by a Private Equity firm to join the new management team of Ouray. I hired, fired, and managed 9 graphic designers to release 1,200 graphics a year. We won small business of the year in 2011. I was an awarded a patent for a t-shirt concept I created."
+    list:
+      - name: 'Won South Denver Small Business of the year, 2001'
+      - name: 'Won a Patent'
+  -
+    title: "Account Executive"
+    org: "Futureshirts"
+    date: "January 2005 - October 2008"
+    summary: "Futureshirts was a small music merchandise company doing about $2M in annual revenues. I was responsible to aquire new business, servicing customers with new product and design ideas. Oftentimes, it was easier for me to design my own graphics for their merchandise so I was able to lean on my graphic design experience."
+  -
+    title: "Graphic Designer, Freelance"
+    org: "Dub Design Company"
+    date: "January 2003 - January 2005"
+    summary: "Dub, short for 'W'. My work with Church Clothes brought business for other graphic design tasks. I designed t-shirts, brochures, websites, and postcards for anyone who asked."
+  -
+    title: "Sole Proprietor"
+    org: "Church Clothes"
+    date: "October 1996 - October 2006"
+    summary: "I went to a religious college. As such, I started a tongue and cheeck clothing line titled 'church clothes'. Some of my favorite experiences building the brand were selling into 100 retailers, opening two Mall kiosks, and producing a 7 city promotional music tour by select retailers."
+
+break:
+  body: That's memory lane for me. Makes you realize you don't really know how life's road will lead.

@@ -1,14 +1,5 @@
----
-title: about me
-description: Hello, I'm Dave Woodall and this page is about me.
----
-
-<% config[:about].each do |entry| %>
+<% item[:about].each do |entry| %>
   <%= render '/partials/card.*', data: entry %>
 <% end %>
 
-<%= render '/partials/break.*',
-  data:{
-    title: 'About this site...',
-    body: "This site is a static generated site built with HTML, CSS, Ruby, and the Nanoc framework. I enjoy the freedom and flexibility of combining the power of Ruby with static content."
-  }%>
+<%= render '/partials/break.*', data: item[:break] %>

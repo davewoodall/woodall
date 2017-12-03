@@ -1,0 +1,48 @@
+title: education
+description: dave woodall's education
+
+formal_education:
+  -
+    title: 'M.S. Finance'
+    org: 'University of Denver'
+    date: '2011'
+    summary: 'Focus on entreprenurial finance, funding, and managment'
+  -
+    title: 'B.S. Communications (Advertising &amp; P.R.)'
+    org: 'Liberty University'
+    date: '2000'
+    summary: 'I used many of my school based projects to start my first t-shirt company. I had a captive audience in the student body who were my first customers. My college experience was the perfect startup incubator.'
+
+continued_education:
+  -
+    title: 'Sandi Metz Course'
+    org: 'Durham, NC'
+    date: '2016'
+    summary: 'Yes, <i>THE</i> Sandi Metz! I had the tremendous opportunity to take her 3-Day Object Oriented course. I had already read "POODR" twice. She solidified many of the views about software. I am eternally grateful to Phishme for making this happen.'
+  -
+    title: '(the original) Code Academy'
+    org: 'Chicago, IL'
+    date: '2012'
+    summary: 'I attended Code Academy, which suffered from being named the same as the popular online site named the same but was not affiliated. The Code Academy I attended was the first popular Coding Bootcamp. I was the third class and the last one before the movement exploded. It was an amazing 3 month experience which gave me the confidence to forge ahead in my new career.'
+  -
+    title: 'RoleModel Software Craftsmanship'
+    org: 'Holly Springs, NC'
+    date: '2012'
+    summary: "RMSC offered a week long bootcamp experience that gave an intense overview of all things software. It was a great way to get my bearings before I started Code Academy."
+
+online_education:
+  -
+    title: 'Online Training'
+    summary: 'I have invested over 2,000 hours watching software videos on the following;'
+    list:
+      - name: 'Lynda'
+      - name: 'PluralSight'
+      - name: 'GoRails'
+      - name: 'RailsCasts'
+      - name: 'Tea Leaf Academy'
+      - name: 'Udemy'
+      - name: 'Code School'
+
+break:
+  title: "But that's not all..."
+  body: "I've included some of my favorite books and conferences over in the <a href='/about/'>about</a> page"
