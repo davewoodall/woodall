@@ -3,6 +3,8 @@
 # 'Slabo+27px', 'Barlow Condensed', 'Lora', Roboto, 'Open Sans'
 google_fonts: ['Barlow Condensed', 'Roboto' ]
 
+blog_comments: true
+
 # Meta
 github_account: fakefarm
 default_keywords: dave woodall remote web developer coder ruby on rails vue js

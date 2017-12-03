@@ -1,6 +1,6 @@
 ---
 title: how to make business cards
-description: I created a simple static website template for developers who don't have a professional website. This is a way for them to get one in less than 30 minutes!
+description: "I created a simple static website template for developers who don not have a professional website. This is a way for them to get one in less than 30 minutes!"
 created_at: 2017-12-01 13:11:31 -0500
 last_updated: 2017-12-01 13:11:31 -0500
 kind: article
