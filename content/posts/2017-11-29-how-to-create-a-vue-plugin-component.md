@@ -5,6 +5,7 @@ last_updated: 2017-11-29
 kind: article
 published: true
 description: How to create a Vue Plugin Component
+tags: ['vue-js', 'tutorial']
 ---
 
 Vue components are the predominant approach to Vue Apps. However, there are situations which require universal access to state (data) or behavior (methods). Vue Plugins are how to address this situation.

@@ -10,8 +10,17 @@
       </h1>
     </header>
     <article class='post-body' id="markdown">
+      <div class="tags">
+         <% if item[:tags] %>
+          <b>tags</b> <% item[:tags].each do |tag| %>
+            <%= tag_link tag, class: 'tag primary' %>
+          <% end  %>
+        <% end  %>
+      </div>
       <div class='p last-updated'>
-        Last Updated: <%= get_pretty_date(item) %>
+        <p class='p'>
+          Last Updated: <%= get_pretty_date(item) %>
+        </p>
       </div>
       <%= yield %>
       <% if config[:use_disqus_for_comments] %>

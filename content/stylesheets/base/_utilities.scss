@@ -1,4 +1,5 @@
 @import '../site_theme';
+@import 'colors';
 @import 'measurements';
 
 // My style junk drawer.
@@ -12,8 +13,20 @@
   color: $tagline;
 }
 
-a {
+.primary {
+  background: $primary;
+  &:hover {
+    background: $hover;
+  }
+}
+
+a,
+.a {
+  transition: all 300ms;
   color: $links;
+  &:hover {
+    background: $hover;
+  }
 }
 
 b {

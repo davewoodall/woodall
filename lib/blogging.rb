@@ -7,12 +7,21 @@ module PostHelper
     attribute_to_time(post[:created_at]).strftime('%B %-d, %Y')
   end
 
+  # TODO
+  def tag_cloud
+    if item[:tags]
+      item[:tags].each do |tag|
+        "#{tag_link tag, class: 'tag'}"
+      end.join(" ")
+    end
+  end
+
   def show_tags(post)
     if tags_for(post) == '(none)'
       ''
     else
       post[:tags].map do |tag|
-        "#{link_to tag, '', class: 'tag'}"
+        "#{tag_link tag, class: 'tag'}"
       end.join(" ")
     end
   end

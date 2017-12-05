@@ -4,7 +4,7 @@ description: business card template
 created_at: 2017-12-01 12:54:05 -0500
 last_updated: 2017-12-01 12:54:05 -0500
 kind: article
-published: true
+published: false
 ---
 
 A business card is an erb partial which will manage responsive layout and text.

@@ -37,7 +37,6 @@
 .org,
 .tags {
   float: left;
-  // margin-top: $space-2;
 }
 
 .tag {
@@ -46,6 +45,7 @@
   padding: $space-2 $space-3;
   margin-right: $space-4;
   background: $one;
+  border-radius: 5px;
 }
 
 .date {

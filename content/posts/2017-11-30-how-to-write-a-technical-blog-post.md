@@ -5,6 +5,7 @@ created_at: 2017-11-30
 last_updated: 2017-11-30
 kind: article
 published: true
+tags: ['writing', 'tutorial', 'marketing']
 ---
 
 So you want to be a technical blogger. Great! It is really not as difficult as it seems. Many times, technical posts are the outflow of someone who is taking notes while they are learning new subjects themselves.

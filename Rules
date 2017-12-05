@@ -39,3 +39,7 @@ route '/**/*.{html,md}' do
 end
 
 layout '/**/*', :erb
+
+preprocess do
+  create_tags_pages
+end

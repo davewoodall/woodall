@@ -3,7 +3,7 @@ title: Create &amp; deploy a static website with nanoc 4 &amp; github pages
 created_at: 2017-11-26
 last_updated: 2017-11-26
 kind: article
-published: true
+published: false
 description: How to build a nanoc site from scratch
 ---
 

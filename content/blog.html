@@ -3,6 +3,12 @@ title: blog
 description: Welcome to Internetland.
 ---
 
+<p class='p'>
+  <% all_tags.each do |tag| %>
+    <%= tag_link tag, class: 'tag a' %>
+  <% end %>
+</p>
+
 <% published_posts.each do |post| %>
   <a class='blog-post-card' href="<%= post.path %>">
     <%= render '/partials/card.*',

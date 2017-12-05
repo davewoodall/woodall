@@ -1,5 +1,9 @@
 @import '../base/base';
 #show {
+  @media (min-width: $break-1) {
+    min-height: 640px;
+  }
+
   main {
     padding: 1em;
   }

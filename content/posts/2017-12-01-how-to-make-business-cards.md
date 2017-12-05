@@ -4,8 +4,8 @@ description: "I created a simple static website template for developers who don 
 created_at: 2017-12-01 13:11:31 -0500
 last_updated: 2017-12-01 13:11:31 -0500
 kind: article
-published: true
-tags: [ 'tutorial', 'business cards', 'self marketing' ]
+published: false
+tags: [ 'tutorial', 'business-cards', 'marketing' ]
 ---
 
 Business Cards is a simple static website generator for software developers to have a professional online presence. Why? Because as the cobbler's kids lack shoes, many developers lack a professional site to clearly communicate their skills.

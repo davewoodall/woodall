@@ -20,6 +20,7 @@ task :post, :title do |t, args|
     post.puts "last_updated: #{Time.now}"
     post.puts 'kind: article'
     post.puts 'published: false'
+    post.puts 'tags: ["tag-placeholder"]'
     post.puts "---\n\n"
   end
 end
