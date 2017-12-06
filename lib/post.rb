@@ -1,19 +1,10 @@
-module PostHelper
+module Post
   def get_pretty_date(post)
     attribute_to_time(post[:last_updated]).strftime('%B %-d, %Y')
   end
 
   def created_at(post)
     attribute_to_time(post[:created_at]).strftime('%B %-d, %Y')
-  end
-
-  # TODO
-  def tag_cloud
-    if item[:tags]
-      item[:tags].each do |tag|
-        "#{tag_link tag, class: 'tag'}"
-      end.join(" ")
-    end
   end
 
   def show_tags(post)
@@ -44,4 +35,4 @@ module PostHelper
   end
 end
 
-include PostHelper
+include Post
