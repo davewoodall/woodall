@@ -1,20 +1,6 @@
 @import '../base/base';
 
 #landing {
-  .skills {
-    padding: 0;
-    margin: 0;
-  }
-  .skill {
-    list-style: none;
-    display: inline-block;
-    background: $skill;
-    border-radius: 30px;
-    font-size: 16px;
-    padding: $space-1 $space-3;
-    margin: $space-2 $space-1;
-  }
-
   // grid changes are due to skill pills being too many!
   @media (min-width: $break-2) {
     .grid {

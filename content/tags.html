@@ -1,4 +1,14 @@
-<h1>Hello!</h1>
-<% all_tags.each do |tag| %>
-  <%= tag_link tag %>
-<% end  %>
+---
+title: tags
+description: A list of tags from all blog posts
+---
+
+<p class="p">
+  <%= item[:description] %>
+</p>
+
+<ul class="tags v-space">
+  <% all_tags.each do |tag| %>
+    <li class="tag"><%= tag_link tag %></li>
+  <% end %>
+</ul>

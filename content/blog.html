@@ -3,20 +3,14 @@ title: blog
 description: Welcome to Internetland.
 ---
 
-<p class='p'>
-  <% all_tags.each do |tag| %>
-    <%= tag_link tag, class: 'tag a' %>
-  <% end %>
-</p>
+<p class="p">View all <%= link_to 'blog tags', '/tags' %></p>
 
 <% published_posts.each do |post| %>
-  <a class='blog-post-card' href="<%= post.path %>">
-    <%= render '/partials/card.*',
+   <%= link_to (render '/partials/card.*',
       data: {
         title: post[:title],
         tags: show_tags(post),
         date: created_at(post),
         summary: post[:description]
-      } %>
-  </a>
+      }), post.path  %>
 <% end %>

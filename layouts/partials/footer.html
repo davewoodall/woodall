@@ -1,4 +1,13 @@
 <footer class='footer'>
+  <% if footer_blurb_written?  %>
+    <%= footer_blurb %>
+  <% end %>
+    <% if prev_page_exists?  %>
+    <%= link_to_previous_page  %>
+  <% end %>
+  <% if next_page_exists?  %>
+    <%= link_to_next_page  %>
+  <% end %>
   <nav class='nav-footer'>
     <%= render '/partials/nav.*' %>
   </nav>

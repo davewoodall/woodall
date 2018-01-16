@@ -1,0 +1,44 @@
+@import '../site_theme'; // TODO - base should only be part of base, me thinks.
+
+.tags {
+  float: left;
+}
+
+.tag {
+  font-size: 0.75em;
+  text-decoration: none;
+  padding: $space-2 $space-3;
+  margin-right: $space-4;
+  background: $one;
+  border-radius: 5px;
+}
+
+.tags,
+.pills {
+  padding: 0;
+  margin: 0;
+}
+.tag,
+.pill {
+  list-style: none;
+  display: inline-block;
+  background: $pill;
+  border-radius: 30px;
+  font-size: 16px;
+}
+.pill {
+  padding: $space-1 $space-3;
+  margin: $space-2 $space-1;
+}
+
+.tag {
+  &:hover {
+    transition: all 300ms;
+  }
+  a {
+    border-radius: 30px;
+    padding: $space-1 $space-3;
+    margin: $space-2 $space-1;
+    text-decoration: none;
+  }
+}

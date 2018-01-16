@@ -1,13 +1,13 @@
-  <!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>
-    Dave Woodall | business-cards posts
+    Dave Woodall | simple sass functions
   </title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Posts tagged 'business-cards'" />
+  <meta name="description" content="simple sass functions" />
   <meta name="keywords" content="dave woodall remote web developer coder ruby on rails vue js" />
   <meta name="author" content="dave woodall wwwoodall fakefarm" />
   <link rel="stylesheet" href="/stylesheets/application.css">
@@ -17,15 +17,15 @@
   <body class='body'>
 
     
-    <section id="show">
-      <header class='header'>
+  <header class='header'>
   <h1 class='p title'>
     <a href="/">Dave Woodall</a>
   </h1>
 </header>
 
-      <nav class='nav-site'>
-        <a class="nav-link" href="/">intro</a>
+  <section id="post">
+    <nav class='nav-site'>
+      <a class="nav-link" href="/">intro</a>
 <a class="nav-link" href="/about/">about</a>
 <a class="nav-link" href="/resume/">resume</a>
 <a class="nav-link" href="/education/">education</a>
@@ -36,49 +36,70 @@
   <a class="nav-link" target="_blank" href="http://www.github.com/fakefarm">github</a>
 
 
-      </nav>
-      <main>
-        <h1 class='h2 title'>
-          business-cards posts
-        </h1>
-        
-         <a class='blog-post-card' href="/2017/12/how-to-make-business-cards/">
-           <article class="card">
-  <header>
-    <h2 class='h3'>
-      how to make business cards
-    </h2>
-    
-      <div class='meta'>
-        <div class="tags">
-          
-        </div>
-        <h4 class="org h4">
-          
-        </h4>
-        <h4 class="date h4">
-          December 1, 2017
-        </h4>
-      </div>
-    
-  </header>
-  
-    <section class='card-summary'>
-      
-        <p class='p'>
-          I created a simple static website template for developers who don not have a professional website. This is a way for them to get one in less than 30 minutes!
-        </p>
-      
-      
-    </section>
-  
-</article>
-
-         </a>
+    </nav>
+    <header class='post-header'>
+      <h1 class='post-title title'>
+        simple sass functions
+      </h1>
+    </header>
+    <article class='post-body' id="markdown">
+      <div class="tags">
          
-      </main>
-    </section>
+          <b>tags</b> 
+            <a class="tag primary" href="/tags/scss/">scss</a>
+          
+            <a class="tag primary" href="/tags/syntax/">syntax</a>
+          
+            <a class="tag primary" href="/tags/vocab/">vocab</a>
+          
+        
+      </div>
+      <div class='p last-updated'>
+        <p class='p'>
+          Last Updated: December 8, 2017
+        </p>
+      </div>
+      
+<p>I’ve been writing basic css as much as possible because I learned that many of the reasons I wrote scss were in css3. However, I the scss syntax is cleaner. I’m writing most of my CSS in Vue components these days. As such, there is no loss for adding  <code>&lt;style :lang='scss'&gt;</code> to the component and letting it compile as Webpack does.</p>
+
+<p>A few functions that I recently came across looked interesting. I may try some of these;</p>
+
+<p>```
+$color: red
+$amount: 0.5</p>
+
+<p>rgba($color, $amount)
+fade($color, $amount)
+lighten($color, $amount)
+darken($color, $amount)
+```</p>
+
+<p>Here is the full documentation;
+http://sass-lang.com/documentation/Sass/Script/Functions.html</p>
+
+      
+      <div class='comments'>
+        <div id="disqus_thread"></div>
+      </div>
+      
+    </article>
+  </section>
   
+    <script>
+(function() {
+  var d = document,
+    s = d.createElement('script');
+  s.src = 'https://davewoodall.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+  
+
     <footer class='footer'>
   
     this is my footer content

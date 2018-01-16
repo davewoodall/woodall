@@ -8,6 +8,8 @@ google_fonts: ['Barlow Condensed', 'Roboto' ]
 use_disqus_for_comments: true
 discuss_subdomain: davewoodall
 
+footer_blurb: 'this is my footer content'
+
 # Meta
 github_account: fakefarm
 default_keywords: dave woodall remote web developer coder ruby on rails vue js

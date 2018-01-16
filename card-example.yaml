@@ -1,0 +1,15 @@
+card_subject:
+  -
+    title: card title
+    summary: a card summary
+    org: in the club
+    date: Jan 2021
+    tags: ['tag', 'tab', 'tat']
+    list:
+      - name: Lynda
+      - name: PluralSight
+      - name: GoRails
+      - name: RailsCasts
+      - name: Tea Leaf Academy
+      - name: Udemy
+      - name: Code School
