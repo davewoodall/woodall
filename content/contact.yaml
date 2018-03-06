@@ -9,10 +9,7 @@ next_page: intro
 contact:
   -
     title: 'Work reasons'
-    summary: 'If you have made it this far and still feel we might be a match, then I would enjoy hearing from you. I am always interested in hearing of new remote opportunities that would fit with my <a href="/resume">resume</a>, <a href="/education">education</a>, and <a href="/interests">interests</a>.'
-  -
-    title: 'Mentorship reasons'
-    summary: "I'm happy to share my experiences with people who are eager to learn and grow."
+    summary: 'I am always interested in hearing of new remote opportunities that would fit with my <a href="/resume">resume</a>, <a href="/education">education</a>, and <a href="/interests">interests</a>.'
   -
     title: 'Email is best'
     org: "dave@woodalls.me"

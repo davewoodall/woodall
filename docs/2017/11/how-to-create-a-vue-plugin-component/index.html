@@ -30,7 +30,7 @@
 <a class="nav-link" href="/resume/">resume</a>
 <a class="nav-link" href="/education/">education</a>
 <a class="nav-link" href="/blog/">blog</a>
-<a class="nav-link" href="/2017/11/how-to-write-a-technical-blog-post/">latest post</a>
+<span class="active">latest post</span>
 <a class="nav-link" href="/contact/">contact</a>
 
   <a class="nav-link" target="_blank" href="http://www.github.com/fakefarm">github</a>
@@ -58,139 +58,8 @@
         </p>
       </div>
       
-<p>Vue components are the predominant approach to Vue Apps. However, there are situations which require universal access to state (data) or behavior (methods). Vue Plugins are how to address this situation.</p>
+<script src="https://gist.github.com/fakefarm/c8bc710fc258268c29617473be47d2c0.js"></script>
 
-<p>This post is a step by step process of creating a Vue plugin.</p>
-
-<!-- more -->
-
-<p><strong>Step 1.</strong> create a directory for the plugin</p>
-
-<pre><code>  mkdir SidebarPlugin
-</code></pre>
-
-<p><strong>Step 2.</strong> create an <code>index.js</code> file to collect various pieces and parts</p>
-
-<p><code>cd SidebarPlugin; touch index.js</code></p>
-
-<h2 id="in-indexjs">In index.js</h2>
-
-<p><strong>Step 3.</strong> Create a component global component. Import it into <code>index.js</code>
-<em>note - the component specifics are not the focus of this how-to. To see specifics, <a href="https://github.com/cristijora/vue-paper-dashboard/tree/master/src/components/UIComponents/SidebarPlugin">visit the repo</a></em></p>
-
-<p><code>import Sidebar from './SideBar.vue';</code></p>
-
-<p><strong>Step 4.</strong> This plugin is creating a global component called <code>&lt;side-bar&gt;</code>. In addition to inserting the component around the app, we need a way to manage it. For example, if <code>&lt;side-bar&gt;</code> is visible or not.</p>
-
-<p>Create an object to manage sidebar specific data and some helper methods. For example, <code>showSidebar: Boolean</code> will be used from a global variable, which we will soon name <code>$sidebar</code> (in step 8)</p>
-
-<p><code>
-const SidebarStore = {
-  showSidebar: false,
-  sidebarLinks: [
-    {
-      name: 'Dashboardly',
-      icon: 'ti-panel',
-      path: '/admin/overview'
-    },
-    {
-      name: 'User Profile',
-      icon: 'ti-user',
-      path: '/admin/stats'
-    }
-  ],
-  displaySidebar(value) {
-    this.showSidebar = value;
-  }
-};
-</code></p>
-
-<p><strong>Step 5.</strong> Now create a plugin <code>const</code> and name it the same as directory for consisitency (<code>SidebarPlugin</code>)</p>
-
-<p>```
-const SidebarPlugin = {</p>
-
-<p>// Step 6. Wire up the plugin inside the install() function.
-  // install() is a special method Vue calls when a Plugin is requested (in step 12).
-  // (read more about Vue Plugins: [1])</p>
-
-<p>install(Vue) {</p>
-
-<pre><code>// Step 7. For the SidebarStore to be reactive it must be wrapped in a mixin.
-// Creating a mixin will automatically attach the data to `$root`.
-// The following mixin will create `this.$root.sidebarStore`.
-
-Vue.mixin({
-  data() {
-    return {
-      sidebarStore: SidebarStore
-    };
-  }
-});
-
-
-// Step 8. Use Object.defineProperty to attach the mixin (`this.$root.sidebarStore`)
-// onto Vue's prototype object. (Read more about Object.defineProperty at: [2])
-
-// Convention: Prefix with '$' to avoid name collisions.
-// Doing this step makes for a better experience (as you will see shortly)
-
-Object.defineProperty(Vue.prototype, '$sidebar', {
-  get() {
-    return this.$root.sidebarStore;
-  }
-});
-
-
-// Step 9. Attach the component (from Step 3) to Vue's global component store
-
-Vue.component('side-bar', Sidebar);   } }; ```
-</code></pre>
-
-<p><strong>Step 10.</strong> export <code>const</code> (created in step 5)</p>
-
-<p><code>export default SidebarPlugin;</code></p>
-
-<h2 id="in-mainjs">In main.js</h2>
-
-<p><strong>Step  11.</strong> In <code>main.js</code>, import SidebarPlugin that was exported in step 10. Notice that the name is been changed to <code>SideBar</code> because the plugin’s goal is to create a sidebar. The <code>import</code> method is smart enough to know you mean <code>SidebarPlugin/index.js</code> even though the file name, <code>index.js</code> is left off the <code>import</code> statement</p>
-
-<p><code>import SideBar from './components/UIComponents/SidebarPlugin';</code></p>
-
-<p><strong>Step 12.</strong> Tell Vue to use the imported <code>SideBar</code> (from step 11).</p>
-
-<p><code>Vue.use(SideBar);</code></p>
-
-<h2 id="using-the-component">Using the component</h2>
-
-<p><strong>Step 13.</strong> Now <code>&lt;side-bar&gt;</code> is available anywhere in the App. The API to manage <code>&lt;side-bar&gt;</code> is contained in <code>$sidebar</code>.</p>
-
-<p>For example, check if sidebar should be displayed;</p>
-
-<p><code>this.$sidebar.displaySidebar(!this.$sidebar.showSidebar); // returns true or false</code></p>
-
-<p>In html, no need to use <code>this</code> when referencing <code>$sidebar</code></p>
-
-<p><code>&lt;button :class="{toggled: $sidebar.showSidebar}"&gt;</code></p>
-
-<p>The <code>&lt;side-bar&gt;</code> component can also reference <code>$sidebar</code> to populate it’s content</p>
-
-<p><code>&lt;side-bar type="navbar" :sidebar-links="$sidebar.sidebarLinks"&gt;</code></p>
-
-<h2 id="footnotes">Footnotes</h2>
-
-<p>[1] <a href="https://vuejs.org/v2/guide/plugins.html">Writing a Plugin</a></p>
-
-<p>[2] <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty">Mozilla Object.defineProperty</a></p>
-
-<p>Notes from reading <a href="https://github.com/cristijora/vue-paper-dashboard/tree/master/src/components/UIComponents/SidebarPlugin">cristijora/vue-paper-dashboard SidebarPlugin</a></p>
-
-<blockquote>
-  <p>Usually components are suited for most cases. I would say 80-90% of the cases.
-For the rest 10-20%, you might find yourself using directives and plugins.
-Plugins usually incorporate some logic (data, component registration, maybe mixins or even directives)
-- cristijora</p>
-</blockquote>
 
       
       <div class='comments'>
@@ -217,7 +86,7 @@ Plugins usually incorporate some logic (data, component registration, maybe mixi
 
     <footer class='footer'>
   
-    this is my footer content
+    Last Updated: March 6, 2018
   
     
   
@@ -227,7 +96,7 @@ Plugins usually incorporate some logic (data, component registration, maybe mixi
 <a class="nav-link" href="/resume/">resume</a>
 <a class="nav-link" href="/education/">education</a>
 <a class="nav-link" href="/blog/">blog</a>
-<a class="nav-link" href="/2017/11/how-to-write-a-technical-blog-post/">latest post</a>
+<span class="active">latest post</span>
 <a class="nav-link" href="/contact/">contact</a>
 
   <a class="nav-link" target="_blank" href="http://www.github.com/fakefarm">github</a>

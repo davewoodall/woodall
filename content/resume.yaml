@@ -2,16 +2,15 @@ title: resume
 description: Dave Woodall's Resume
 resume:
   -
-    title: 'Senior Software Engineer'
-    org: '<a href="http://www.phishme.com" target="_blank">Phishme</a>'
+    title: 'Senior Software Engineer (Level II)'
+    org: '<a href="http://www.cofense.com" target="_blank">CoFense (formerly Phishme)</a>'
     date: 'July 2016 - Present'
-    summary: 'Primarily responsible for Vue JS Application which talks to Rails API. The Vue app handles a variety of CRUD operations. Additionally, I contribute to API development as it relates to other web services in the organization which consume the API. I am an active participate in road map discussions, backlog grooming, as well as team retros. My current activities are primiarly around writing the following;'
+    summary: 'Lead developer on a Vue JS Application which consumes data from a Rails API. The Vue app handles a variety of CRUD operations. I also contribute to Rails API development to provide resources for other teams in the organization, who consume the API. I am an active participate in road map discussions, backlog grooming, as well as team retros. My current activities are primiarly around writing the following;'
     list:
       - name: 'Vue JS'
       - name: 'Rails API'
-      - name: 'HTML &amp; CSS'
-      - name: 'Webpack'
-      - name: 'Node'
+      - name: 'HTML &amp; CSS (I like Bulma library)'
+      - name: 'Node &amp; Webpack for VueJS Development'
       - name: 'RSpec'
   -
     title: 'Software Engineer'

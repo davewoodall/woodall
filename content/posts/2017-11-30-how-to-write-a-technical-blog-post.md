@@ -4,7 +4,7 @@ description: Some simple suggestions on how and why you should write technical p
 created_at: 2017-11-30
 last_updated: 2017-11-30
 kind: article
-published: true
+published: false
 tags: ['writing', 'tutorial', 'marketing']
 ---
 
@@ -36,7 +36,7 @@ The more specific title, the more specific your audience. If you write a 'how to
 
 Not all technical posts have to include code. But if they do, it is helpful to provide some snippets for your readers to follow along.
 
-~~~ruby
+```ruby
 route '/**/*.{html,md}' do
   if item.identifier =~ '/index.*'
     '/index.html'
@@ -46,12 +46,12 @@ route '/**/*.{html,md}' do
 end
 
 layout '/**/*', :erb
-~~~
+```
 
 Here is a simple javascript function that when you call `hello()`, it will return `hi`
 
-~~~javascript
+```javascript
 function hello() {
-  return 'hi'
+  return 'hi';
 }
-~~~
+```

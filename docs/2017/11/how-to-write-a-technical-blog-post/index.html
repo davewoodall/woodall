@@ -30,7 +30,7 @@
 <a class="nav-link" href="/resume/">resume</a>
 <a class="nav-link" href="/education/">education</a>
 <a class="nav-link" href="/blog/">blog</a>
-<span class="active">latest post</span>
+<a class="nav-link" href="/2017/11/how-to-create-a-vue-plugin-component/">latest post</a>
 <a class="nav-link" href="/contact/">contact</a>
 
   <a class="nav-link" target="_blank" href="http://www.github.com/fakefarm">github</a>
@@ -88,29 +88,25 @@
 
 <p>Not all technical posts have to include code. But if they do, it is helpful to provide some snippets for your readers to follow along.</p>
 
-<div class="language-ruby highlighter-coderay"><div class="CodeRay">
-  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span>route <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">/**/*.{html,md}</span><span style="color:#710">'</span></span> <span style="color:#080;font-weight:bold">do</span>
-<span class="line-numbers"> <a href="#n2" name="n2">2</a></span>  <span style="color:#080;font-weight:bold">if</span> item.identifier =~ <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">/index.*</span><span style="color:#710">'</span></span>
-<span class="line-numbers"> <a href="#n3" name="n3">3</a></span>    <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">/index.html</span><span style="color:#710">'</span></span>
-<span class="line-numbers"> <a href="#n4" name="n4">4</a></span>  <span style="color:#080;font-weight:bold">else</span>
-<span class="line-numbers"> <a href="#n5" name="n5">5</a></span>    item.identifier.without_ext + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">/index.html</span><span style="color:#710">'</span></span>
-<span class="line-numbers"> <a href="#n6" name="n6">6</a></span>  <span style="color:#080;font-weight:bold">end</span>
-<span class="line-numbers"> <a href="#n7" name="n7">7</a></span><span style="color:#080;font-weight:bold">end</span>
-<span class="line-numbers"> <a href="#n8" name="n8">8</a></span>
-<span class="line-numbers"> <a href="#n9" name="n9">9</a></span>layout <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">/**/*</span><span style="color:#710">'</span></span>, <span style="color:#A60">:erb</span>
-</pre></div>
-</div>
-</div>
+<p>```ruby
+route ‘/<em>*/</em>.{html,md}’ do
+  if item.identifier =~ ‘/index.*’
+    ‘/index.html’
+  else
+    item.identifier.without_ext + ‘/index.html’
+  end
+end</p>
+
+<p>layout ‘/<em>*/</em>’, :erb
+```</p>
 
 <p>Here is a simple javascript function that when you call <code>hello()</code>, it will return <code>hi</code></p>
 
-<div class="language-javascript highlighter-coderay"><div class="CodeRay">
-  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span><span style="color:#080;font-weight:bold">function</span> <span style="color:#06B;font-weight:bold">hello</span>() {
-<span class="line-numbers"><a href="#n2" name="n2">2</a></span>  <span style="color:#080;font-weight:bold">return</span> <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">hi</span><span style="color:#710">'</span></span>
-<span class="line-numbers"><a href="#n3" name="n3">3</a></span>}
-</pre></div>
-</div>
-</div>
+<p><code>javascript
+function hello() {
+  return 'hi';
+}
+</code></p>
 
       
       <div class='comments'>
@@ -137,7 +133,7 @@
 
     <footer class='footer'>
   
-    this is my footer content
+    Last Updated: March 6, 2018
   
     
   
@@ -147,7 +143,7 @@
 <a class="nav-link" href="/resume/">resume</a>
 <a class="nav-link" href="/education/">education</a>
 <a class="nav-link" href="/blog/">blog</a>
-<span class="active">latest post</span>
+<a class="nav-link" href="/2017/11/how-to-create-a-vue-plugin-component/">latest post</a>
 <a class="nav-link" href="/contact/">contact</a>
 
   <a class="nav-link" target="_blank" href="http://www.github.com/fakefarm">github</a>
