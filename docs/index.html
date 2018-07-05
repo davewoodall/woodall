@@ -23,7 +23,7 @@
 <a class="nav-link" href="/resume/">resume</a>
 <a class="nav-link" href="/education/">education</a>
 <a class="nav-link" href="/blog/">blog</a>
-<a class="nav-link" href="/2017/11/how-to-create-a-vue-plugin-component/">latest post</a>
+<a class="nav-link" href="/2018/07/chrome-console-debugger-gotcha/">latest post</a>
 <a class="nav-link" href="/contact/">contact</a>
 
   <a class="nav-link" target="_blank" href="http://www.github.com/fakefarm">github</a>
@@ -123,10 +123,27 @@
     <section class="right-grid-panel">
       <article class='padding-1'>
         <h3 class="h2 title">Blog</h3>
-        <h2 class='h4 main-title v-space'>How to create a Vue Plugin Component</h2>
+        <h2 class='h4 main-title v-space'>Chrome Console Debugger Gotcha</h2>
         <div class='v-space' id="markdown">
-<script src="https://gist.github.com/fakefarm/c8bc710fc258268c29617473be47d2c0.js"></script>
+<p>Google Chrome Debugger is one of my favorite tools. I use it in both environments, development, and testing because it reveals the state and data of an object that I don’t know anything about. Just yesterday I discovered an issue related to how and when it recognizes Javascript <code>imports</code>. I mistakenly thought that some modules were not available because, in debugger, chrome console said they were not found. I was confused because the console was picking up other variables, but for some of the imported ones, it was returning <code>undefined</code>.</p>
 
+<pre><code>import Component from 'component';
+// down later in a debugger session
+debugger
+// Component
+// =&gt; undefined or 'cant find Component'
+</code></pre>
+
+<p>What I ended up doing is something similar to this;</p>
+
+<pre><code>import Component from 'component';
+// down later in a debugger session
+let c = Component
+debugger
+// Now, Component is assigned to c and it is in context.
+</code></pre>
+
+<p>I think that has caused me to take some longer journeys. My code will be much cleaner now moving forward. Promise :-)</p>
 </div>
       </article>
     </section>
@@ -145,7 +162,7 @@
 <a class="nav-link" href="/resume/">resume</a>
 <a class="nav-link" href="/education/">education</a>
 <a class="nav-link" href="/blog/">blog</a>
-<a class="nav-link" href="/2017/11/how-to-create-a-vue-plugin-component/">latest post</a>
+<a class="nav-link" href="/2018/07/chrome-console-debugger-gotcha/">latest post</a>
 <a class="nav-link" href="/contact/">contact</a>
 
   <a class="nav-link" target="_blank" href="http://www.github.com/fakefarm">github</a>

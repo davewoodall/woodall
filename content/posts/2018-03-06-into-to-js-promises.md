@@ -9,3 +9,38 @@ tags: ["javascript"]
 ---
 
 I have been consuming Javascript Promises for a while but I had yet to build one from scratch. I wanted to be able to reason about the various moving parts so I wrote a simple promise to see how these things work together.
+
+function successTwo() {
+return {a: 'b', c: 'd'};
+}
+
+async function boom2() {
+try {
+var b = await successTwo();
+console.log('we got success')
+console.log(b)
+} catch(e) {
+console.log('we got error')
+console.log(e)
+}
+}
+
+boom2()
+
+// function success(callback) {
+// var data = {a: 'b', c: 'd'};
+// callback(data);
+// }
+
+// function promiseFunction() {
+// return new Promise(function(zebra, reject) {
+// success(function(data) {
+// console.log('from the success')
+// zebra(data)
+// })
+// })
+// }
+
+// promiseFunction().then(function(response){
+// console.log(response)
+// })

@@ -30,7 +30,7 @@
 <a class="nav-link" href="/resume/">resume</a>
 <a class="nav-link" href="/education/">education</a>
 <a class="nav-link" href="/blog/">blog</a>
-<a class="nav-link" href="/2017/11/how-to-create-a-vue-plugin-component/">latest post</a>
+<a class="nav-link" href="/2018/07/chrome-console-debugger-gotcha/">latest post</a>
 <a class="nav-link" href="/contact/">contact</a>
 
   <a class="nav-link" target="_blank" href="http://www.github.com/fakefarm">github</a>
@@ -57,6 +57,41 @@
       </div>
       
 <p>I have been consuming Javascript Promises for a while but I had yet to build one from scratch. I wanted to be able to reason about the various moving parts so I wrote a simple promise to see how these things work together.</p>
+
+<p>function successTwo() {
+return {a: ‘b’, c: ‘d’};
+}</p>
+
+<p>async function boom2() {
+try {
+var b = await successTwo();
+console.log(‘we got success’)
+console.log(b)
+} catch(e) {
+console.log(‘we got error’)
+console.log(e)
+}
+}</p>
+
+<p>boom2()</p>
+
+<p>// function success(callback) {
+// var data = {a: ‘b’, c: ‘d’};
+// callback(data);
+// }</p>
+
+<p>// function promiseFunction() {
+// return new Promise(function(zebra, reject) {
+// success(function(data) {
+// console.log(‘from the success’)
+// zebra(data)
+// })
+// })
+// }</p>
+
+<p>// promiseFunction().then(function(response){
+// console.log(response)
+// })</p>
 
       
       <div class='comments'>
@@ -93,7 +128,7 @@
 <a class="nav-link" href="/resume/">resume</a>
 <a class="nav-link" href="/education/">education</a>
 <a class="nav-link" href="/blog/">blog</a>
-<a class="nav-link" href="/2017/11/how-to-create-a-vue-plugin-component/">latest post</a>
+<a class="nav-link" href="/2018/07/chrome-console-debugger-gotcha/">latest post</a>
 <a class="nav-link" href="/contact/">contact</a>
 
   <a class="nav-link" target="_blank" href="http://www.github.com/fakefarm">github</a>
