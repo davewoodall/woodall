@@ -1,10 +1,6 @@
 title: about me
 description: Hello, I'm Dave Woodall and this page is about me.
 
-footer_blurb: custom footer
-prev_page: intro
-next_page: resume
-
 about:
   -
     title: 'Interests'

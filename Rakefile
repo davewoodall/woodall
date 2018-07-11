@@ -35,3 +35,10 @@ desc "Delete content"
     # directory of blog posts
     # delete the contents
 end
+
+desc "Review commands"
+  task :review, :title do |t, args|
+    puts "\nNanoc Review \n"
+    puts "nanoc live   -- turn it on"
+    puts "rake post['title']   -- new title"
+end

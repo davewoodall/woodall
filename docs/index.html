@@ -23,7 +23,7 @@
 <a class="nav-link" href="/resume/">resume</a>
 <a class="nav-link" href="/education/">education</a>
 <a class="nav-link" href="/blog/">blog</a>
-<a class="nav-link" href="/2018/07/chrome-console-debugger-gotcha/">latest post</a>
+<a class="nav-link" href="/2018/07/today-I-learned-about-til/">latest post</a>
 <a class="nav-link" href="/contact/">contact</a>
 
   <a class="nav-link" target="_blank" href="http://www.github.com/fakefarm">github</a>
@@ -123,27 +123,11 @@
     <section class="right-grid-panel">
       <article class='padding-1'>
         <h3 class="h2 title">Blog</h3>
-        <h2 class='h4 main-title v-space'>Chrome Console Debugger Gotcha</h2>
+        <h2 class='h4 main-title v-space'>today I learned about TIL</h2>
         <div class='v-space' id="markdown">
-<p>Google Chrome Debugger is one of my favorite tools. I use it in both environments, development, and testing because it reveals the state and data of an object that I don’t know anything about. Just yesterday I discovered an issue related to how and when it recognizes Javascript <code>imports</code>. I mistakenly thought that some modules were not available because, in debugger, chrome console said they were not found. I was confused because the console was picking up other variables, but for some of the imported ones, it was returning <code>undefined</code>.</p>
+<p>There are many small and simple moving parts to know as a full stack developer. For example, I have a simple <code>table</code> with rows that expand into a drawer for more details. I wrote a lot of breakpoints on a simple drawer to make it look good on responsive screens. But today I learned the power of <code>colspan</code> on a <code>td</code>. That one little attribute was all that was needed to make my drawer fit perfectly inside my table. Sometimes I feel like I should know all these little details by now.</p>
 
-<pre><code>import Component from 'component';
-// down later in a debugger session
-debugger
-// Component
-// =&gt; undefined or 'cant find Component'
-</code></pre>
-
-<p>What I ended up doing is something similar to this;</p>
-
-<pre><code>import Component from 'component';
-// down later in a debugger session
-let c = Component
-debugger
-// Now, Component is assigned to c and it is in context.
-</code></pre>
-
-<p>I think that has caused me to take some longer journeys. My code will be much cleaner now moving forward. Promise :-)</p>
+<p>No matter how much time I spend coding, and I spend a lot of my time coding, there is always going to be something else to learn. That <code>colspan</code> showed me I am setting unrealistic expectations to think I will no longer <em>TIL</em>. Which is a silly thing to aspire. After all, why I love this profession is because of the constant learning. Each day I learn something new and get a little bit better. Yes, I am getting better but I hope to never stop learning.</p>
 </div>
       </article>
     </section>
@@ -152,7 +136,7 @@ debugger
 
     <footer class='footer'>
   
-    Last Updated: July 5, 2018
+    Last Updated: July 11, 2018
   
     
   
@@ -162,7 +146,7 @@ debugger
 <a class="nav-link" href="/resume/">resume</a>
 <a class="nav-link" href="/education/">education</a>
 <a class="nav-link" href="/blog/">blog</a>
-<a class="nav-link" href="/2018/07/chrome-console-debugger-gotcha/">latest post</a>
+<a class="nav-link" href="/2018/07/today-I-learned-about-til/">latest post</a>
 <a class="nav-link" href="/contact/">contact</a>
 
   <a class="nav-link" target="_blank" href="http://www.github.com/fakefarm">github</a>
