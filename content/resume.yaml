@@ -2,25 +2,17 @@ title: resume
 description: Dave Woodall's Resume
 resume:
   -
-    title: 'Senior Software Engineer (Level II)'
+    title: 'Senior Software Engineer'
     org: '<a href="http://www.cofense.com" target="_blank">CoFense (formerly Phishme)</a>'
-    date: 'July 2016 - Present'
-    summary: 'Lead developer on a Vue JS Application which consumes data from a Rails API. The Vue app handles a variety of CRUD operations. I also contribute to Rails API development to provide resources for other teams in the organization, who consume the API. I am an active participate in road map discussions, backlog grooming, as well as team retros. My current activities are primiarly around writing the following;'
-    list:
-      - name: 'Vue JS'
-      - name: 'Rails API'
-      - name: 'HTML &amp; CSS (I like Bulma library)'
-      - name: 'Node &amp; Webpack for VueJS Development'
-      - name: 'RSpec'
+    date: 'July 2016 - November 2018'
+    summary: 'Team lead on a Vue/Node Single Page Application which manages customer licenses and product metrics. Core contributor to a Legacy SPA of 12k LOC. Lead initiative to improve test coverage from ~20% to 70%. Developed Rails 5 API for generating and validating licenses related purchasing of our primary product. My current activities are primiarly around writing the following;'
+
   -
     title: 'Software Engineer'
     org: 'LivingSocial'
     date: 'January 2014 - May 2016'
-    summary: 'Most of my work was front-end on Rails tasks because of my appreciation for UI. I worked on three teams during my time;'
-    list:
-      - name: "Team 1: Escapes Retail Vertical"
-      - name: "Team 2: Personalization Data Science GEM &amp; UI"
-      - name: "Team 3: Internal Tools, Customer Service"
+    summary: 'Worked with three teams in a fast paced, startup culture. Spent a lot of time honing my CSS pixel perfection eye as features were seen by millions of visitors. Worked on a Ruby Gem for Data Scientist to experiment with conversion rates. Built a Rails backed BackboneJS pseudo-SPA which interacted with Salesforce API to process customer service center.'
+
   -
     title: 'Software Consultant'
     org: 'hireDave.me, LLC'

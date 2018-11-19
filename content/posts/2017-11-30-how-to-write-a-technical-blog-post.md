@@ -4,7 +4,7 @@ description: Some simple suggestions on how and why you should write technical p
 created_at: 2017-11-30
 last_updated: 2017-11-30
 kind: article
-published: false
+published: true
 tags: ['writing', 'tutorial', 'marketing']
 ---
 
@@ -55,3 +55,11 @@ function hello() {
   return 'hi';
 }
 ```
+
+### Step 4: Edit as needed
+
+It's safe to say that no one knows everything. So do your best and if you need to update your content, then go ahead and do it. Nothing wrong with hitting the 'edit' button.
+
+---
+
+That's all I have for now. I'll update later if I need to.

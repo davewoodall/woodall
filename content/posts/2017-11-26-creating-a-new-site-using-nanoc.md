@@ -3,7 +3,7 @@ title: Create &amp; deploy a static website with nanoc 4 &amp; github pages
 created_at: 2017-11-26
 last_updated: 2017-11-26
 kind: article
-published: false
+published: true
 description: How to build a nanoc site from scratch
 ---
 
@@ -132,7 +132,7 @@ If you don't want to go out and buy a domain name everytime, then you probably w
 
 be nanoc --env=[prod]
 
-# problem -
+## problem -
 - stylesheets / dynamic paths
 
 1. nanoc.yaml comes as a @config

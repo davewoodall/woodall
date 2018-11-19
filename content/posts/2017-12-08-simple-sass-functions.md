@@ -4,7 +4,7 @@ description: simple sass functions
 created_at: 2017-12-08 11:09:26 -0500
 last_updated: 2017-12-08 11:09:26 -0500
 kind: article
-published: false
+published: true
 tags: ["scss", "syntax", "vocab"]
 ---
 

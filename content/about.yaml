@@ -4,7 +4,7 @@ description: Hello, I'm Dave Woodall and this page is about me.
 about:
   -
     title: 'Interests'
-    summary: 'I enjoy thinking, tinkering, and trying new things. I got into software because it solved my own problems.'
+    summary: 'I started writing software to solve my own problems. I enjoy thinking, tinkering, and trying new things. When I am not writing code, I spend time reading, writing, and with my sons.'
   -
     title: 'Open Source Contributions'
     list:
