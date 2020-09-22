@@ -3,6 +3,11 @@ description: Dave Woodall's Resume
 resume:
   -
     title: 'Senior Software Engineer'
+    org: '<a href="http://www.davewoodall.com" target="_blank">Ruby on Rails + JS (Full Stack) Contractor</a>'
+    date: 'November 2018 - Present'
+    summary: 'Clients include: Aetna Digital Search Team, Dime Accounting, Dave Ramsey Solutions.<br><i>(Acquisition of Aetna, resulted in CVS Health as the nation’s premier health innovation company.)</i><br><br> • Provided consulting services to Fortune 500 companies and small businesses.<br> • Full stack development in writing Ruby on Rails, Ruby, RSpec, Stimulus, JavaScript, HTML, CSS, SQL.<br> • Additional tasks included work in Elixir and Node stacks to interact with Elasticsearch & RabbitMQ<br>• Most recent project was as single engineer to architect, design, and development from concept to completion a Ruby on Rails Monolith application which managing $75M in monthly credit card transactions for the fuel industry. The App ingests various formats of third-party vendor files, parses and normalizes files, then presents reports and delivers daily e-mails to customers and administrators for accounting activities.'
+  -
+    title: 'Senior Software Engineer'
     org: '<a href="http://www.cofense.com" target="_blank">CoFense (formerly Phishme)</a>'
     date: 'July 2016 - November 2018'
     summary: 'Team lead on a Vue/Node Single Page Application which manages customer licenses and product metrics. Core contributor to a Legacy SPA of 12k LOC. Lead initiative to improve test coverage from ~20% to 70%. Developed Rails 5 API for generating and validating licenses related purchasing of our primary product. My current activities are primiarly around writing the following;'
